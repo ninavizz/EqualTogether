@@ -1,0 +1,545 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* Navvy Things */
+#masthead {
+	position:absolute;
+	left:0px;
+	top:50px;
+	width:100%;
+	height:75px;
+	background-color: #10aaf3;
+	z-index:3;
+}
+
+#masthead-black {
+	position:absolute;
+	left:0px;
+	top:50px;
+	width:100%;
+	height:75px;
+	background-color: black;
+	z-index:3;
+}
+
+#masthead-airbnb {
+	position:absolute;
+	left:0px;
+	top:50px;
+	width:100%;
+	height:75px;
+	background-color: #f45c5b3;
+	z-index:3;
+}
+
+#masthead-atlassian {
+	position:absolute;
+	left:0px;
+	top:50px;
+	width:100%;
+	height:75px;
+	background-color: #062f67;
+	z-index:3;
+}
+
+#masthead-dropbox {
+	position:absolute;
+	left:0px;
+	top:50px;
+	width:100%;
+	height:75px;
+	background-color: #0077e5;
+	z-index:3;
+}
+
+#masthead-facebook {
+	position:absolute;
+	left:0px;
+	top:50px;
+	width:100%;
+	height:75px;
+	background-color: #345393;
+	z-index:3;
+}
+
+#masthead-groupon {
+	position:absolute;
+	left:0px;
+	top:50px;
+	width:100%;
+	height:75px;
+	background-color: #829b47;
+	z-index:3;
+}
+
+#masthead-pandora {
+	position:absolute;
+	left:0px;
+	top:50px;
+	width:100%;
+	height:75px;
+	background-color: #02538a;
+	z-index:3;
+}
+
+#masthead-pinterest {
+	position:absolute;
+	left:0px;
+	top:50px;
+	width:100%;
+	height:75px;
+	background-color: #d72c25;
+	z-index:3;
+}
+
+#masthead-salesforce {
+	position:absolute;
+	left:0px;
+	top:50px;
+	width:100%;
+	height:75px;
+	background-color: #3e9edc;
+	z-index:3;
+}
+
+#masthead-twitter {
+	position:absolute;
+	left:0px;
+	top:50px;
+	width:100%;
+	height:75px;
+	background-color: #10aaf3;
+	z-index:3;
+}
+
+#masthead-yahoo {
+	position:absolute;
+	left:0px;
+	top:50px;
+	width:100%;
+	height:75px;
+	background-color: #3e0099;
+	z-index:3;
+}
+
+.masthead-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.fpoblock {
+    display: block;
+	font-weight:bold;
+    font-size: 24px;
+    color: #fff;
+    text-align: center; 
+}
+
+.dropdown-header-FYI {
+    display: block;
+	font-weight:bold;
+    padding:8px 25px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #3b9dc5;
+    white-space: nowrap;
+	margin: 0, 0, 0, 0;
+}
+
+a.navbar-brand {
+   float: left;
+   height: 50px;
+   padding: 15px 15px;
+   font-size: 18px;
+   font-weight: bold;
+   line-height: 20px;
+}
+
+
+.navbar-nav {
+   float: left;
+   margin-left: 150px;
+}
+
+.caret {
+   display: inline-block;
+   width: 0;
+   height: 0;
+   margin-left: 4px;
+   vertical-align: middle;
+   border-top: 4px solid;
+   border-right: 4px solid transparent;
+   border-left: 4px solid transparent;
+}
+
+
+/* Charty Things */
+	  
+p.datestamp-month {
+	font-family: Montserrat, sans-serif;
+	font-variant: small-caps;
+	font-weight:700;
+    font-size: 12px;
+	letter-spacing:.17em;
+    color: #777;
+    text-align: center;
+	padding-top: 9px;
+	padding-bottom: 1px;
+}
+
+p.datestamp-day {
+	font-family: Montserrat, sans-serif;
+	font-weight:700;
+    font-size: 30px;
+	line-height: 4px;
+    color: #555;
+    text-align: center;
+}
+
+p.datestamp-year {
+	font-family:Montserrat, sans-serif;
+	font-weight:400;
+    font-size:10px;
+	letter-spacing:.2em;
+	line-height:15px;
+    color: #777;
+    text-align:center;
+}
+
+.numbmen {
+	font-family: Montserrat, sans-serif;
+	font-variant: small-caps;
+	font-weight:400;
+    font-size:14px;
+	line-height:4px;
+    color: #30b9e4;
+    text-align: left;
+}
+
+.men {
+	font-family: Montserrat, sans-serif;
+	font-variant: small-caps;
+    font-size:17px;
+	line-height:4px;
+	font-weight:700;
+    color: #30b9e4;
+	padding-left:5px;
+    text-align: left;
+}
+.numbwomen {
+	font-family: Montserrat, sans-serif;
+	font-variant: small-caps;
+	font-weight:400;
+    font-size:14px;
+	line-height:4px;
+    color: #116085;
+    text-align: left;
+}
+
+.women {
+	font-family: Montserrat, sans-serif;
+	font-variant: small-caps;
+    font-size:17px;
+	line-height:2px;
+	font-weight:700;
+    color: #116085;
+	padding-left:5px;
+    text-align: left;
+}
+
+.numbwhite {
+	font-family: Montserrat, sans-serif;
+	font-variant: small-caps;
+	font-weight:400;
+    font-size:14px;
+	line-height:2px;
+    color: #edc119;
+    text-align: left;
+}
+
+.white {
+	font-family: Montserrat, sans-serif;
+	font-variant: small-caps;
+    font-size:17px;
+	line-height:2px;
+	font-weight:700;
+    color: #edc119;
+	padding-left:5px;
+    text-align: left;
+}
+
+.numbasian {
+	font-family: Montserrat, sans-serif;
+	font-variant: small-caps;
+    font-size:14px;
+	line-height:2px;
+	font-weight:400;
+    color: #d85e1b;
+    text-align: left;
+}
+
+.asian {
+	font-family: Montserrat, sans-serif;
+	font-variant: small-caps;
+    font-size:17px;
+	font-weight:700;
+	line-height:2px;
+    padding-left:5px;
+    color: #d85e1b;
+    text-align: left;
+}
+
+.numbblack {
+	font-family: Montserrat, sans-serif;
+	font-variant: small-caps;
+    font-size:14px;
+	line-height:2px;
+	font-weight:700;
+    color: #831953;
+    text-align: left;
+}
+
+.black {
+	font-family: Montserrat, sans-serif;
+	font-variant: small-caps;
+	line-height:2px;
+    font-size:17px;
+	font-weight:700;
+	padding-left:5px;
+    color: #831953;
+    text-align: left;
+}
+
+.numblatino {
+	font-family: Montserrat, sans-serif;
+	font-variant: small-caps;
+	font-weight:400;
+	line-height:2px;
+    font-size:14px;
+	padding-top: -2px;
+    color: #df3489;
+    text-align: left;
+}
+
+.latino {
+	font-family: Montserrat, sans-serif;
+	font-variant: small-caps;
+    font-size:17px;
+	line-height:2px;
+	font-weight:700;
+	padding-left: 5px;
+    color: #df3489;
+    text-align: left;
+}
+
+.numbother {
+	font-family: Montserrat, sans-serif;
+	font-variant: small-caps;
+    font-size: 14px;
+	line-height:4px;
+	font-weight:700;
+    color: #ccc;
+    text-align: left;
+}
+
+.other {
+	font-family: Montserrat, sans-serif;
+	font-variant: small-caps;
+    font-size:17px;
+	line-height:4px;
+	font-weight:700;
+    color: #ccc;
+	padding-left:5px;
+    text-align: left;
+}
+
+
+
+/* Corp Page Things */
+
+
+.percentnumber {
+	font-family: Montserrat, sans-serif;
+	font-weight:700;
+    font-size: 16px;
+	line-height: 30px;
+    color: #40009D;
+    text-align: left;
+	padding-left:22px;
+}
+.percentsymbol {
+	font-family: Montserrat, sans-serif;
+	font-weight:400;
+    font-size: 16px;
+	line-height: 30px;
+    color: #40009D;
+    text-align: left;
+	padding-left:1px;
+}
+.hereworld {
+	font-weight:400;
+	font-variant:small-caps;
+    font-size: 24px;
+    color: #40009D;
+    text-align:left;
+	padding-left:2px;
+}
+.addy {
+	font-family: Open Sans, sans-serif;
+	font-weight:400;
+    font-size:13px;
+	line-height:9px;
+    color: #555;
+    text-align: left;
+}
+.addy2 {
+	font-family: Open Sans, sans-serif;
+	font-weight:600;
+    font-size:12px;
+	line-height:8px;
+    color: #555;
+    text-align: left;
+}
+.addy3 {
+	font-family: Open Sans, sans-serif;
+	font-weight:400;
+    font-size:12px;
+	line-height:8px;
+    color: #555;
+    text-align: left;
+	padding-left:4px;
+}
+.officepurpose {
+	font-family: Open Sans, sans-serif;
+	font-style:italic;
+	font-weight:300;
+    font-size:12px;
+	line-height:9px;
+    color: #40009D;
+    text-align: left;
+}
+.us-world {
+	font-weight:400;
+	font-variant:small-caps;
+    font-size: 24px;
+    color: #40009D;
+    text-align:left;
+	padding-left:2px;
+}
+.citydate {
+	font-weight:700;
+    padding-left:3px;
+	z-index:4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Pact Things */
+.pact-headline {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+    font-size: 24px;
+    color: #555;
+    text-align: left; 
+}
+
+.pact-intro {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+    font-size: 13px;
+	line-height: 19px;
+    color: #555;
+    text-align: left; 
+	padding-bottom: 10px;
+}
+
+.pact-agreeto {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+    font-size: 13px;
+	line-height: 18px;
+    color: #222;
+    text-align: left; 
+	padding-bottom: 20px;
+}
+
+.pact-commits {
+	border-top:solid;
+	border-top-width: 4px;
+	border-bottom-style:dotted;
+}
+
+.PactGuts li {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+    font-size: 12px;
+	line-height: 15px;
+    color: #222;
+    text-align: left; 
+	padding-bottom: 5px;
+}
+
+.pact-subhead {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+    font-size: 18px;
+    color: #222;
+    text-align: left; 
+	padding-bottom:10px;
+}
+
+.declare {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+    font-size:13px;
+	line-height:2px;
+    color: #222;
+    text-align: left; 
+}
+
+.respond {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+    font-size: 12px;
+	line-height: 15px;
+    color: #555;
+    text-align: left; 
+	padding-bottom:15px;
+}
+
+.continuation {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+    font-size: 13px;
+	line-height: 17px;
+    color: #222;
+    text-align: left; 
+	padding-bottom:5px;
+}
+
+.pact-notyet {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+    font-size: 24px;
+	font-style:italic;
+    color: #ccc;
+    text-align: center; 
+	padding-top:15px;
+}
+
+
+
+
+
+
