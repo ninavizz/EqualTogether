@@ -359,6 +359,8 @@ p.datestamp-year {
 
 /* Corp Page Things */
 
+/* Bar */
+
 .percentnumber {
 	font-family: Montserrat, sans-serif;
 	font-weight:700;
@@ -433,6 +435,9 @@ p.datestamp-year {
 	z-index:4;
 }
 
+
+/* Article */
+
 .dateline {
 	position:relative;
 	font-family: Montserrat, sans-serif;
@@ -479,11 +484,6 @@ p.datestamp-year {
 	padding-bottom:15px;
 	z-index:4;
 }
-
-
-
-
-
 
 
 
