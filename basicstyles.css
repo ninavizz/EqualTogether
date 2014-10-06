@@ -359,7 +359,6 @@ p.datestamp-year {
 
 /* Corp Page Things */
 
-
 .percentnumber {
 	font-family: Montserrat, sans-serif;
 	font-weight:700;
@@ -434,9 +433,52 @@ p.datestamp-year {
 	z-index:4;
 }
 
+.dateline {
+	position:relative;
+	font-family: Montserrat, sans-serif;
+	font-weight:600;
+    font-size: 11px;
+}
 
+.dateline span {
+    background-color: white;
+	padding-right:10px;
+}
 
+.dateline:after {
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0.75em;
+    border-top: 1px dotted #555;
+    z-index: -1;
+}
 
+.article-h1 {
+	font-family: Open-Sans, sans-serif;
+	font-weight:300;
+    font-size: 30px;
+	color: #40009D;
+	padding-top:30px;
+}
+
+.article-body {
+	font-family: Open-Sans, sans-serif;
+	font-weight:300;
+    font-size:15px;
+	line-height:19px;
+	color: #555;
+}
+
+.article {
+    left:40px;
+	padding-top:50px;
+	width:700px;
+	padding-bottom:15px;
+	z-index:4;
+}
 
 
 
