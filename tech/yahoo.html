@@ -17,9 +17,6 @@
 <link href="../basicstyles.css" rel="stylesheet" type="text/css">
 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]-->
 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -379,25 +376,24 @@
 	top:470px;
 	width:750px;
 	height:76px;
-	z-index:4;
+	z-index:7;
 }
-#tabby-content {
+#tabby_content {
 	position:absolute;
 	left:240px;
 	top:500px;
 	width:700px;
 	height:824px;
-	z-index:4;
+	z-index:6;
 }
 
-#Article-Testimony {
+#article_testimony {
 	position:absolute;
 	left:40px;
 	top:50px;
 	width:700px;
 	padding-bottom:5px;
 	border-bottom:5px solid #40009D;
-	z-index:4;
 }
 
 #date {
@@ -417,22 +413,20 @@
 	background-position:-400px -7px;
 }
 
-#Article-2 {
+#article_2 {
 	position:absolute;
 	left:40px;
 	top:450px;
 	width:700px;
 	padding-bottom:15px;
-	z-index:4;
 }
 
-#Article-3 {
+#article_3 {
 	position:absolute;
 	left:40px;
 	top:800px;
 	width:700px;
 	padding-bottom:15px;
-	z-index:4;
 }
 	
 </style>
@@ -605,43 +599,48 @@
     </div>
 </div>
   
-<!------------------------------------ Tabs ------------------------------------>      
-<div id="tabbytabs"><ul class="nav nav-tabs" role="tablist">
-      <li class="active"><a href="#">Articles</a></li>
-      <li><a href="#">Leadership</a></li>
-      <li><a href="#">Community Support</a></li>
-    </ul></div>
-<div id="tabby-content">
-    <div id="Article-Testimony">
-       <div class="dateline"><span>02 August 2014</span></div>
-       <p class="article-h1">Q: Why Lebowski?<p>
-       <div id="ceo-mug"></div>
-       <span class="article-body"><p>Hey, relax man, I'm a brother shamus. Excuse me! Mark it zero. Next frame. I just want to say, sir, that we're both enormous—on a personal level. I mean his wife goes out and owes money and they pee on my rug. That's right Dude; they pee on your fucking Rug. There's no fucking reason—here's my point, Dude—there's no fucking reason. 1972 Pontiac LeBaron. Fuck it Dude. Let's go bowling.</p>
+<!------------------------------------ Tabs ------------------------------------>
+<div id="tabbytabs">
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="active"><a href="#articles" role="tab" data-toggle="tab">Articles</a></li>
+    <li><a href="#leadership" role="tab" data-toggle="tab">Leadership</a></li>
+    <li><a href="#community" role="tab" data-toggle="tab">Community Support</a></li>
+  </ul>
+</div>
+<div id="tabby_content" class="tab-content">
+    <div class="tab-pane fade active in" id="articles">
+      <div id="article_testimony">
+        <div class="dateline"><span>02 August 2014</span></div>
+        <p class="article-h1">Q: Why Lebowski?<p>
+        <div id="ceo-mug"></div>
+        <span class="article-body"><p>Hey, relax man, I'm a brother shamus. Excuse me! Mark it zero. Next frame. I just want to say, sir, that we're both enormous—on a personal level. I mean his wife goes out and owes money and they pee on my rug. That's right Dude; they pee on your fucking Rug. There's no fucking reason—here's my point, Dude—there's no fucking reason. 1972 Pontiac LeBaron. Fuck it Dude. Let's go bowling.</p>
        
-       <p>Dieter has been on the fringes of —well, of everything in L.A., for about twenty years. Look at my LP's. Under 'Autobahn.'. I see you rolled your way into the semis. Dios mio, man. Seamus and me, we're gonna fuck you up. Say friend, ya got any more a that good sarsaparilla? Ja, und maybe vee stamp on it und skvush it, Lebowski! Hello! Do you speak English? Parla usted Inglese? I'll say it again. Did I urinate on your rug?</p><p>-Maude Lebowski, CEO</span>
-     </div>
-     <div id="Article-2">
-       <div class="dateline"><span>02 July 2014</span></div>
-       <p class="article-h1">Here's What Happens, He Abides!</p>
-       <span class="article-body"><p>You thought, hey, a deadbeat, a loser, someone the square community won't give a shit about. Urna sed orci ipsum, placerat id condimentum. Does the Pope shit in the woods? Rutrum, rhoncus ac lorem aliquam placerat posuere neque. We know it's his fucking homework, Walter! Where's the fucking money, you little brat? At dignissim magna ullamcorper in aliquam sagittis massa ac tortor ultrices. I'll suck your cock for a thousand bucks. Faucibus curabitur eu mi sapien, ut ultricies ipsum morbi eget.</p>
+        <p>Dieter has been on the fringes of —well, of everything in L.A., for about twenty years. Look at my LP's. Under 'Autobahn.'. I see you rolled your way into the semis. Dios mio, man. Seamus and me, we're gonna fuck you up. Say friend, ya got any more a that good sarsaparilla? Ja, und maybe vee stamp on it und skvush it, Lebowski! Hello! Do you speak English? Parla usted Inglese? I'll say it again. Did I urinate on your rug?</p><p>-Maude Lebowski, CEO</span>
+      </div>
+      <div id="article_2">
+        <div class="dateline"><span>02 July 2014</span></div>
+        <p class="article-h1">Here's What Happens, He Abides!</p>
+        <span class="article-body"><p>You thought, hey, a deadbeat, a loser, someone the square community won't give a shit about. Urna sed orci ipsum, placerat id condimentum. Does the Pope shit in the woods? Rutrum, rhoncus ac lorem aliquam placerat posuere neque. We know it's his fucking homework, Walter! Where's the fucking money, you little brat? At dignissim magna ullamcorper in aliquam sagittis massa ac tortor ultrices. I'll suck your cock for a thousand bucks. Faucibus curabitur eu mi sapien, ut ultricies ipsum morbi eget.</p>
        
-       <p>Strong men also cry… Strong men also cry. Risus nulla nullam vel nisi enim, vel auctor ante. Fuck me, man! That kid's already spent all the money! Morbi id urna vel felis lacinia. Regrettably, it's true, standards have fallen in adult entertainment. It's video, Dude. Placerat vestibulum turpis nulla, viverra nec volutpat ac, ornare id. Yeah well, that's just, ya know, like, your opinion, man. Lectus cras pharetra faucibus tristique nullam non accumsan justo nulla facilisi integer interdum elementum.</p></span>
-     </div>
-     <div id="Article-3">
-       <div class="dateline"><span>02 July 2014</span></div>
-       <p class="article-h1">Here's What Happens, He Abides!</p>
-       <span class="article-body"><p>You thought, hey, a deadbeat, a loser, someone the square community won't give a shit about. Urna sed orci ipsum, placerat id condimentum. Does the Pope shit in the woods? Rutrum, rhoncus ac lorem aliquam placerat posuere neque. We know it's his fucking homework, Walter! Where's the fucking money, you little brat? At dignissim magna ullamcorper in aliquam sagittis massa ac tortor ultrices. I'll suck your cock for a thousand bucks. Faucibus curabitur eu mi sapien, ut ultricies ipsum morbi eget.</p>
+        <p>Strong men also cry… Strong men also cry. Risus nulla nullam vel nisi enim, vel auctor ante. Fuck me, man! That kid's already spent all the money! Morbi id urna vel felis lacinia. Regrettably, it's true, standards have fallen in adult entertainment. It's video, Dude. Placerat vestibulum turpis nulla, viverra nec volutpat ac, ornare id. Yeah well, that's just, ya know, like, your opinion, man. Lectus cras pharetra faucibus tristique nullam non accumsan justo nulla facilisi integer interdum elementum.</p></span>
+      </div>
+      <div id="article_3">
+        <div class="dateline"><span>02 July 2014</span></div>
+        <p class="article-h1">Here's What Happens, He Abides!</p>
+        <span class="article-body"><p>You thought, hey, a deadbeat, a loser, someone the square community won't give a shit about. Urna sed orci ipsum, placerat id condimentum. Does the Pope shit in the woods? Rutrum, rhoncus ac lorem aliquam placerat posuere neque. We know it's his fucking homework, Walter! Where's the fucking money, you little brat? At dignissim magna ullamcorper in aliquam sagittis massa ac tortor ultrices. I'll suck your cock for a thousand bucks. Faucibus curabitur eu mi sapien, ut ultricies ipsum morbi eget.</p>
        
-       <p>Strong men also cry… Strong men also cry. Risus nulla nullam vel nisi enim, vel auctor ante. Fuck me, man! That kid's already spent all the money! Morbi id urna vel felis lacinia. Regrettably, it's true, standards have fallen in adult entertainment. It's video, Dude. Placerat vestibulum turpis nulla, viverra nec volutpat ac, ornare id. Yeah well, that's just, ya know, like, your opinion, man. Lectus cras pharetra faucibus tristique nullam non accumsan justo nulla facilisi integer interdum elementum.</p></span>
-     </div>
+        <p>Strong men also cry… Strong men also cry. Risus nulla nullam vel nisi enim, vel auctor ante. Fuck me, man! That kid's already spent all the money! Morbi id urna vel felis lacinia. Regrettably, it's true, standards have fallen in adult entertainment. It's video, Dude. Placerat vestibulum turpis nulla, viverra nec volutpat ac, ornare id. Yeah well, that's just, ya know, like, your opinion, man. Lectus cras pharetra faucibus tristique nullam non accumsan justo nulla facilisi integer interdum elementum.</p></span>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="leadership">
+      <h4>Leadership</h4>
+    </div>
+    <div class="tab-pane fade" id="community">
+      <h4>Community Support</h4>
+    </div>
 </div>
 
-
-
-
-</div>    
-
-<!---------------------- Bootstrap Template Fixed Footer Was Buggy----------------------------->
+<!---------------------- Bootstrap Template Fixed Footer Was Buggy---------------------------->
 
 
 
@@ -649,8 +648,12 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
+
 </body>
 </html>
