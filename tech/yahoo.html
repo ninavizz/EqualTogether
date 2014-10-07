@@ -33,12 +33,12 @@
       google.load('visualization', '1.0', {'packages':['corechart']});
 
       // Set a callback to run when the Google Visualization API is loaded.
-      google.setOnLoadCallback(drawChart);
+      google.setOnLoadCallback(drawRace);
 
       // Callback that creates and populates a data table,
       // instantiates the pie chart, passes in the data and
       // draws it.
-      function drawChart() {
+      function drawRace() {
 
         // Create the data table.
         var data = new google.visualization.DataTable();
@@ -52,6 +52,14 @@
           ['Other', 110],
         ]);
 
+        function selectHandler() {
+          var selectedItem = chart.getSelection()[0];
+          if (selectedItem) {
+            var value = data.getValue(selectedItem.row, 0);
+            console.log('The user selected ', value);
+          }
+        }
+        
         // Set chart options
         var options = {'width':420,
                        'height':420,
@@ -65,6 +73,7 @@
 
         // Instantiate and draw our chart, passing in some options.
         var chart = new google.visualization.PieChart(document.getElementById('chart_race'));
+        google.visualization.events.addListener(chart, 'select', selectHandler);
         chart.draw(data, options);
       }
     </script>
@@ -78,12 +87,12 @@
       google.load('visualization', '1.0', {'packages':['corechart']});
 
       // Set a callback to run when the Google Visualization API is loaded.
-      google.setOnLoadCallback(drawChart);
+      google.setOnLoadCallback(drawGender);
 
       // Callback that creates and populates a data table,
       // instantiates the pie chart, passes in the data and
       // draws it.
-      function drawChart() {
+      function drawGender() {
 
         // Create the data table.
         var data = new google.visualization.DataTable();
@@ -95,6 +104,13 @@
           ['Other', 4],
         ]);
 
+        function selectHandler() {
+          var selectedItem = chart.getSelection()[0];
+          if (selectedItem) {
+            console.log('The user selected ', selectedItem);
+          }
+        }
+        
         // Set chart options
         var options = {'width':230,
                        'height':230,
@@ -108,6 +124,7 @@
 
         // Instantiate and draw our chart, passing in some options.
         var chart = new google.visualization.PieChart(document.getElementById('chart_gender'));
+        google.visualization.events.addListener(chart, 'select', selectHandler);
         chart.draw(data, options);
       }
     </script>
@@ -175,15 +192,6 @@
 	top:200px;
 	width:1000px;
 	height:1400px;
-	z-index:4;
-}
-#tabbytabs {
-	position:absolute;
-	background-color:#ffffff;
-	left:240px;
-	top:0px;
-	width:700px;
-	height:76px;
 	z-index:4;
 }
 #NiceLegend {
@@ -375,24 +383,19 @@
 	left:240px;
 	top:470px;
 	width:750px;
-	height:76px;
+	height:42px;
 	z-index:7;
 }
 #tabby_content {
 	position:absolute;
-	left:240px;
+	left:280px;
 	top:500px;
 	width:700px;
 	height:824px;
 	z-index:6;
 }
 
-#article_testimony {
-	position:absolute;
-	left:40px;
-	top:50px;
-	width:700px;
-	padding-bottom:5px;
+#testimony {
 	border-bottom:5px solid #40009D;
 }
 
@@ -411,22 +414,6 @@
     background-size: 486px 155px;
 	background-repeat: no-repeat;
 	background-position:-400px -7px;
-}
-
-#article_2 {
-	position:absolute;
-	left:40px;
-	top:450px;
-	width:700px;
-	padding-bottom:15px;
-}
-
-#article_3 {
-	position:absolute;
-	left:40px;
-	top:800px;
-	width:700px;
-	padding-bottom:15px;
 }
 	
 </style>
@@ -609,7 +596,7 @@
 </div>
 <div id="tabby_content" class="tab-content">
     <div class="tab-pane fade active in" id="articles">
-      <div id="article_testimony">
+      <div id="testimony" class="article">
         <div class="dateline"><span>02 August 2014</span></div>
         <p class="article-h1">Q: Why Lebowski?<p>
         <div id="ceo-mug"></div>
@@ -617,14 +604,14 @@
        
         <p>Dieter has been on the fringes of —well, of everything in L.A., for about twenty years. Look at my LP's. Under 'Autobahn.'. I see you rolled your way into the semis. Dios mio, man. Seamus and me, we're gonna fuck you up. Say friend, ya got any more a that good sarsaparilla? Ja, und maybe vee stamp on it und skvush it, Lebowski! Hello! Do you speak English? Parla usted Inglese? I'll say it again. Did I urinate on your rug?</p><p>-Maude Lebowski, CEO</span>
       </div>
-      <div id="article_2">
+      <div class="article">
         <div class="dateline"><span>02 July 2014</span></div>
         <p class="article-h1">Here's What Happens, He Abides!</p>
         <span class="article-body"><p>You thought, hey, a deadbeat, a loser, someone the square community won't give a shit about. Urna sed orci ipsum, placerat id condimentum. Does the Pope shit in the woods? Rutrum, rhoncus ac lorem aliquam placerat posuere neque. We know it's his fucking homework, Walter! Where's the fucking money, you little brat? At dignissim magna ullamcorper in aliquam sagittis massa ac tortor ultrices. I'll suck your cock for a thousand bucks. Faucibus curabitur eu mi sapien, ut ultricies ipsum morbi eget.</p>
        
         <p>Strong men also cry… Strong men also cry. Risus nulla nullam vel nisi enim, vel auctor ante. Fuck me, man! That kid's already spent all the money! Morbi id urna vel felis lacinia. Regrettably, it's true, standards have fallen in adult entertainment. It's video, Dude. Placerat vestibulum turpis nulla, viverra nec volutpat ac, ornare id. Yeah well, that's just, ya know, like, your opinion, man. Lectus cras pharetra faucibus tristique nullam non accumsan justo nulla facilisi integer interdum elementum.</p></span>
       </div>
-      <div id="article_3">
+      <div class="article">
         <div class="dateline"><span>02 July 2014</span></div>
         <p class="article-h1">Here's What Happens, He Abides!</p>
         <span class="article-body"><p>You thought, hey, a deadbeat, a loser, someone the square community won't give a shit about. Urna sed orci ipsum, placerat id condimentum. Does the Pope shit in the woods? Rutrum, rhoncus ac lorem aliquam placerat posuere neque. We know it's his fucking homework, Walter! Where's the fucking money, you little brat? At dignissim magna ullamcorper in aliquam sagittis massa ac tortor ultrices. I'll suck your cock for a thousand bucks. Faucibus curabitur eu mi sapien, ut ultricies ipsum morbi eget.</p>

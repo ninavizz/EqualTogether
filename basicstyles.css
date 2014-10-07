@@ -472,13 +472,12 @@ p.datestamp-year {
 .article-body {
 	font-family: Open-Sans, sans-serif;
 	font-weight:300;
-    font-size:15px;
+  font-size:15px;
 	line-height:19px;
 	color: #555;
 }
 
 .article {
-    left:40px;
 	padding-top:50px;
 	width:700px;
 	padding-bottom:15px;
