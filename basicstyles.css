@@ -1,6 +1,9 @@
 @charset "UTF-8";
 /* CSS Document */
 
+body {
+  margin: 0 0 40px; /* bottom = footer height */
+}
 
 /* Navvy Things */
 #masthead {
@@ -483,7 +486,6 @@ p.datestamp-year {
 	padding-bottom:15px;
 	z-index:4;
 }
-
 
 
 /* Pact Things */
