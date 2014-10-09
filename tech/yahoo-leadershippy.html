@@ -26,6 +26,56 @@
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <!--[endif]-->
 
+<!-- Age Script -->
+<script>
+
+/*
+Ultimate Age calculator script- By JavaScript Kit (http://www.javascriptkit.com)
+Over 200+ free scripts here!
+Credit must stay intact for use
+*/
+
+var one_day=1000*60*60*24
+var one_month=1000*60*60*24*30
+var one_year=1000*60*60*24*30*12
+
+function displayage(yr, mon, day, unit, decimal, round){
+today=new Date()
+var pastdate=new Date(yr, mon-1, day)
+
+var countunit=unit
+var decimals=decimal
+var rounding=round
+
+finalunit=(countunit=="days")? one_day : (countunit=="months")? one_month : one_year
+decimals=(decimals<=0)? 1 : decimals*10
+
+if (unit!="years"){
+if (rounding=="rounddown")
+document.write(Math.floor((today.getTime()-pastdate.getTime())/(finalunit)*decimals)/decimals+" "+countunit)
+else
+document.write(Math.ceil((today.getTime()-pastdate.getTime())/(finalunit)*decimals)/decimals+" "+countunit)
+}
+else{
+yearspast=today.getFullYear()-yr-1
+tail=(today.getMonth()>mon-1 || today.getMonth()==mon-1 && today.getDate()>=day)? 1 : 0
+pastdate.setFullYear(today.getFullYear())
+pastdate2=new Date(today.getFullYear()-1, mon-1, day)
+tail=(tail==1)? tail+Math.floor((today.getTime()-pastdate.getTime())/(finalunit)*decimals)/decimals : Math.floor((today.getTime()-pastdate2.getTime())/(finalunit)*decimals)/decimals
+document.write(yearspast+tail+" "+countunit)
+}
+}
+
+//Sample usage
+//displayage (year, month, day, unit, decimals, rounding)
+//Unit can be "years", "months", or "days"
+//Decimals specifies demical places to round to (ie: 2)
+//Rounding can be "roundup" or "rounddown"
+
+//displayage(1997, 11, 24, "years", 0, "rounddown")
+
+</script>
+
 <!-- CHARTS -- CHARTS -- CHARTS -- CHARTS -- CHARTS -- CHARTS -- CHARTS -- CHARTS -->
 <!-------------------------------------- RACE -------------------------------------->
     <!--Load the AJAX API-->
@@ -196,7 +246,7 @@
 	top:163px;
 	width:143px;
 	height:304px;
-	z-index:3;
+	z-index:6;
 }
 #datestamp {
 	position:absolute;
@@ -390,50 +440,29 @@
 	z-index:4;
 }
 
-#Article-Testimony {
-	position:absolute;
-	left:40px;
-	top:50px;
-	width:700px;
-	padding-bottom:5px;
-	border-bottom:5px solid #40009D;
-	z-index:4;
-}
-
 #date {
 	width:700px;
 	z-index:4;
 }
-#ceo-mug {
-	float:left;
-	margin-top:5px;
-	margin-right:20px;
-	margin-bottom:20px;
-	width:78px;
-	height:78px;
-	background-image: url('../images/BrandIMG_Yahoo.png');
-    background-size: 486px 155px;
-	background-repeat: no-repeat;
-	background-position:-400px -7px;
+
+#exec_weebles {
+	width:600px;
+	height:350px;
+	position:absolute;
+	top:40px;
+	left:15px;
+	background-image: url('../images/execs_yahoo.png');
+	background-repeat:no-repeat;
 }
 
-#Article-2 {
+#execs_list {
+	width:600px;
+	height:400px;
 	position:absolute;
-	left:40px;
-	top:450px;
-	width:700px;
-	padding-bottom:15px;
-	z-index:4;
+	top:250px;
+	left:15px;
 }
 
-#Article-3 {
-	position:absolute;
-	left:40px;
-	top:800px;
-	width:700px;
-	padding-bottom:15px;
-	z-index:4;
-}
 	
 </style>
 </head>
@@ -607,33 +636,16 @@
   
 <!------------------------------------ Tabs ------------------------------------>      
 <div id="tabbytabs"><ul class="nav nav-tabs" role="tablist">
-      <li class="active"><a href="#">Articles</a></li>
-      <li><a href="#">Leadership</a></li>
+      <li><a href="#">Articles</a></li>
+      <li class="active"><a href="#">Leadership</a></li>
       <li><a href="#">Community Support</a></li>
     </ul></div>
 <div id="tabby-content">
-    <div id="Article-Testimony">
-       <div class="dateline"><span>02 August 2014</span></div>
-       <p class="article-h1">Q: Why Lebowski?<p>
-       <div id="ceo-mug"></div>
-       <span class="article-body"><p>Hey, relax man, I'm a brother shamus. Excuse me! Mark it zero. Next frame. I just want to say, sir, that we're both enormous—on a personal level. I mean his wife goes out and owes money and they pee on my rug. That's right Dude; they pee on your fucking Rug. There's no fucking reason—here's my point, Dude—there's no fucking reason. 1972 Pontiac LeBaron. Fuck it Dude. Let's go bowling.</p>
-       
-       <p>Dieter has been on the fringes of —well, of everything in L.A., for about twenty years. Look at my LP's. Under 'Autobahn.'. I see you rolled your way into the semis. Dios mio, man. Seamus and me, we're gonna fuck you up. Say friend, ya got any more a that good sarsaparilla? Ja, und maybe vee stamp on it und skvush it, Lebowski! Hello! Do you speak English? Parla usted Inglese? I'll say it again. Did I urinate on your rug?</p><p>-Maude Lebowski, CEO</span>
-     </div>
-     <div id="Article-2">
-       <div class="dateline"><span>02 July 2014</span></div>
-       <p class="article-h1">Here's What Happens, He Abides!</p>
-       <span class="article-body"><p>You thought, hey, a deadbeat, a loser, someone the square community won't give a shit about. Urna sed orci ipsum, placerat id condimentum. Does the Pope shit in the woods? Rutrum, rhoncus ac lorem aliquam placerat posuere neque. We know it's his fucking homework, Walter! Where's the fucking money, you little brat? At dignissim magna ullamcorper in aliquam sagittis massa ac tortor ultrices. I'll suck your cock for a thousand bucks. Faucibus curabitur eu mi sapien, ut ultricies ipsum morbi eget.</p>
-       
-       <p>Strong men also cry… Strong men also cry. Risus nulla nullam vel nisi enim, vel auctor ante. Fuck me, man! That kid's already spent all the money! Morbi id urna vel felis lacinia. Regrettably, it's true, standards have fallen in adult entertainment. It's video, Dude. Placerat vestibulum turpis nulla, viverra nec volutpat ac, ornare id. Yeah well, that's just, ya know, like, your opinion, man. Lectus cras pharetra faucibus tristique nullam non accumsan justo nulla facilisi integer interdum elementum.</p></span>
-     </div>
-     <div id="Article-3">
-       <div class="dateline"><span>02 July 2014</span></div>
-       <p class="article-h1">Here's What Happens, He Abides!</p>
-       <span class="article-body"><p>You thought, hey, a deadbeat, a loser, someone the square community won't give a shit about. Urna sed orci ipsum, placerat id condimentum. Does the Pope shit in the woods? Rutrum, rhoncus ac lorem aliquam placerat posuere neque. We know it's his fucking homework, Walter! Where's the fucking money, you little brat? At dignissim magna ullamcorper in aliquam sagittis massa ac tortor ultrices. I'll suck your cock for a thousand bucks. Faucibus curabitur eu mi sapien, ut ultricies ipsum morbi eget.</p>
-       
-       <p>Strong men also cry… Strong men also cry. Risus nulla nullam vel nisi enim, vel auctor ante. Fuck me, man! That kid's already spent all the money! Morbi id urna vel felis lacinia. Regrettably, it's true, standards have fallen in adult entertainment. It's video, Dude. Placerat vestibulum turpis nulla, viverra nec volutpat ac, ornare id. Yeah well, that's just, ya know, like, your opinion, man. Lectus cras pharetra faucibus tristique nullam non accumsan justo nulla facilisi integer interdum elementum.</p></span>
-     </div>
+   <div id="exec_weebles"></div>
+   <div id="execs_list">
+      <div class="execs-head"></div>
+      <div class="exec-name"></div>
+   </div>
 </div>
 
 
