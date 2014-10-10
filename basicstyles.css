@@ -160,7 +160,6 @@ a.navbar-brand {
    line-height: 20px;
 }
 
-
 .navbar-nav {
    float: left;
    margin-left: 150px;
@@ -175,6 +174,39 @@ a.navbar-brand {
    border-top: 4px solid;
    border-right: 4px solid transparent;
    border-left: 4px solid transparent;
+}
+
+.footy {
+	font-family: Montserrat, sans-serif;
+	font-weight:700;
+    font-size:12px;
+	line-height:4px;
+    color: #575558;
+	vertical-align:center;
+    text-align: left;
+}
+
+.footy-blather-header {
+	font-family: Open-Sans, sans-serif;
+	font-weight:700;
+    font-size:12px;
+    color: #777;
+    text-align: left;
+	margin-top:20px;
+	margin-left:50px;
+	padding-bottom:2px;
+}
+
+
+.footy-blather {
+	font-family: Open-Sans, sans-serif;
+	font-weight:300;
+    font-size:12px;
+	line-height:19px;
+    color: #888;
+    text-align: left;
+	margin-left:50px;
+	margin-right:250px;
 }
 
 
@@ -494,43 +526,66 @@ p.datestamp-year {
 	font-weight: 600;
     font-size: 13px;
     color: #222;
-    text-align: left; 
-	margin-bottom:-10px;
+    text-align: left;
 }
 
 .execs-headcomp {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 600;
-    font-size: 13px;
-    color: #222;
+	float:right;
+	text-align:right;
 	margin-right:100px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:600;
+    font-size:13px;
+    color: #222;
+
+}
+
+.exec {
+	display:block;
+	padding-top:5px;
+	width:600px;
+	height:50;
+    text-align:left; 
+	margin-top:2px;
+	margin-bottom:5px;
+	border-bottom:dotted 1px #999;
 }
 
 .exec-name {
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 600;
+	font-weight:600;
     font-size: 13px;
     color: #222;
-    text-align: left; 
-	margin-bottom:-10px;
+    text-align:left; 
+	margin-bottom:0px;
+}
+
+.no-age {
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+    font-size: 13px;
+    color: #ccc;
+    text-align:left; 
+	margin-bottom:0px;
 }
 
 .exec-title {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
     font-size: 13px;
-    color: #555;
-    text-align: left; 
-	margin-bottom:20px;
-	border-bottom:dotted 1px #999;
+	line-height:26px;
+    color: #777;
 }
 
 .exec-comp {
+	float:right;
+	text-align:right;
+	margin-right:200px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
     font-size: 13px;
-    color: #555;
-	margin-right:100px;
+	line-height:26px;
+    color: #777;
 }
 
 
