@@ -128,6 +128,56 @@
         chart.draw(data, options);
       }
     </script>
+    
+<!---------------------------------------- Age Script ------------------------------------------>
+<script>
+
+/*
+Ultimate Age calculator script- By JavaScript Kit (http://www.javascriptkit.com)
+Over 200+ free scripts here!
+Credit must stay intact for use
+*/
+
+var one_day=1000*60*60*24
+var one_month=1000*60*60*24*30
+var one_year=1000*60*60*24*30*12
+
+function displayage(yr, mon, day, unit, decimal, round){
+today=new Date()
+var pastdate=new Date(yr, mon-1, day)
+
+var countunit=unit
+var decimals=decimal
+var rounding=round
+
+finalunit=(countunit=="days")? one_day : (countunit=="months")? one_month : one_year
+decimals=(decimals<=0)? 1 : decimals*10
+
+if (unit!="years"){
+if (rounding=="rounddown")
+document.write(Math.floor((today.getTime()-pastdate.getTime())/(finalunit)*decimals)/decimals+" "+countunit)
+else
+document.write(Math.ceil((today.getTime()-pastdate.getTime())/(finalunit)*decimals)/decimals+" "+countunit)
+}
+else{
+yearspast=today.getFullYear()-yr-1
+tail=(today.getMonth()>mon-1 || today.getMonth()==mon-1 && today.getDate()>=day)? 1 : 0
+pastdate.setFullYear(today.getFullYear())
+pastdate2=new Date(today.getFullYear()-1, mon-1, day)
+tail=(tail==1)? tail+Math.floor((today.getTime()-pastdate.getTime())/(finalunit)*decimals)/decimals : Math.floor((today.getTime()-pastdate2.getTime())/(finalunit)*decimals)/decimals
+document.write(yearspast+tail+" "+countunit)
+}
+}
+
+//Sample usage
+//displayage (year, month, day, unit, decimals, rounding)
+//Unit can be "years", "months", or "days"
+//Decimals specifies demical places to round to (ie: 2)
+//Rounding can be "roundup" or "rounddown"
+
+//displayage(1997, 11, 24, "years", 0, "rounddown")
+
+</script>
 
 <!-- Lame-assed embedded styles -->
 <style type="text/css">
@@ -323,7 +373,7 @@
 	position:absolute;
 	width:170px;
 	left:0px;
-	top:705px;
+	top:460px;
 	border-bottom:dotted 1px #ccc;
 	z-index:4;
 }
@@ -331,7 +381,23 @@
 	position:absolute;
 	width:170px;
 	left:0px;
-	top:880px;
+	top:590px;
+    border-bottom:dotted 1px #ccc;
+	z-index:4;
+}
+#IntlOffices-3 {
+	position:absolute;
+	width:170px;
+	left:0px;
+	top:855px;
+    border-bottom:dotted 1px #ccc;
+	z-index:4;
+}
+#IntlOffices-4 {
+	position:absolute;
+	width:170px;
+	left:0px;
+	top:965px;
     border-bottom:dotted 1px #ccc;
 	z-index:4;
 }
@@ -377,6 +443,7 @@
 	background-position:-215px -44px;
 	z-index:4;
 }
+
 #tabbytabs {
 	position:absolute;
 	background-color:#ffffff;
@@ -386,7 +453,17 @@
 	height:42px;
 	z-index:7;
 }
+
 #tabby_content {
+	position:absolute;
+	left:280px;
+	top:500px;
+	width:700px;
+	height:1280px;
+	z-index:6;
+}
+
+#leadership_content {
 	position:absolute;
 	left:280px;
 	top:500px;
@@ -403,6 +480,7 @@
 	width:700px;
 	z-index:4;
 }
+
 #ceo-mug {
 	float:left;
 	margin-top:5px;
@@ -414,6 +492,43 @@
     background-size: 486px 155px;
 	background-repeat: no-repeat;
 	background-position:-400px -7px;
+}
+
+#exec_weebles {
+	width:600px;
+	height:350px;
+	position:absolute;
+	top:30px;
+	left:-20px;
+	background-image: url('../images/execs_yahoo.png');
+	background-repeat:no-repeat;
+}
+
+#execs_list {
+	width:600px;
+	height:400px;
+	position:absolute;
+	top:340px;
+    left:0px;
+}
+
+#execcy_head {
+	display:block;
+	width:600px;
+	height:23px;
+	top:0px;
+    left:0px;
+	margin-bottom:5px;
+	border-bottom:solid 2px #222;
+}
+
+#endpage_blahdeda {
+	position:absolute;
+	width:100%;
+	height:250px;
+	top:2000px;
+	background-color:#eee;
+	z-index:1;
 }
 
 .footer-filler {
@@ -521,72 +636,75 @@
     <div id="Founded">Founded<span class="citydate">Sunnyvale, 2006</span></div>
     <div id="WeebleOffice-1">
         <div id="OneWeeble-1"></div>
-        <span class="percentnumber">92</span><span class="percentsymbol">%</span>
+        <span class="percentnumber">72</span><span class="percentsymbol">%</span>
         <p class="addy">701 First Avenue</p>
         <p class="addy">Sunnyvale, CA 95307</p>
     </div>
     <div id="WeebleOffice-2">
         <div id="OneWeeble-2"></div>
-        <span class="percentnumber">92</span><span class="percentsymbol">%</span>
-        <p class="addy">1123 First Avenue</p>
-        <p class="addy">Sunnyvale, CA 93125</p>
+        <span class="percentnumber">12</span><span class="percentsymbol">%</span>
+        <p class="addy">555 Mission St.</p>
+        <p class="addy">San Francisco, CA 94105</p>
     </div>
     <div id="WeebleOffice-3">
         <div id="OneWeeble-2"></div>
-        <span class="percentnumber">92</span><span class="percentsymbol">%</span>
-        <p class="addy">1123 First Avenue</p>
-        <p class="addy">Sunnyvale, CA 93125</p>
+        <span class="percentnumber">10</span><span class="percentsymbol">%</span>
+        <p class="addy">229 W. 43rd St.</p>
+        <p class="addy">NYC, NY 20012</p>
     </div>
     <div id="WeebleOffice-4">
         <div id="OneWeeble-2"></div>
-        <span class="percentnumber">92</span><span class="percentsymbol">%</span>
-        <p class="addy">1123 First Avenue</p>
-        <p class="addy">Sunnyvale, CA 93125</p>
+        <span class="percentnumber">6</span><span class="percentsymbol">%</span>
+        <p class="addy">2450 Broadway</p>
+        <p class="addy">Santa Monica, CA 90210</p>
     </div>
   <div id="Office-5">
-        <p class="officepurpose">Sales, Customer Service</p>
-        <p class="addy2">1123 First Avenue</p>
-        <p class="addy2">Sunnyvale, CA 93125</p>
-    </div>
-    <div id="Office-6">
-        <p class="officepurpose">Sales, Customer Service</p>
-        <p class="addy2">1123 First Avenue</p>
-        <p class="addy2">Sunnyvale, CA 93125</p>
-    </div>
-    <div id="Office-7">
-      <p class="officepurpose">Sales, Customer Service</p>
-        <p class="addy2">1123 First Avenue</p>
-        <p class="addy2">Sunnyvale, CA 93125</p>
-  </div>
-  <div id="Office-7">
-        <p class="officepurpose">Sales, Customer Service</p>
-        <p class="addy2">1123 First Avenue</p>
-        <p class="addy2">Sunnyvale, CA 93125</p>
-    </div>
-    <div id="Office-8">
-        <p class="officepurpose">Sales, Customer Service</p>
-        <p class="addy2">1123 First Avenue</p>
-        <p class="addy2">Sunnyvale, CA 93125</p>
+        <p class="officepurpose">Search Marketing</p>
+        <p class="addy2">3333 Empire Ave</p>
+        <p class="addy2">Burbank, CA 91504</p>
     </div>
     <div id="IntlOffices-1">
-        <p class="officepurpose">Asia Pacific</p>
-        <p class="addy3">Singapore</p>
-        <p class="addy3">Tokyo</p>
-        <p class="addy3">Seoul</p>
-        <p class="addy3">Sydney</p>
-        <p class="addy3">Mumbai</p>
-        <p class="addy3">Hong Kong</p>
-        <p class="addy3">Chang Mai</p>
+        <p class="officepurpose">Americas</p>
+        <p class="addy3">Canada</p>
+        <p class="addy3">Mexico</p>
+        <p class="addy3">Brazil</p>
+        <p class="addy3">Argentina</p>
+        <p class="addy3">Chile</p>
     </div>
      <div id="IntlOffices-2">
         <p class="officepurpose">Europe</p>
-        <p class="addy3">Dublin</p>
-        <p class="addy3">Edinburgh</p>
+        <p class="addy3">Iceland</p>
+        <p class="addy3">Norway</p>
         <p class="addy3">London</p>
-        <p class="addy3">Utrecht</p>
-        <p class="addy3">Paris</p>
-        <p class="addy3">Madrid</p>
-        <p class="addy3">Berlin</p>
+        <p class="addy3">Ireland</p>
+        <p class="addy3">Spain</p>
+        <p class="addy3">Morocco</p>
+        <p class="addy3">Italy</p>
+        <p class="addy3">France</p>
+        <p class="addy3">Netherlands</p>
+        <p class="addy3">Germany</p>
+        <p class="addy3">Belgium</p>
+        <p class="addy3">Hungary</p>
+    </div>
+    <div id="IntlOffices-3">
+        <p class="officepurpose">Middle East</p>
+        <p class="addy3">Egypt</p>
+        <p class="addy3">Jordaan</p>
+        <p class="addy3">Israel</p>
+        <p class="addy3">Saudi Arabia</p>
+    </div>
+        <div id="IntlOffices-4">
+        <p class="officepurpose">Asia Pacific</p>
+        <p class="addy3">Australia</p>
+        <p class="addy3">New Zealand</p>
+        <p class="addy3">Japan</p>
+        <p class="addy3">Phillippines</p>
+        <p class="addy3">Malaysia</p>
+        <p class="addy3">Korea</p>
+        <p class="addy3">China</p>
+        <p class="addy3">Singapore</p>
+        <p class="addy3">Taiwan</p>
+        <p class="addy3">Vietnam</p>
     </div>
 </div>
   
@@ -598,8 +716,13 @@
     <li><a href="#community" role="tab" data-toggle="tab">Community Support</a></li>
   </ul>
 </div>
+
+<!------------------------------- Tabby Content ------------------------------->
 <div id="tabby_content" class="tab-content">
-    <div class="tab-pane fade active in" id="articles">
+
+
+<!------------------------------------ Articles ------------------------------------>
+<div class="tab-pane fade active in" id="articles">
       <div id="testimony" class="article">
         <div class="dateline"><span>02 August 2014</span></div>
         <p class="article-h1">Q: Why Lebowski?<p>
@@ -623,21 +746,147 @@
         <p>Strong men also cry… Strong men also cry. Risus nulla nullam vel nisi enim, vel auctor ante. Fuck me, man! That kid's already spent all the money! Morbi id urna vel felis lacinia. Regrettably, it's true, standards have fallen in adult entertainment. It's video, Dude. Placerat vestibulum turpis nulla, viverra nec volutpat ac, ornare id. Yeah well, that's just, ya know, like, your opinion, man. Lectus cras pharetra faucibus tristique nullam non accumsan justo nulla facilisi integer interdum elementum.</p></span>
       </div>
     </div>
-    <div class="tab-pane fade" id="leadership">
-      <h4>Leadership</h4>
+    
+    
+<!------------------------------------ Leadership ------------------------------------>    
+<div class="tab-pane fade" id="leadership">
+      <div id="exec_weebles"></div>
+   <div id="execs_list">
+      <div id="execcy_head" class="execs-head">Executive Team<span class="execs-headcomp">2013 Total Cash Compensation</span>
+      </div>
+      <div class="exec">
+         <p class="exec-name">Marissa Mayer, <script>
+       displayage(1975, 05, 30, "years", 0, "rounddown")
+       </script></p>
+         <p><span class="exec-title">CEO</span>
+            <span class="exec-comp">$2,702,250.00<font color="#ffffff">0</font></span></p>
+      </div>
+      <div class="exec">
+         <p class="exec-name">David Filo, <script>
+       displayage(1966, 04, 20, "years", 0, "rounddown")
+       </script></p>
+         <p><span class="exec-title">Co-Founder + Chief Yahoo!</span>
+            <span class="exec-comp">$1.00<font color="#ffffff">00,00,000</font></span></p>
+      </div>
+      <div class="exec">
+         <p class="exec-name">Ken Goldman, <script>
+       displayage(1949, 09, 28, "years", 0, "rounddown")
+       </script></p>
+         <p><span class="exec-title">CFO</span>
+            <span class="exec-comp">$1,100,000.00<font color="#ffffff">0</font></span></p>
+      </div>
+      <div class="exec">
+         <p class="exec-name">Ron Bell, <script>
+       displayage(1966, 09, 2014, "years", 0, "rounddown")
+       </script></p>
+         <p><span class="exec-title">General Counsel + Secretary</span>
+            <span class="exec-comp">$1,050,000.00<font color="#ffffff">0</font></span></p>
+      </div>
+      <div class="exec">
+         <p class="exec-name">Jacqueline D. Reses, <script>
+       displayage(1970, 09, 01, "years", 0, "rounddown")
+       </script></p>
+         <p><span class="exec-title">Chief Development Officer</span>
+            <span class="exec-comp">n/r<font color="#ffffff">000,000,000</font></span></p>
+      </div>
+      <div class="exec">
+         <p class="exec-name">Kathy Savitt, <script>
+       displayage(1964, 02, 01, "years", 0, "rounddown")
+       </script></p>
+         <p><span class="exec-title">CMO</span>
+            <span class="exec-comp">n/r<font color="#ffffff">000,000,000</font></span></p>
+      </div>
+      <div class="exec">
+         <p class="exec-name">Adam Cahan, <script>
+       displayage(1972, 09, 01, "years", 0, "rounddown")
+       </script></p>
+         <p><span class="exec-title">SVP, Mobile + Emerging Products</span>
+            <span class="exec-comp">n/r<font color="#ffffff">000,000,000</font></span></p>
+      </div>
+      <div class="exec">
+         <p class="exec-name">Mike Kerns, <script>
+       displayage(1977, 12, 01, "years", 0, "rounddown")
+       </script></p>
+         <p><span class="exec-title">SVP, Homepage + Verticals</span>
+            <span class="exec-comp">n/r<font color="#ffffff">000,000,000</font></span></p>
+      </div>
+      <div class="exec">
+         <p class="exec-name">Laurie Mann, <script>
+       displayage(1992, 10, 28, "years", 0, "rounddown")
+       </script></p>
+         <p><span class="exec-title">SVP, Search Products</span>
+            <span class="exec-comp">n/r<font color="#ffffff">000,000,000</font></span></p>
+      </div>
+      <div class="exec">
+         <p class="exec-name">Jeff Bonaforte, <script>
+       displayage(1992, 10, 28, "years", 0, "rounddown")
+       </script></p>
+         <p><span class="exec-title">SVP, Communication Products</span>
+            <span class="exec-comp">n/r<font color="#ffffff">000,000,000</font></span></p>
+      </div>
+      <div class="exec">
+         <p class="exec-name">Scott Burke, <script>
+       displayage(1992, 10, 28, "years", 0, "rounddown")
+       </script></p>
+         <p><span class="exec-title">SVP, Advertising Technology</span>
+            <span class="exec-comp">n/r<font color="#ffffff">000,000,000</font></span></p>
+      </div>
+      <div class="exec">
+         <p class="exec-name">Jay Rossiter, <script>
+       displayage(1992, 10, 28, "years", 0, "rounddown")
+       </script></p>
+         <p><span class="exec-title">SVP, Platforms</span>
+            <span class="exec-comp">n/r<font color="#ffffff">000,000,000</font></span></p>
+      </div>
+      <div class="exec">
+         <p class="exec-name">Mike Kail, <script>
+       displayage(1992, 10, 28, "years", 0, "rounddown")
+       </script></p>
+         <p><span class="exec-title">SVP, CIO</span>
+            <span class="exec-comp">n/r<font color="#ffffff">000,000,000</font></span></p>
+      </div>
+      <div class="exec">
+         <p class="exec-name">Ned Brody, <script>
+       displayage(1992, 10, 28, "years", 0, "rounddown")
+       </script></p>
+         <p><span class="exec-title">Head of Americas</span>
+            <span class="exec-comp">n/r<font color="#ffffff">000,000,000</font></span></p>
+      </div>
+      <div class="exec">
+         <p class="exec-name">Dawn Airey, <script>
+       displayage(1992, 10, 28, "years", 0, "rounddown")
+       </script></p>
+         <p><span class="exec-title">SVP, Europe, Middle East, and Africa</span>
+            <span class="exec-comp">n/r<font color="#ffffff">000,000,000</font></span></p>
+      </div>
+      <div class="exec">
+         <p class="exec-name">Rose Tsou, <script>
+       displayage(1992, 10, 28, "years", 0, "rounddown")
+       </script></p>
+         <p><span class="exec-title">SVP, Asia Pacific</span>
+            <span class="exec-comp">n/r<font color="#ffffff">000,000,000</font></span></p>
+      </div>
+   </div>
     </div>
+    
+<!------------------------------------ Community ------------------------------------>        
     <div class="tab-pane fade" id="community">
       <h4>Community Support</h4>
     </div>
   </div>
 
+<!---------------------- Page End Page End Page End Page End ---------------------------->
+
+<div id="endpage_blahdeda">
+   <p class="footy-blather-header">EqualTogether is a proud project of HumanAxis, a 501(c)3 non-profit Delaware Corporation.</p><p class="footy-blather">Yep, you read that correctly: a non-profit. A competitively priced B2B SAAS platform serving curated content and workforce analytics reporting, and developed by industry leaders who aren't in it to become billionaires. A business that's in the same game as all the other Delaware C-Corps, but without the equity, without the VC shackles, and that's not out to make anyone a billionaire. How in the hell does that work? Simple: We're a non-profit that refuses to beg, is out to solve for workplace inequality issues that have thus far eluded the savviest of proble-solvers, and—oh hey—this product happens to be at the core of measuring how solution prospects perform, it didn't yet exist, so why not seize the opportunity to "get rich" delivering a badass product the market is ready for... and instead of begging like pathetic hippies 4x a year, we just divert revenues that exceed operating expenses, into mission-centered projects of HumanAxis? It's a new day: Welcome!</p> 
+</div>
   <div class="footer-filler">
   </div>
 
     <div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
       <div class="container" style="padding-top: 1em;">
-        <div class="navbar-right">
-          <p>HumanAxis &copy;2014</p>
+        <div class="navbar-left">
+          <p class="footy">&copy;2014 <a href="http://www.humanaxis.org">HumanAxis</a></p>
         </div>
       </div>
     </div>
