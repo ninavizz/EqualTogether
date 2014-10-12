@@ -525,7 +525,7 @@ document.write(yearspast+tail+" "+countunit)
 #endpage_blahdeda {
 	position:absolute;
 	width:100%;
-	height:250px;
+	height:160px;
 	top:2000px;
 	background-color:#eee;
 	z-index:1;
@@ -533,6 +533,51 @@ document.write(yearspast+tail+" "+countunit)
 
 .footer-filler {
   margin-bottom: 50px;
+}
+
+#slideout {
+    position:absolute;
+    top: 2000px;
+	height:50px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: left;
+    background: #BBB;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+}
+#slideout_inner {
+    position:absolute;
+    top: 2050px;
+    background: #CCC;
+    width: 100%;
+    padding: 50px;
+    height: 300px;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    text-align: left;
+    -webkit-border-radius: 0 0 5px 0;
+    -moz-border-radius: 0 0 5px 0;
+    border-radius: 0 0 5px 0;
+}
+#slideout_inner textarea {
+    width: 190px;
+    height: 100px;
+    margin-bottom: 6px;
+}
+#slideout:hover {
+    bottom: 1700px;
+}
+#slideout:hover #slideout_inner {
+    left: 0;
 }
 
 </style>
@@ -875,11 +920,18 @@ document.write(yearspast+tail+" "+countunit)
     </div>
   </div>
 
-<!---------------------- Page End Page End Page End Page End ---------------------------->
+<!---------------------- Nacho Momma's NonProfit ---------------------------->
 
 <div id="endpage_blahdeda">
-   <p class="footy-blather-header">EqualTogether is a proud project of HumanAxis, a 501(c)3 non-profit Delaware Corporation.</p><p class="footy-blather">Yep, you read that correctly: a non-profit. A competitively priced B2B SAAS platform serving curated content and workforce analytics reporting, and developed by industry leaders who aren't in it to become billionaires. A business that's in the same game as all the other Delaware C-Corps, but without the equity, without the VC shackles, and that's not out to make anyone a billionaire. How in the hell does that work? Simple: We're a non-profit that refuses to beg, is out to solve for workplace inequality issues that have thus far eluded the savviest of proble-solvers, and—oh hey—this product happens to be at the core of measuring how solution prospects perform, it didn't yet exist, so why not seize the opportunity to "get rich" delivering a badass product the market is ready for... and instead of begging like pathetic hippies 4x a year, we just divert revenues that exceed operating expenses, into mission-centered projects of HumanAxis? It's a new day: Welcome!</p> 
+   <p class="footy-blather-header">EqualTogether is a proud project of HumanAxis, a 501(c)3 non-profit Delaware Corporation.</p>
+   <p class="footy-blather">Yep, you read that correctly: a non-profit. A competitively priced B2B SAAS platform serving curated content and workforce analytics, developed by industry vets who aren't in it to become billionaires—but are in this to get results. A business in the same game as all the other Delaware C-Corps, but without the VCs, without valuation goals, and with mission-centric social re-investment in place of valuation gains. That mission: aggressive steps to rectify workforce inequality. <span class="footy-blather-continue">Continue Reading</span>
+</p> 
 </div>
+
+<!---------------------- Footer Footer Footer Footer ---------------------------->
+
+
+
   <div class="footer-filler">
   </div>
 
