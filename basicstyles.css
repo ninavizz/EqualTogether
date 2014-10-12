@@ -182,8 +182,9 @@ a.navbar-brand {
     font-size:12px;
 	line-height:4px;
     color: #575558;
-	vertical-align:center;
+	padding:5px;
     text-align: left;
+	margin-left:-75px;
 }
 
 .footy-blather-header {
@@ -192,9 +193,8 @@ a.navbar-brand {
     font-size:12px;
     color: #777;
     text-align: left;
-	margin-top:20px;
+	margin-top:13px;
 	margin-left:50px;
-	padding-bottom:2px;
 }
 
 
@@ -202,11 +202,17 @@ a.navbar-brand {
 	font-family: Open-Sans, sans-serif;
 	font-weight:300;
     font-size:12px;
-	line-height:19px;
+	line-height:18px;
     color: #888;
     text-align: left;
 	margin-left:50px;
-	margin-right:250px;
+	margin-right:220px;
+}
+
+.footy-blather-continue {
+	font-family: Open-Sans, sans-serif;
+	font-weight:700;
+    color: #777;
 }
 
 
