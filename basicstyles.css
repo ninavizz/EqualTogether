@@ -177,18 +177,18 @@ a.navbar-brand {
 }
 
 .footy {
-	font-family: Montserrat, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight:700;
     font-size:12px;
 	line-height:4px;
     color: #575558;
 	padding:5px;
     text-align: left;
-	margin-left:-75px;
+	margin-left:-15px;
 }
 
 .footy-blather-header {
-	font-family: Open-Sans, sans-serif;
+	font-family: 'Open-Sans', sans-serif;
 	font-weight:700;
     font-size:12px;
     color: #777;
@@ -199,7 +199,7 @@ a.navbar-brand {
 
 
 .footy-blather {
-	font-family: Open-Sans, sans-serif;
+	font-family: 'Open-Sans', sans-serif;
 	font-weight:300;
     font-size:12px;
 	line-height:18px;
@@ -210,7 +210,7 @@ a.navbar-brand {
 }
 
 .footy-blather-continue {
-	font-family: Open-Sans, sans-serif;
+	font-family: 'Open-Sans', sans-serif;
 	font-weight:700;
     color: #777;
 }
@@ -219,7 +219,7 @@ a.navbar-brand {
 /* Charty Things */
 	  
 p.datestamp-month {
-	font-family: Montserrat, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-variant: small-caps;
 	font-weight:700;
     font-size: 12px;
@@ -231,7 +231,7 @@ p.datestamp-month {
 }
 
 p.datestamp-day {
-	font-family: Montserrat, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight:700;
     font-size: 30px;
 	line-height: 4px;
@@ -240,7 +240,7 @@ p.datestamp-day {
 }
 
 p.datestamp-year {
-	font-family:Montserrat, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight:400;
     font-size:10px;
 	letter-spacing:.2em;
@@ -250,7 +250,7 @@ p.datestamp-year {
 }
 
 .numbmen {
-	font-family: Montserrat, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-variant: small-caps;
 	font-weight:400;
     font-size:14px;
@@ -260,7 +260,7 @@ p.datestamp-year {
 }
 
 .men {
-	font-family: Montserrat, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-variant: small-caps;
     font-size:17px;
 	line-height:4px;
@@ -270,7 +270,7 @@ p.datestamp-year {
     text-align: left;
 }
 .numbwomen {
-	font-family: Montserrat, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-variant: small-caps;
 	font-weight:400;
     font-size:14px;
@@ -280,7 +280,7 @@ p.datestamp-year {
 }
 
 .women {
-	font-family: Montserrat, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-variant: small-caps;
     font-size:17px;
 	line-height:2px;
@@ -291,7 +291,7 @@ p.datestamp-year {
 }
 
 .numbwhite {
-	font-family: Montserrat, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-variant: small-caps;
 	font-weight:400;
     font-size:14px;
@@ -301,7 +301,7 @@ p.datestamp-year {
 }
 
 .white {
-	font-family: Montserrat, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-variant: small-caps;
     font-size:17px;
 	line-height:2px;
@@ -312,7 +312,7 @@ p.datestamp-year {
 }
 
 .numbasian {
-	font-family: Montserrat, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-variant: small-caps;
     font-size:14px;
 	line-height:2px;
@@ -322,7 +322,7 @@ p.datestamp-year {
 }
 
 .asian {
-	font-family: Montserrat, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-variant: small-caps;
     font-size:17px;
 	font-weight:700;
@@ -333,7 +333,7 @@ p.datestamp-year {
 }
 
 .numbblack {
-	font-family: Montserrat, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-variant: small-caps;
     font-size:14px;
 	line-height:2px;
@@ -343,7 +343,7 @@ p.datestamp-year {
 }
 
 .black {
-	font-family: Montserrat, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-variant: small-caps;
 	line-height:2px;
     font-size:17px;
@@ -354,7 +354,7 @@ p.datestamp-year {
 }
 
 .numblatino {
-	font-family: Montserrat, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-variant: small-caps;
 	font-weight:400;
 	line-height:2px;
@@ -365,7 +365,7 @@ p.datestamp-year {
 }
 
 .latino {
-	font-family: Montserrat, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-variant: small-caps;
     font-size:17px;
 	line-height:2px;
@@ -376,7 +376,7 @@ p.datestamp-year {
 }
 
 .numbother {
-	font-family: Montserrat, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-variant: small-caps;
     font-size: 14px;
 	line-height:4px;
@@ -386,7 +386,7 @@ p.datestamp-year {
 }
 
 .other {
-	font-family: Montserrat, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-variant: small-caps;
     font-size:17px;
 	line-height:4px;
@@ -403,7 +403,7 @@ p.datestamp-year {
 /* Bar */
 
 .percentnumber {
-	font-family: Montserrat, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight:700;
     font-size: 16px;
 	line-height: 30px;
@@ -412,7 +412,7 @@ p.datestamp-year {
 	padding-left:22px;
 }
 .percentsymbol {
-	font-family: Montserrat, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight:400;
     font-size: 16px;
 	line-height: 30px;
@@ -429,7 +429,7 @@ p.datestamp-year {
 	padding-left:2px;
 }
 .addy {
-	font-family: Open Sans, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight:400;
     font-size:13px;
 	line-height:9px;
@@ -445,7 +445,7 @@ p.datestamp-year {
     text-align: left;
 }
 .addy3 {
-	font-family: Open Sans, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight:400;
     font-size:12px;
 	line-height:8px;
@@ -454,7 +454,7 @@ p.datestamp-year {
 	padding-left:4px;
 }
 .officepurpose {
-	font-family: Open Sans, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-style:italic;
 	font-weight:300;
     font-size:12px;
@@ -481,7 +481,7 @@ p.datestamp-year {
 
 .dateline {
 	position:relative;
-	font-family: Montserrat, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight:600;
     font-size: 11px;
 }
@@ -503,7 +503,7 @@ p.datestamp-year {
 }
 
 .article-h1 {
-	font-family: Open-Sans, sans-serif;
+	font-family: 'Open-Sans', sans-serif;
 	font-weight:300;
     font-size: 30px;
 	color: #40009D;
@@ -511,7 +511,7 @@ p.datestamp-year {
 }
 
 .article-body {
-	font-family: Open-Sans, sans-serif;
+	font-family: 'Open-Sans', sans-serif;
 	font-weight:300;
   font-size:15px;
 	line-height:19px;
@@ -688,7 +688,58 @@ p.datestamp-year {
 	padding-top:15px;
 }
 
+/* Prices */
 
+.prices-year {
+	display:block;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	margin-top:20px;
+    font-size: 28px;
+    color: #222;
+    text-align: left; 
+}
+
+.price-head {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+    font-size:12px;
+	line-height:17px;
+    color: #222;
+    text-align: left; 
+}
+
+.line-white {
+	display:block;
+	padding-left:30px;
+	padding-top:8px;
+	padding-bottom:10px;
+	margin-top:4px;
+	width:100%
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+    font-size:12px;
+	line-height:17px;
+    color: #222;
+    text-align: left; 
+}
+
+.line-gris {
+	display:block;
+	padding-left:30px;
+	padding-top:8px;
+	padding-bottom:10px;
+	padding-right:15px;
+    margin-top:5px;
+	width:100%
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+    font-size:12px;
+	line-height:17px;
+    color: #222;
+	background-color:#f1f1f1;
+    text-align: left; 
+}
 
 
 

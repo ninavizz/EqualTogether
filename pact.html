@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <title>EqualTogether</title>
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-
 <!-- Latest compiled and minified Bootstrap CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
@@ -15,11 +14,8 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
 <!-- Nina's Stylesheet -->
-<link href="../basicstyles.css" rel="stylesheet" type="text/css">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800' rel='stylesheet' type='text/css'>
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<link href="basicstyles.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]-->
@@ -29,14 +25,6 @@
 
 <!-- Lame-assed embedded styles -->
 <style type="text/css">
-#mrsketchy {
-	position:absolute;
-	left:1000px;
-	top:55px;
-	width:1140px;
-	height:79px;
-	z-index:3;
-}
 
 #NavBar-Masthead {
 	position:absolute;
@@ -46,18 +34,11 @@
 	height:19px;
 	z-index:5;
 }
-#LogoBig {
-	position:absolute;
-	left:110px;
-	top:90px;
-	width:92px;
-	height:82px;
-	z-index:6;
-}
+
 #Headline {
 	position:absolute;
-	left:213px;
-	top:145px;
+	left:110px;
+	top:100px;
 	width:773px;
 	height:36px;
 	z-index:6;
@@ -65,8 +46,8 @@
 
 #TheePact {
 	position:absolute;
-	left:213px;
-	top:210px;
+	left:110px;
+	top:165px;
 	width:780px;
 	height:1080px;
 	z-index:7;
@@ -75,7 +56,7 @@
 #PactGuts {
 	position:absolute;
 	left:0px;
-	top:330px;
+	top:300px;
 	width:780px;
 	height:100%;
 	border-top:solid;
@@ -101,7 +82,7 @@
 
 #dottie {
 	position:absolute;
-	top:980px;
+	top:935px;
 	width:100%;
 	border-bottom:dotted thin #555;
 }
@@ -109,25 +90,69 @@
 #apDiv1 {
 	position:absolute;
 	left:145px;
-	top:1014px;
+	top:965px;
 	width:465px;
 	height:86px;
 	z-index:8;
 }
 
-#footer {
+
+#endpage_blahdeda {
 	position:absolute;
-	top:1150px;
 	width:100%;
+	height:175px;
+	top:1400px;
+	background-color:#eee;
+	z-index:1;
 }
 
-.footie {
-	border-top:dotted #555 1px;
-	font-family:Verdana, Arial, sans-serif;
-	font-size:10px;
-	padding-top:5px;
-	text-align:left;
-	color:#555;
+.footer-filler {
+  margin-bottom: 50px;
+}
+
+#slideout {
+    position:absolute;
+    top: 2000px;
+	height:50px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: left;
+    background: #BBB;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+}
+#slideout_inner {
+    position:absolute;
+    top: 2050px;
+    background: #CCC;
+    width: 100%;
+    padding: 50px;
+    height: 300px;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    text-align: left;
+    -webkit-border-radius: 0 0 5px 0;
+    -moz-border-radius: 0 0 5px 0;
+    border-radius: 0 0 5px 0;
+}
+#slideout_inner textarea {
+    width: 190px;
+    height: 100px;
+    margin-bottom: 6px;
+}
+#slideout:hover {
+    bottom: 1700px;
+}
+#slideout:hover #slideout_inner {
+    left: 0;
 }
 
 .durp {
@@ -163,7 +188,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <div id="NavBar-Masthead"><a href="http://www.equaltogether.com"><img src="../et_mastheadlogo.png" width="164" height="19" alt="Home"></a></div>
+          <div id="NavBar-Masthead"><a href="http://www.equaltogether.com"><img src="images/et_mastheadlogo.png" width="164" height="19" alt="Home"></a></div>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -180,7 +205,6 @@
                 <li class="durp">Facebook</a></li>
                 <li class="durp">Google</a></li>
                 <li class="durp">LinkedIn</a></li>
-                <li class="durp">Pinterest</a></li>
                 <li class="durp">Yahoo!</a></li>
                 <li class="divider"></li>
                 <li class="dropdown-header-FYI" data-toggle="modal" data-target="#myModal"><a href="#">What's The Difference?</a></li>
@@ -211,12 +235,12 @@
 </div>
 
 <!------------------------------------ Begin page content ------------------------------------>
-<div id="LogoBig"><img src="etlogo_big.jpg" width="92" height="82" alt="ET Logo"></div>   
+   
 <div class="pact-headline" id="Headline">Our Partner Company Pact</div>   
 
 <div id="TheePact">
    <div class="pact-intro">
-     <p>EqualTogether is an opt-in service tailored to benefit the entire community of companies, employees, jobseekers, analysts, journalists, and    educators, in presenting the richest and most progressive diversity narratives, possible. EEO-1 data is current to the dates shown, and all other company information is either taken from public SEC filings, or is provided directly by the companies themselves.</p><p>Accountability is at the heart of EqualTogether’s purpose, as     is mutual responsibility. We are in this, together.</p>
+     <p><span class="pact-agreeto">EqualTogether</span> is an opt-in B2B content management and reporting platform. Your customers, your users, and your employee prospects are our primary users. Your reputation is our reputation. EqualTogether is also a professional community and a coalition of same-sector businesses, taking bold new steps together (the name isn’t just to sound catchy) to close existing opportunity gaps.</p><p></p><p>Accountability is at the heart of EqualTogether’s purpose, as is mutual responsibility. We are in this, together. <span class="pact-agreeto"><a href="pricing.html">Join Us</a></span></p>
    </div>
    <div class="pact-agreeto">
    <p>We the undersigned, are a consortium of organizations joined in a shared commitment to radical transparency and measurable change. Our charge is correcting today’s disparities in workforce diversity, across our               industry. Our goal is to align the diversity numbers of our corporate workplaces, with the communities that house them.</p>
@@ -254,21 +278,48 @@
     </div>
   </div>
   <div id="dottie"></div>
-  <div id="apDiv1" class="pact-notyet">...this is gonna be good!</div>
-  <div id="footer" class="footie">©2014 Human Axis Inc. | All Rights Reserved | <a href="http://equaltogether.posthaven.com">blog</a></div>
+  <div id="apDiv1" class="pact-notyet">Partner Companies Yet To Disclose</div>
 </div>
-<!---------------------- Bootstrap Template Fixed Footer Was Buggy----------------------------->
 
+<!---------------------- Nacho Momma's NonProfit ---------------------------->
+
+<div id="endpage_blahdeda">
+   <p class="footy-blather-header">EqualTogether is a project of HumanAxis</p>
+   <p class="footy-blather">HumanAxis is a 501(c)3, under the proud fiscal sponsorship of the NetRoots Foundation. Yep, you read that correctly: this whole shebang is being done as a non-profit. A competitively priced B2B SAAS platform serving curated content and workforce analytics, developed by industry vets who aren't in it to become billionaires—but are in this to get results. A business in the same game as all the other Delaware C-Corps, but without the VCs, without valuation goals, and with a  social entrepreneurship purpose. Expectations are high, and we seek to crush them.
+</p> 
+</div>
+
+
+
+<!---------------------- Footer Footer Footer Footer ---------------------------->
+
+
+
+  <div class="footer-filler">
+  </div>
+
+    <div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+      <div class="container" style="padding-top: 1em;">
+        <div class="navbar-left">
+          <p class="footy">&copy;2014 <a href="http://www.humanaxis.org">HumanAxis</a></p>
+        </div>
+      </div>
+    </div>
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
-</body>
+
+
+
+  </body>
+</html>
 
 
 </html>
