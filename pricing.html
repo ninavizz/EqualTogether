@@ -1,0 +1,687 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>EqualTogether</title>
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<!-- Latest compiled and minified Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+<!-- Custom styles for nav/footer -->
+<link href="http://getbootstrap.com/examples/sticky-footer-navbar/sticky-footer-navbar.css" rel="stylesheet">
+
+<!-- Optional Bootstrap theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+<!-- Nina's Stylesheet -->
+<link href="basicstyles.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]-->
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<!--[endif]-->
+
+<!-- Lame-assed embedded styles -->
+<style type="text/css">
+#mrsketchy {
+	position:absolute;
+	left:75px;
+	top:100px;
+	width:1140px;
+	height:79px;
+	z-index:2;
+}
+
+#NavBar-Masthead {
+	position:absolute;
+	left:24px;
+	top:14px;
+	width:164px;
+	height:19px;
+	z-index:5;
+}
+
+#apDiv1 {
+	position:absolute;
+	left:735px;
+	top:60px;
+	width:271px;
+	height:43px;
+	z-index:6;
+	background-color: #000000;
+}
+
+#top_intro {
+	position:absolute;
+	top:120px;
+	left:110px;
+	width:700px;
+	height:500px;
+	z-index:3;
+}
+	
+#top_shoutout {
+	position:relative;
+	display:block;
+	width:700px;
+	height:77px;
+}
+	
+#top_graphix {
+	position:relative;
+	display:block;
+	width:750px;
+	height:350px;
+	background-image: url('images/pricesheet_gfx.png');
+	background-size: 750px 202px;
+	background-repeat: no-repeat;
+	background-position:-30px 0px;
+}
+	
+#toptext_lessthan100 {
+	position:absolute;
+	top:250px;
+	left:0px;
+	width:190px;
+	height:50px;
+	z-index:5;
+}
+
+#toptext_moarthan100 {
+	position:absolute;
+	top:250px;
+	left:250px;
+	width:220px;
+	height:100px;
+	z-index:5;
+}
+	
+#toptext_enterprise {
+	position:absolute;
+	top:342px;
+	left:560px;
+	width:250px;
+	height:50px;
+	z-index:5;
+}
+
+#topbutt_getstarted {
+	position:absolute;
+	top:300px;
+	left:0px;
+	width:500px;
+	height:100px;
+	z-index:5;
+}
+
+#topbutt_enterprise {
+	position:absolute;
+	top:300px;
+	left:525px;
+	width:190px;
+	height:100px;
+	z-index:5;
+}
+
+#features {
+	position:absolute;
+	top:480px;
+	left:110px;
+	width:700px;
+	height:1200px;
+	z-index:5;
+}
+
+#check_1 {
+	position:relative;
+	display:block;
+	float:left;
+	margin-top:7px;
+	margin-left:-15px;
+	margin-right:10px;
+	width:20px;
+	height:20px;
+	background-image: url('images/pricesheet_gfx.png');
+	background-size: 750px 202px;
+	background-repeat: no-repeat;
+	background-position:-2px -10px;
+}
+
+#check_2 {
+	position:relative;
+	display:block;
+	float:left;
+	margin-top:7px;
+	margin-left:-15px;
+	margin-right:10px;
+	width:20px;
+	height:20px;
+	background-image: url('images/pricesheet_gfx.png');
+	background-size: 750px 202px;
+	background-repeat: no-repeat;
+	background-position:-2px -10px;
+}
+
+#check_3 {
+	position:relative;
+	display:block;
+	float:left;
+	margin-top:9px;
+	margin-bottom:10px;
+	margin-left:-15px;
+	margin-right:10px;
+	width:20px;
+	height:20px;
+	background-image: url('images/pricesheet_gfx.png');
+	background-size: 750px 202px;
+	background-repeat: no-repeat;
+	background-position:-2px -10px;
+}
+
+#check_4 {
+	position:relative;
+	display:block;
+	float:left;
+	margin-top:9px;
+	margin-bottom:40px;
+	margin-left:-15px;
+	margin-right:10px;
+	width:20px;
+	height:20px;
+	background-image: url('images/pricesheet_gfx.png');
+	background-size: 750px 202px;
+	background-repeat: no-repeat;
+	background-position:-2px -10px;
+}
+
+#check_5 {
+	position:relative;
+	display:block;
+	float:left;
+	margin-top:1px;
+	margin-left:-15px;
+	margin-right:10px;
+	width:20px;
+	height:20px;
+	background-image: url('images/pricesheet_gfx.png');
+	background-size: 750px 202px;
+	background-repeat: no-repeat;
+	background-position:-2px -10px;
+}
+
+#check_6 {
+	position:relative;
+	display:block;
+	float:left;
+	margin-top:1px;
+	margin-left:-15px;
+	margin-right:10px;
+	width:20px;
+	height:20px;
+	background-image: url('images/pricesheet_gfx.png');
+	background-size: 750px 202px;
+	background-repeat: no-repeat;
+	background-position:-2px -10px;
+}
+
+#check_7 {
+	position:relative;
+	display:block;
+	float:left;
+	margin-top:9px;
+	margin-bottom:10px;
+	margin-left:-15px;
+	margin-right:10px;
+	width:20px;
+	height:20px;
+	background-image: url('images/pricesheet_gfx.png');
+	background-size: 750px 202px;
+	background-repeat: no-repeat;
+	background-position:-2px -10px;
+}
+
+#check_8 {
+	position:relative;
+	display:block;
+	float:left;
+	margin-top:1px;
+	margin-left:-15px;
+	margin-right:10px;
+	width:20px;
+	height:20px;
+	background-image: url('images/pricesheet_gfx.png');
+	background-size: 750px 202px;
+	background-repeat: no-repeat;
+	background-position:-2px -10px;
+}
+
+#check_9 {
+	position:relative;
+	display:block;
+	float:left;
+	margin-top:9px;
+	margin-bottom:10px;
+	margin-left:-15px;
+	margin-right:10px;
+	width:20px;
+	height:20px;
+	background-image: url('images/pricesheet_gfx.png');
+	background-size: 750px 202px;
+	background-repeat: no-repeat;
+	background-position:-2px -10px;
+}
+
+#target_1 {
+	position:relative;
+	display:block;
+	float:left;
+	margin-top:9px;
+	margin-bottom:40px;
+	margin-left:-15px;
+	margin-right:10px;
+	width:22px;
+	height:20px;
+	background-image: url('images/pricesheet_gfx.png');
+	background-size: 750px 202px;
+	background-repeat: no-repeat;
+	background-position:-2px -30px;
+}
+
+#target_2 {
+	position:relative;
+	display:block;
+	float:left;
+	margin-top:1px;
+	margin-left:-15px;
+	margin-right:10px;
+	width:22px;
+	height:20px;
+	background-image: url('images/pricesheet_gfx.png');
+	background-size: 750px 202px;
+	background-repeat: no-repeat;
+	background-position:-2px -30px;
+}
+
+#target_3 {
+	position:relative;
+	display:block;
+	float:left;
+	margin-top:1px;
+	margin-left:-15px;
+	margin-right:10px;
+	width:22px;
+	height:20px;
+	background-image: url('images/pricesheet_gfx.png');
+	background-size: 750px 202px;
+	background-repeat: no-repeat;
+	background-position:-2px -30px;
+}
+
+#target_4 {
+	position:relative;
+	display:block;
+	float:left;
+	margin-top:7px;
+	margin-left:-15px;
+	margin-right:10px;
+	width:22px;
+	height:20px;
+	background-image: url('images/pricesheet_gfx.png');
+	background-size: 750px 202px;
+	background-repeat: no-repeat;
+	background-position:-2px -30px;
+}
+
+#target_5 {
+	position:relative;
+	display:block;
+	float:left;
+	margin-top:1px;
+	margin-left:-15px;
+	margin-right:10px;
+	width:22px;
+	height:20px;
+	background-image: url('images/pricesheet_gfx.png');
+	background-size: 750px 202px;
+	background-repeat: no-repeat;
+	background-position:-2px -30px;
+}
+
+#target_6 {
+	position:relative;
+	display:block;
+	float:left;
+	margin-top:1px;
+	margin-left:-15px;
+	margin-right:10px;
+	width:22px;
+	height:20px;
+	background-image: url('images/pricesheet_gfx.png');
+	background-size: 750px 202px;
+	background-repeat: no-repeat;
+	background-position:-2px -30px;
+}
+
+#target_7 {
+	position:relative;
+	display:block;
+	float:left;
+	margin-top:1px;
+	margin-left:-15px;
+	margin-right:10px;
+	width:22px;
+	height:20px;
+	background-image: url('images/pricesheet_gfx.png');
+	background-size: 750px 202px;
+	background-repeat: no-repeat;
+	background-position:-2px -30px;
+}
+
+#target_8 {
+	position:relative;
+	display:block;
+	float:left;
+	margin-top:7px;
+	margin-left:-15px;
+	margin-right:10px;
+	width:22px;
+	height:20px;
+	background-image: url('images/pricesheet_gfx.png');
+	background-size: 750px 202px;
+	background-repeat: no-repeat;
+	background-position:-2px -30px;
+}
+
+#target_9 {
+	position:relative;
+	display:block;
+	float:left;
+	margin-top:1px;
+	margin-left:-15px;
+	margin-right:10px;
+	width:22px;
+	height:20px;
+	background-image: url('images/pricesheet_gfx.png');
+	background-size: 750px 202px;
+	background-repeat: no-repeat;
+	background-position:-2px -30px;
+}
+
+#target_10 {
+	position:relative;
+	display:block;
+	float:left;
+	margin-top:7px;
+	margin-left:-15px;
+	margin-right:10px;
+	width:22px;
+	height:20px;
+	background-image: url('images/pricesheet_gfx.png');
+	background-size: 750px 202px;
+	background-repeat: no-repeat;
+	background-position:-2px -30px;
+}
+
+#target_11 {
+	position:relative;
+	display:block;
+	float:left;
+	margin-top:1px;
+	margin-left:-15px;
+	margin-right:10px;
+	width:22px;
+	height:20px;
+	background-image: url('images/pricesheet_gfx.png');
+	background-size: 750px 202px;
+	background-repeat: no-repeat;
+	background-position:-2px -30px;
+}
+
+#target_12 {
+	position:relative;
+	display:block;
+	float:left;
+	margin-top:7px;
+	margin-left:-15px;
+	margin-right:10px;
+	width:22px;
+	height:20px;
+	background-image: url('images/pricesheet_gfx.png');
+	background-size: 750px 202px;
+	background-repeat: no-repeat;
+	background-position:-2px -30px;
+}
+
+#endpage_blahdeda {
+	position:absolute;
+	width:100%;
+	height:175px;
+	top:1800px;
+	background-color:#eee;
+	z-index:1;
+}
+
+.footer-filler {
+  margin-bottom: 50px;
+}
+
+#slideout {
+    position:absolute;
+    top: 2000px;
+	height:50px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: left;
+    background: #BBB;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+}
+#slideout_inner {
+    position:absolute;
+    top: 2050px;
+    background: #CCC;
+    width: 100%;
+    padding: 50px;
+    height: 300px;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    text-align: left;
+    -webkit-border-radius: 0 0 5px 0;
+    -moz-border-radius: 0 0 5px 0;
+    border-radius: 0 0 5px 0;
+}
+#slideout_inner textarea {
+    width: 190px;
+    height: 100px;
+    margin-bottom: 6px;
+}
+#slideout:hover {
+    bottom: 1700px;
+}
+#slideout:hover #slideout_inner {
+    left: 0;
+}
+
+</style>
+</head>
+
+<body tracingsrc="images/pricesheet_trace.png" tracingopacity="100">
+<!---------------------------- Bootstrap Template Fed navbar -------------------------------->
+<div id="NavBar-Masthead"></div>
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div id="NavBar-Masthead"><a href="#"><img src="images/et_mastheadlogo.png" width="164" height="19" alt="Home"></a></div>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="pact.html">Our Pact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Browse Companies<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+              <li role="presentation" class="dropdown-header">Partner Companies</li>
+                <li><a href="#">One</a></li>
+                <li><a href="#">Two</a></li>
+                <li><a href="#">Three</a></li>
+                <li class="divider"></li>
+                <li role="presentation" class="dropdown-header">Independently Disclosed Companies</li>
+                <li><a href="tech/apple.html">Apple</a></li>
+                <li><a href="tech/ebay.html">EBay</a></li>
+                <li><a href="tech/facebook.html">Facebook</a></li>
+                <li><a href="tech/google.html">Google</a></li>
+                <li><a href="tech/groupon.html">Groupon</a></li>
+                <li><a href="tech/linkedin.html">LinkedIn</a></li>
+                <li><a href="tech/pinterest.html">Pinterest</a></li>
+                <li><a href="tech/salesforce.html">Salesforce</a></li>
+                <li><a href="tech/twitter.html">Twitter</a></li>
+                <li><a href="tech/yahoo.html">Yahoo!</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header-FYI" data-toggle="modal" data-target="#myModal"><a href="#">What's The Difference?</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    
+
+<!--------------- What's The Diff Modal ------------------>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">What's The Difference Between Partner Companies + Independently Disclosed Companies?</h4>
+      </div>
+      <div class="modal-body">
+        <p>Partner Companies here, are those who've agreed to the EqualTogether Pact. Sure, we also have traditional technology partners to help make the magic behind the curtain happen.</p><p>At the of EqualTogether's value, are both the api-based reporting services we provide, and the realtionship we build with each Partner Company and that we help Prtner Companies forge with one another. Unprecidented workplace cultural transformation, traditional methods be damned, is something we've all agreed to make happen. Together.</p><p>Independently Disclosed Companies are just that—organizations who've taken the bold step to go public with their EEO-1 reported diversity numbers, and have no relationship with EqualTogether. All information we post about these companies is publicly available, and presented here to offer the most complete window we can into Tech's diversity challenges.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Coolio!</button>
+      </div>
+    </div>
+  </div>
+</div>   
+
+<!------------------------------------ Page Intro Blurb ------------------------------------>
+
+<div id="top_intro">
+    <div id="top_shoutout" class="pact-intro"><span class="pact-agreeto">EqualTogether</span> is an opt-in B2B content management and reporting platform. Your customers, your users, and your employee prospects are our primary users. Your reputation is our reputation. EqualTogether is also a professional community and a coalition of same-sector businesses, taking bold new steps together (the name isn’t just to sound catchy) to close existing opportunity gaps.
+    </div>
+	<div id="top_graphix"></div>
+    <div id="toptext_lessthan100" class="respond">Businesses with <100 employees.</div>
+    <div id="toptext_moarthan100"  class="respond">Businesses with 101-600 employees pay $10 per employee, billed annually.</div> 
+    <div id="toptext_enterprise" class="respond">For Enterprise Pricing</div>
+    <div id="topbutt_getstarted"><a href="mailto:nina@equaltogether.com" class="btn btn-block btn-default">Get Started Here</a></div>
+    <div id="topbutt_enterprise"><a href="mailto:nina@equaltogether.com" class="btn btn-block btn-primary btn-primary">Contact Us</a></div>
+</div>
+
+<!------------------------------------ Features ------------------------------------>
+<div id="features"><span class="prices-year">2014</span>
+   <div class="line-gris"><div id="check_1"></div><span class="price-head">Quick, frictionless on-boarding.</span> We’ll work with you to get your Partner Profile live asap, and to establish updating workflows with HR staff that keep their attention on your business, not ours.</div>
+   
+     <div class="line-white"><div id="check_2"></div><span class="price-head">Visually clean, statistics focused, intuitively navigable pages</span> that will always be free of ads and promotions. Presentation consistency to ease data comparison, and an emphasis on low cognitive burden, data-centric storytelling.</div>
+     
+       <div class="line-gris"><div id="check_3"></div><span class="price-head">Workforce metrics updated weekly, monthly, or quarterly</span> (depending on company size) via email. Short of SEC and EEOC filings, this will give each business the most accurate & up-to-date representation of their workforce, available to the general public.</div>
+       
+         <div class="line-white"><div id="check_4"></div><span class="price-head">Your company’s workforce, matched to EqualTogether’s sector-specific job type classifications.</span> Comparison needs consistency. For Tech, the categories are: Leadership, Product, Business Operations, Market Delivery, and Interns. For businesses currently using Radford tables, we’re open to integrating them and would like to learn more about how deeply ingrained our whole sector and sub-sectors are, in working with them.</div>
+         
+           <div class="line-gris"><div id="check_5"></div><span class="price-head">Executive Statement</span> of Commitment to Workplace Diversity, uniformly displayed on each Partner Company’s front page.</div>
+           
+           <div class="line-white"><div id="check_6"></div><span class="price-head">Named non-profit beneficiaries</span> that each company patrons, presented abreast metrics to quantify their engagement.</div>
+           
+           <div class="line-gris"><div id="check_7"></div><span class="price-head">Workplace culture & diversity themed blog articles</span> submitted by each Partner Company, that link-back to their corporate blog. Within our framework of objective, trusted data about each company, we give Partners a place to express their voice in retaining an open dialog with the public.</div>
+           
+           <div class="line-white"><div id="check_8"></div><span class="price-head">Clear + structured showcasing of company benefits</span> that promote diversity, inclusion, and total quality-of-life.</div>
+           
+           <div class="line-gris"><div id="check_9"></div><span class="price-head">Annual Partner Roundtable Summit</span> invitation, for Partner Companies to share successful flips, embarrassing flops, and establish new best-practices among sector-specific peer companies. Note: This will likely happen in Q2-2015, and be in the Bay Area.</div>
+           
+           <div class="line-white"><div id="target_1"></div><span class="price-head">Ongoing workshop support & development</span> providing businesses with curricula and moderator support for employee workshops that have been proven in practice to make workplaces more welcoming, fun, easier places for folks to be. Not just “compliant”. Current topics in development, include: better communication skills, combating unconscious bias, boosting mindfulness.</div>
+           
+           <span class="prices-year">2015</span>
+           <div class="line-gris"><div id="target_2"></div><span class="price-head">Daily, automated, secure API data collection.</span></div>
+           
+           <div class="line-white"><div id="target_3"></div><span class="price-head">Recruitment pipeline reporting.</span></div>
+           
+           <div class="line-gris"><div id="target_4"></div><span class="price-head">Resource Allies </span> section to provide consistent, snapshot information about non-profits and the support each receives from Partner Companies.</div>
+           
+           <div class="line-white"><div id="target_5"></div><span class="price-head">CMS Implementation</span> for Partner Companies and Resource Allies.</div>
+           
+           <div class="line-gris"><div id="target_7"></div><span class="price-head">Progress Reporting</span>, on how Partner Company diversification efforts are performing over time.</div>
+           
+           <div class="line-white"><div id="target_9"></div><span class="price-head">Drill-in capabilities on job-type classifications</span>, down to specific job kinds (Visual Designer, Systems Analyst, etc).</div>
+           
+           <div class="line-gris"><div id="target_10"></div><span class="price-head"><span class="price-head">Standardization of new reporting methods</span>, to demonstrate KPIs to the public in a meaningful, consistent fashion.</div>
+           
+           <div class="line-white"><div id="target_11"></div><span class="price-head">Jobseeker profiles</span> to enhance data collection in recruitment pipeline reporting.</div>
+           
+           <div class="line-gris"><div id="target_12"></div><span class="price-head">Robust, private reporting</span> to help Partner Companies better understand where unconscious biases may be hindering workplace cultural diversification.</div>
+
+
+</div>
+
+<!------------------------------------ 2015 ------------------------------------>
+
+<!------------------------------------ Addendum ------------------------------------>
+
+<!------------------------------------ Trace ------------------------------------>
+
+
+
+
+<!---------------------- Nacho Momma's NonProfit ---------------------------->
+
+<div id="endpage_blahdeda">
+   <p class="footy-blather-header">EqualTogether is a project of HumanAxis</p>
+   <p class="footy-blather">HumanAxis is a 501(c)3, under the proud fiscal sponsorship of the NetRoots Foundation. Yep, you read that correctly: this whole shebang is being done as a non-profit. A competitively priced B2B SAAS platform serving curated content and workforce analytics, developed by industry vets who aren't in it to become billionaires—but are in this to get results. A business in the same game as all the other Delaware C-Corps, but without the VCs, without valuation goals, and with a  social entrepreneurship purpose. Expectations are high, and we seek to crush them.
+</p> 
+</div>
+
+<!---------------------- Footer Footer Footer Footer ---------------------------->
+
+
+
+  <div class="footer-filler">
+  </div>
+
+    <div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+      <div class="container" style="padding-top: 1em;">
+        <div class="navbar-left">
+          <p class="footy">&copy;2014 <a href="http://www.humanaxis.org">HumanAxis</a></p>
+        </div>
+      </div>
+    </div>
+
+<!---------------------- Bootstrap Template Fixed Footer Was Buggy---------------------------->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
+
+  </body>
+</html>
