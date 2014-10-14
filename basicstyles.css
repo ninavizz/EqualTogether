@@ -6,6 +6,12 @@ body {
 }
 
 /* Navvy Things */
+.durp {
+	color:#ccc;
+	padding-left:23px;
+	padding-top:5px;
+}
+
 #masthead {
 	position:absolute;
 	left:0px;
@@ -179,12 +185,21 @@ a.navbar-brand {
 .footy {
 	font-family: 'Montserrat', sans-serif;
 	font-weight:700;
-    font-size:12px;
+    font-size:10px;
 	line-height:4px;
     color: #575558;
 	padding:5px;
     text-align: left;
 	margin-left:-15px;
+}
+
+.footy-etc {
+	font-family: 'Montserrat', sans-serif;
+	font-weight:200;
+    font-size:10px;
+	line-height:4px;
+    color: #ccc;
+    text-align: left;
 }
 
 .footy-blather-header {
@@ -693,10 +708,10 @@ p.datestamp-year {
 .prices-year {
 	display:block;
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 700;
-	margin-top:20px;
+	font-weight:500;
+	margin-top:30px;
     font-size: 28px;
-    color: #222;
+    color: #555;
     text-align: left; 
 }
 
