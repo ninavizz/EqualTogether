@@ -23,8 +23,15 @@
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <!--[endif]-->
 
+<!-- Popovers -->
+<script>$(function () 
+      { $("[data-toggle='popover']").popover();
+      });
+   </script>
+
 <!-- Lame-assed embedded styles -->
 <style type="text/css">
+
 
 #NavBar-Masthead {
 	position:absolute;
@@ -34,74 +41,151 @@
 	height:19px;
 	z-index:5;
 }
-
-#Headline {
+#apDiv1 {
 	position:absolute;
-	left:110px;
-	top:100px;
-	width:773px;
-	height:36px;
+	left:735px;
+	top:60px;
+	width:271px;
+	height:43px;
+	z-index:6;
+	background-color: #000000;
+}
+
+#woo {
+	position:absolute;
+	left:80px;
+	top:70px;
+	width:313px;
+	height:85px;
+}
+
+#bizgrid {
+	position:absolute;
+	left:80px;
+	top:160px;
+	width:825px;
+	height:560px;
+}
+
+div.biz_yahoo {
+	position:relative;
+	display:inline-block;
+	width:271px;
+	height:136px;
+	margin:5 5 5 5;
+	background-image: url('images/BrandIMG_Yahoo.png');
+	background-size: 486px 155px;
+	background-repeat: no-repeat;
+	background-position:-34px -2px;
+}
+
+div.biz_linkedin {
+	position:relative;
+	display:inline-block;
+	width:271px;
+	height:136px;
+	margin:5 5 5 5;
+	background-image: url('images/BrandIMG_LinkedIn.png');
+	background-size: 486px 155px;
+	background-repeat: no-repeat;
+	background-position:-34px -2px;
+}
+
+div.biz_facebook {
+	position:relative;
+	display:inline-block;
+	width:271px;
+	height:136px;
+	margin:5 5 5 5;
+	background-image: url('images/BrandIMG_Facebook.png');
+	background-size: 486px 155px;
+	background-repeat: no-repeat;
+	background-position:-34px -2px;
+}
+
+div.biz_google {
+	position:relative;
+	display:inline-block;
+	width:271px;
+	height:136px;
+	margin:5 5 5 5;
+	background-image: url('images/BrandIMG_Google.png');
+	background-size: 486px 155px;
+	background-repeat: no-repeat;
+	background-position:-34px -2px;
+}
+
+#bizgrid a {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    z-index: 27;
+    background-color: #FFF; 
+    opacity: 0; 
+    filter: alpha(opacity=1); 
+}
+
+#bizgrid a:hover {
+    opacity:0.2;
+    filter:alpha(opacity=20); 
+}
+
+div.biz_TMP {
+	position:relative;
+	display:inline-block;
+	width:271px;
+	height:136px;
+	margin:5 5 5 5;
+	background-image: url('images/BrandIMG_TMP.png');
+	background-size: 486px 155px;
+	background-repeat: no-repeat;
+	background-position:-34px -2px;
+}
+
+.hp_headcount {
+	position:absolute;
+	top:113px;
+	left:48px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+    font-size: 11px;
+	color: #fff;
 	z-index:6;
 }
 
-#TheePact {
-	position:absolute;
-	left:110px;
-	top:165px;
-	width:780px;
-	height:900px;
-	z-index:7;
+div.cta {
+	position:relative;
+	display:inline-block;
+	width:545px;
+	height:136px;
+	margin:5 5 5 5;
+	background-image: url('images/signup_first.png');
+	background-repeat: no-repeat;
 }
 
-#PactGuts {
+.hp_est {
 	position:absolute;
-	left:0px;
-	top:215px;
-	width:780px;
-	height:100%;
-	border-top:solid;
-	border-top-width: 4px;
-	z-index:7;
+	top:113px;
+	left:216px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+    font-size: 11px;
+	color: #fff;
+	z-index:6;
 }
 
-#LeftCol {
-	position:absolute;
-	left:0px;
-	top:5px;
-	width:370px;
-	height:100%;
+.meh {
+	text-align:center;
 }
-
-#RightCol {
-	position:absolute;
-	top:5px;
-	left:400px;
-	width:370px;
-	height:100%;
-}
-
-#dottie {
-	position:absolute;
-	top:850px;
-	width:100%;
-	border-bottom:dotted thin #555;
-}
-
-#apDiv1 {
-	position:absolute;
-	left:145px;
-	top:875px;
-	width:465px;
-	height:86px;
-	z-index:8;
-}
-
 
 #endpage_blahdeda {
 	position:absolute;
 	width:100%;
 	height:175px;
-	top:1200px;
+	top:950px;
 	background-color:#eee;
 	z-index:1;
 }
@@ -155,29 +239,11 @@
     left: 0;
 }
 
-.durp {
-	color:#ccc;
-	padding-left:23px;
-	padding-top:5px;
-}
-
 </style>
-
-<!---------------------------- Analytics Goodness -------------------------------->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-54550991-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 </head>
 
 <body>
-<!---------------------------- Bootstrap Template Fixed navbar -------------------------------->
+<!---------------------------- Bootstrap Template Fed navbar -------------------------------->
     <div id="NavBar-Masthead"></div>
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
@@ -188,11 +254,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <div id="NavBar-Masthead"><a href="http://www.equaltogether.com"><img src="images/et_mastheadlogo.png" width="164" height="19" alt="Home"></a></div>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">Our Pact</a></li>
+            <li><a href="pact.html">Our Pact</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Browse Companies<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
@@ -202,11 +267,10 @@
                 <li class="durp">Three</a></li>
                 <li class="divider"></li>
                 <li role="presentation" class="dropdown-header">Independently Disclosed Companies</li>
-                <li>Facebook</a></li>
-                <li><a href="../tech/facebook.html">Facebook</a></li>
-                <li><a href="../tech/google.html">Google</a></li>
-                <li><a href="../tech/linkedin.html">LinkedIn</a></li>
-                <li><a href="../tech/yahoo.html">Yahoo!</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Google</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="tech/lebowski.html">Yahoo!</a></li>
                 <li class="divider"></li>
                 <li class="dropdown-header-FYI" data-toggle="modal" data-target="#myModal"><a href="#">What's The Difference?</a></li>
               </ul>
@@ -223,63 +287,57 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">What's The Difference?</h4>
+        <h4 class="modal-title" id="myModalLabel">What's The Difference Between Partner Companies + Independently Disclosed Companies?</h4>
       </div>
       <div class="modal-body">
-        <p>The difference between Partner Companies and Independently Disclosed Companies, is that our Partner Companies have agreed to the EqualTogether pact—and work directly with us to deliver updated numbers as frequently as makes sense for the size of their organization and rate of hiring. Weekly for a mammoth company, quarterly for a startup with less than 250 employees. We’re also developing API based direct reporting to enable daily updates, and are excited to see those go live just as soon as we can.</p><p>Independently Disclosed Companies are just that—organizations who've taken the bold step to go public with their EEO-1 reported diversity numbers on their own, and have no relationship with EqualTogether. All information we post about these companies is publicly available, and presented here to offer the most complete window we can into Tech's diversity challenges.</p>
+        <p>Partner Companies here, are those who've agreed to the EqualTogether Pact. Sure, we also have traditional technology partners to help make the magic behind the curtain happen.</p><p>At the of EqualTogether's value, are both the api-based reporting services we provide, and the realtionship we build with each Partner Company and that we help Prtner Companies forge with one another. Unprecidented workplace cultural transformation, traditional methods be damned, is something we've all agreed to make happen. Together.</p><p>Independently Disclosed Companies are just that—organizations who've taken the bold step to go public with their EEO-1 reported diversity numbers, and have no relationship with EqualTogether. All information we post about these companies is publicly available, and presented here to offer the most complete window we can into Tech's diversity challenges.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Got It!</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Coolio!</button>
       </div>
     </div>
   </div>
 </div>
 
 <!------------------------------------ Begin page content ------------------------------------>
-   
-<div class="pact-headline" id="Headline">Our Partner Company Pact</div>   
 
-<div id="TheePact">
-   <div class="pact-agreeto">
-     <p>Accountability is at the heart of EqualTogether’s purpose, as is mutual responsibility.<span class="pact-agreeto"><a href="pricing.html"> Businesses: Join Us!</a></span></p>
+<div id="woo"><img src="images/et_hp.png"></div>
+<div id="bizgrid">
+   <div class="biz_yahoo">
+      <a href="/tech/yahoo.html"></a>
+      <div class="hp_headcount">6,138</div>
+      <div class="hp_est">est 1995</div>
    </div>
-   <div class="pact-intro">
-   <p><span class="pact-agreeto">We the undersigned</span> are a consortium of organizations joined in a shared commitment to radical transparency and measurable change. Our charge is correcting today’s disparities in workforce diversity, across our               industry. Our goal is to align the diversity numbers of our corporate workplaces, with the communities that house them.</p>
-   <p>We each commit to this charge as one force among many—because together our visible efforts, mistakes, successes, and challenges, will be a far greater force with which to drive industry-wide equality of opportunity for all, than any one organization could alone accomplish.      </p>
-  <p>We each specifically commit, to…</p>
-  </div>
-  <div id="PactGuts">
-    <div id="LeftCol">
-      <p class="pact-subhead"> Partner Companies</p>
-      <p class="declare">Act as a full participant</p> 
-      <p class="respond">In the effort driven by EqualTogether to standardize how diversity data is categorized, compiled, and represented.</p>
-      <p class="declare">Openly share</p> 
-      <p class="respond">Our own successes and failures with each other.</p> 
-      <p class="declare">Listen to our peers</p> 
-      <p class="respond">In other Partner Companies, about what they are doing that is and isn’t working. This is not a competition, it is a charge to solve for a problem endemic to our industry’s workforce.</p>
-      <p class="declare">Swiftly adapt</p> 
-      <p class="respond">Our own programs as results from Partners make solution-opportunity areas clear.</p>
-      <p class="declare">Take unprecedented risks</p> 
-      <p class="respond">With sharing in-aggregate data about our workforces.</p>
-      <p class="continuation">In doing the above, we also commit to the highest standards of information security and privacy ethics in protecting the details and identities of individuals in our employ.</p>
-      <p class="continuation">To work with EqualTogether and other Partner companies, to develop new standards for accountability in diversity.</p>
-      <p class="continuation">To work towards the goal of including reports of progress in Diversity Hiring, at the end of each Quarterly Earnings Call with investors.</p>
-      <p class="continuation">To participate in our annual Partners Roundtable, reviewing successes, failures, and opportunities to improve as a whole industry. </p>
-    </div>
-    <div id="RightCol">
-      <p class="pact-subhead">Individuals</p>
-      <p class="declare">Be courageous</p>
-      <p class="respond">Truthfully represent all of who you are. Use the EqualTogether EOE box on job applications as often as possible.</p>
-      <p class="declare">Be an ally</p> 
-      <p class="respond">To do our part to be an ally for all our peers from all walks of life.</p>
-      <p class="declare">Listen & Act</p>
-      <p class="respond">When you see abuses happening on the job, report them.</p>
-      <p class="continuation">As EqualTogether rolls-out our “Advocates” program, become an engaged participant.</p>
-    </div>
-  </div>
-  <div id="dottie"></div>
-  <div id="apDiv1" class="pact-notyet">Partner Companies Yet To Disclose</div>
+   <div class="biz_linkedin">
+      <div class="hp_headcount">3,319</div>
+      <div class="hp_est">est 2002</div>
+      <a href="/tech/linkedin.html"></a>
+   </div>
+   <div class="biz_facebook">
+      <div class="hp_headcount">4,263</div>
+      <div class="hp_est">est 2004</div>
+      <a href="/tech/facebook.html"></a>
+   </div>
+   <div class="biz_google">
+      <div class="hp_headcount">26,559</div>
+      <div class="hp_est">est 1998</div>
+      <a href="/tech/google.html"></a>
+   </div>
+   <div class="biz_TMP"></div>
+   <div class="biz_TMP"></div>
+   <div class="biz_TMP"></div>
+   <div class="cta">
+   <a href="pricing.html"></a>
+   </div>
+   <div class="biz_TMP"></div>
+   <div class="biz_TMP"></div>
+   <div class="biz_TMP"></div>
+   <div class="biz_TMP"></div>
+   <div class="biz_TMP"></div>
+   <div class="biz_TMP"></div>
 </div>
+
+
 
 <!---------------------- Nacho Momma's NonProfit ---------------------------->
 
@@ -289,8 +347,6 @@
 </p> 
 </div>
 
-
-
 <!---------------------- Footer Footer Footer Footer ---------------------------->
 
 
@@ -298,13 +354,16 @@
   <div class="footer-filler">
   </div>
 
-  <div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+    <div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
       <div class="container" style="padding-top: 1em;">
         <div class="navbar-left">
           <p class="footy">&copy;2014 <a href="http://www.humanaxis.org">HumanAxis Inc.</a><span class="footy-etc"> All Rights Reserved.</span></p>
         </div>
       </div>
     </div>
+
+<!---------------------- Bootstrap Template Fixed Footer Was Buggy---------------------------->
+
 
 
     <!-- Bootstrap core JavaScript
@@ -319,7 +378,4 @@
 
 
   </body>
-</html>
-
-
 </html>

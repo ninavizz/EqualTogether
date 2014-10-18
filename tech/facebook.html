@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <title>EqualTogether</title>
-<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
 <!-- Latest compiled and minified Bootstrap CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -16,10 +15,7 @@
 
 <!-- Nina's Stylesheet -->
 <link href="../basicstyles.css" rel="stylesheet" type="text/css">
-<link href='http://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]-->
@@ -27,16 +23,165 @@
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <!--[endif]-->
 
+<!-- CHARTS -- CHARTS -- CHARTS -- CHARTS -- CHARTS -- CHARTS -- CHARTS -- CHARTS -->
+<!-------------------------------------- RACE -------------------------------------->
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+
+      // Load the Visualization API and the piechart package.
+      google.load('visualization', '1.0', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.setOnLoadCallback(drawRace);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawRace() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Race');
+        data.addColumn('number', 'Ratios');
+        data.addRows([
+          ['White', 2969],
+          ['Asian', 1424],
+          ['Black', 45],
+          ['Latino', 141],
+          ['Other', 127],
+        ]);
+
+        function selectHandler() {
+          var selectedItem = chart.getSelection()[0];
+          if (selectedItem) {
+            var value = data.getValue(selectedItem.row, 0);
+            console.log('The user selected ', value);
+          }
+        }
+        
+        // Set chart options
+        var options = {'width':420,
+                       'height':420,
+					   'pieHole': 0.65,
+					   'colors': ['#edc119', '#d85e1b', '#831953', '#db67be', '#ccc'],
+					   'pieSliceText': 'none',
+					   'legend': {position: 'none'},
+					   'backgroundColor': 'transparent',
+					   };
+					 
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('chart_race'));
+        google.visualization.events.addListener(chart, 'select', selectHandler);
+        chart.draw(data, options);
+      }
+    </script>
+    
+    <!-------------------------------------- Gender -------------------------------------->
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+
+      // Load the Visualization API and the piechart package.
+      google.load('visualization', '1.0', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.setOnLoadCallback(drawGender);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawGender() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Gender');
+        data.addColumn('number', 'Ratio');
+        data.addRows([
+          ['Men', 3050],
+          ['Women', 1213],
+          ['Other', 4],
+        ]);
+
+        function selectHandler() {
+          var selectedItem = chart.getSelection()[0];
+          if (selectedItem) {
+            console.log('The user selected ', selectedItem);
+          }
+        }
+        
+        // Set chart options
+        var options = {'width':230,
+                       'height':230,
+					   'pieHole': 0.6,
+					   'colors': ['#30b9e4', '#116085', '#eee'],
+					   'pieSliceText': 'none',
+					   'legend': {position: 'none'},
+					   'backgroundColor': 'transparent',
+					   };
+					 
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('chart_gender'));
+        google.visualization.events.addListener(chart, 'select', selectHandler);
+        chart.draw(data, options);
+      }
+    </script>
+    
+<!---------------------------------------- Age Script ------------------------------------------>
+<script>
+
+/*
+Ultimate Age calculator script- By JavaScript Kit (http://www.javascriptkit.com)
+Over 200+ free scripts here!
+Credit must stay intact for use
+*/
+
+var one_day=1000*60*60*24
+var one_month=1000*60*60*24*30
+var one_year=1000*60*60*24*30*12
+
+function displayage(yr, mon, day, unit, decimal, round){
+today=new Date()
+var pastdate=new Date(yr, mon-1, day)
+
+var countunit=unit
+var decimals=decimal
+var rounding=round
+
+finalunit=(countunit=="days")? one_day : (countunit=="months")? one_month : one_year
+decimals=(decimals<=0)? 1 : decimals*10
+
+if (unit!="years"){
+if (rounding=="rounddown")
+document.write(Math.floor((today.getTime()-pastdate.getTime())/(finalunit)*decimals)/decimals+" "+countunit)
+else
+document.write(Math.ceil((today.getTime()-pastdate.getTime())/(finalunit)*decimals)/decimals+" "+countunit)
+}
+else{
+yearspast=today.getFullYear()-yr-1
+tail=(today.getMonth()>mon-1 || today.getMonth()==mon-1 && today.getDate()>=day)? 1 : 0
+pastdate.setFullYear(today.getFullYear())
+pastdate2=new Date(today.getFullYear()-1, mon-1, day)
+tail=(tail==1)? tail+Math.floor((today.getTime()-pastdate.getTime())/(finalunit)*decimals)/decimals : Math.floor((today.getTime()-pastdate2.getTime())/(finalunit)*decimals)/decimals
+document.write(yearspast+tail+" "+countunit)
+}
+}
+
+//Sample usage
+//displayage (year, month, day, unit, decimals, rounding)
+//Unit can be "years", "months", or "days"
+//Decimals specifies demical places to round to (ie: 2)
+//Rounding can be "roundup" or "rounddown"
+
+//displayage(1997, 11, 24, "years", 0, "rounddown")
+
+</script>
+
 <!-- Lame-assed embedded styles -->
 <style type="text/css">
-#mrsketchy {
-	position:absolute;
-	left:0px;
-	top:55px;
-	width:1140px;
-	height:79px;
-	z-index:1;
-}
+
 #NavBar-Masthead {
 	position:absolute;
 	left:24px;
@@ -45,11 +190,431 @@
 	height:19px;
 	z-index:5;
 }
+
+#BrandID {
+	position:absolute;
+	left:554px;
+	top:147px;
+	width:195px;
+	height:75px;
+	z-index:6;
+	background-image: url('../images/BrandIMG_Facebook.png');
+	background-size: 355px 115px;
+    background-repeat: no-repeat;
+	background-position:-15px -12px;
+}
+
+#chart_race {
+	position:absolute;
+	left:26px;
+	top:78px;
+	width:300px;
+	height:300px;
+	z-index: 7;
+}
+
+#chart_gender {
+	position:absolute;
+	left:121px;
+	top:172px;
+	width:150px;
+	height:150px;
+	z-index: 8;
+}
+
+#apDiv2 {
+	position:absolute;
+	left:0px;
+	top:200px;
+	width:1000px;
+	height:1400px;
+	z-index:4;
+}
+
+#NiceLegend {
+	position:absolute;
+	line-spacing: -2px;
+	left:410px;
+	top:163px;
+	width:143px;
+	height:304px;
+	z-index:3;
+}
+
+#FYI {
+	position:absolute;
+	left:570px;
+	top:200px;
+	width:350px;
+	height:300px;
+	z-index:3;
+}
+
+#datestamp {
+	position:absolute;
+	left:190px;
+	top:250px;
+	width:92px;
+	height:72px;
+	z-index:6;
+}
+
+#CorpBar {
+	position:absolute;
+	top:470px;
+	left:100px;
+	width:300px;
+	height:1500px;
+	z-index:4;
+}
+
+#ThreeWeebles {
+	position:absolute;
+	left:0px;
+	top:3px;
+	width:38px;
+	height:25px;
+	z-index:4;
+	background-image: url('../images/BrandIMG_Facebook.png');
+	background-size: 308px 99px;
+	background-repeat: no-repeat;
+	background-position:-205px -7px;
+}
+
+#WeebleOffice-1 {
+	position:absolute;
+	display:block;
+	width:170px;
+	left:0px;
+	top:60px;
+	border-bottom:dotted 1px #bbb;
+	z-index:4;
+}
+
+#WeebleOffice-2 {
+	position:absolute;
+	display:block;
+	width:170px;
+	left:0px;
+	top:140px;
+	border-bottom:dotted 1px #bbb;
+	margin-bottom:20px;
+	z-index:4;
+}
+
+#WeebleOffice-3 {
+	position:absolute;
+	width:170px;
+	top:220px;
+	left:0px;
+	border-bottom:dotted 1px #bbb;
+	margin-bottom:20px;
+	z-index:4;
+}
+
+#ManyOffices {
+	position:absolute;
+	width:170px;
+	length:100%;
+	top:310px;
+	left:0px;
+	z-index:4;
+}
+
+#Office-4 {
+	position:relative;
+	display:block;
+	width:170px;
+	left:0px;
+	border-bottom:dotted 1px #ccc;
+	margin-bottom:20px;
+	z-index:4;
+}
+
+#Office-5 {
+	position:relative;
+	display:inline-block;
+	width:170px;
+	left:0px;
+	border-bottom:dotted 1px #ccc;
+	margin-bottom:20px;
+	z-index:4;
+}
+
+#IntlOffices-1 {
+	position:relative;
+	display:inline-block;
+	width:170px;
+	left:0px;
+	border-bottom:dotted 1px #ccc;
+	margin-bottom:20px;
+	z-index:4;
+}
+
+#IntlOffices-2 {
+	position:relative;
+	display:inline-block;
+	width:170px;
+	left:0px;
+    border-bottom:dotted 1px #ccc;
+	margin-bottom:20px;
+	z-index:4;
+}
+
+#IntlOffices-3 {
+	position:relative;
+	display:inline-block;
+	width:170px;
+	left:0px;
+    border-bottom:dotted 1px #ccc;
+	margin-bottom:20px;
+	z-index:4;
+}
+
+#IntlOffices-4 {
+	position:relative;
+	display:inline-block;
+	width:170px;
+	left:0px;
+    border-bottom:dotted 1px #ccc;
+	margin-bottom:20px;
+	z-index:4;
+}
+
+.fyibody {
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+    font-size:11px;
+	line-height:17px;
+    color: #555;
+    text-align: left;
+	padding-left:4px;
+}
+
+#OneWeeble-1 {
+	position:absolute;
+	top:4px;
+    left:0;
+	width:23px;
+	height:22px;
+	background-image: url('../images/BrandIMG_Facebook.png');
+	background-size: 325px 107px;
+	background-repeat: no-repeat;
+	background-position:-215px -44px;
+	z-index:4;
+}
+
+#OneWeeble-2 {
+	position:absolute;
+	left:0px;
+	top:4px;
+	width:23px;
+	height:22px;
+	background-image: url('../images/BrandIMG_Facebook.png');
+	background-size: 325px 107px;
+	background-repeat: no-repeat;
+	background-position:-215px -44px;
+	z-index:4;
+}
+
+#tabbytabs {
+	position:absolute;
+	background-color:#ffffff;
+	left:290px;
+	top:470px;
+	width:750px;
+	height:42px;
+	z-index:7;
+}
+
+#tabby_content {
+	position:absolute;
+	left:320px;
+	top:500px;
+	width:700px;
+	height:1280px;
+	z-index:6;
+}
+
+#leadership_content {
+	position:absolute;
+	left:320px;
+	top:500px;
+	width:700px;
+	height:1280px;
+	z-index:6;
+}
+
+#community_content {
+	position:absolute;
+	left:320px;
+	top:500px;
+	width:700px;
+	height:1280px;
+	z-index:6;
+}
+
+#date {
+	width:700px;
+	z-index:4;
+}
+
+#ceo-mug {
+	float:left;
+	margin-top:5px;
+	margin-right:20px;
+	margin-bottom:20px;
+	width:78px;
+	height:78px;
+	background-image: url('../images/BrandIMG_Facebook.png');
+    background-size: 486px 155px;
+	background-repeat: no-repeat;
+	background-position:-400px -7px;
+}
+
+#exec_weebles {
+	width:600px;
+	height:350px;
+	position:absolute;
+	top:30px;
+	left:-20px;
+	background-image: url('../images/execs_facebook.png');
+	background-repeat:no-repeat;
+}
+
+#execs_list {
+	width:600px;
+	height:400px;
+	position:absolute;
+	top:240px;
+    left:0px;
+}
+
+#execcy_head {
+	display:block;
+	width:600px;
+	height:23px;
+	top:0px;
+    left:0px;
+	margin-bottom:5px;
+	border-bottom:solid 2px #222;
+}
+
+#communitystuff {
+	position:absolute;
+	width:600px;
+	height:400px;
+	top:40px;
+	left:10px;
+	z-index:4;
+}
+
+#endpage_blahdeda {
+	position:absolute;
+	width:100%;
+	height:175px;
+	left:0px;
+	top:2000px;
+	background-color:#eee;
+	z-index:1;
+}
+
+.footer-filler {
+  margin-bottom: 50px;
+}
+
+#testimony {
+	border-bottom:5px solid #345393;
+}
+
+#EmployeeCount {
+	position:absolute;
+	display:block;
+	left:40px;
+	top:0px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:700;
+    font-size: 24px;
+    color: #345393;
+    text-align: left;
+	z-index:4;
+}
+
+#Founded {
+	position:absolute;
+	display:block;
+	width:170px;
+	left:0px;
+	top:30px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:400;
+    font-size: 10px;
+	padding-bottom:5px;
+	border-bottom:dotted 1px #ccc;
+    color: #345393;
+    text-align: left;
+	z-index:4;
+}
+
+.percentnumber {
+	font-family: 'Montserrat', sans-serif;
+	font-weight:700;
+    font-size: 16px;
+	line-height: 30px;
+    color: #345393;
+    text-align: left;
+	padding-left:22px;
+}
+
+.percentsymbol {
+	font-family: 'Montserrat', sans-serif;
+	font-weight:400;
+    font-size: 16px;
+	line-height: 30px;
+    color: #345393;
+    text-align: left;
+	padding-left:1px;
+}
+
+.hereworld {
+	font-weight:400;
+	font-variant:small-caps;
+    font-size: 24px;
+    color: #345393;
+    text-align:left;
+	padding-left:2px;
+}
+
+.officepurpose {
+	font-family: 'Open Sans', sans-serif;
+	font-style:italic;
+	font-weight:300;
+    font-size:12px;
+	line-height:9px;
+    color: #345393;
+    text-align: left;
+}
+.us-world {
+	font-weight:400;
+	font-variant:small-caps;
+    font-size: 24px;
+    color: #345393;
+    text-align:left;
+	padding-left:2px;
+}
+.article-h1 {
+	font-family: 'Open-Sans', sans-serif;
+	font-weight:300;
+    font-size: 30px;
+	color: #345393;
+	padding-top:30px;
+}
+
 </style>
 </head>
 
 <body>
-<!---------------------------- Bootstrap Template Fixed navbar -------------------------------->
+<!---------------------------- Bootstrap Template Navbar -------------------------------->
     <div id="NavBar-Masthead"></div>
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
@@ -60,7 +625,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <div id="NavBar-Masthead"><a href="#"><img src="../et_mastheadlogo.png" width="164" height="19" alt="Home"></a></div>
+          <div id="NavBar-Masthead"><a href="http://www.equaltogether.com"><img src="../images/et_mastheadlogo.png" width="164" height="19" alt="Home"></a></div>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -69,21 +634,15 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Browse Companies<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
               <li role="presentation" class="dropdown-header">Partner Companies</li>
-                <li><a href="#">One</a></li>
-                <li><a href="#">Two</a></li>
-                <li><a href="#">Three</a></li>
+                <li class="durp">One</a></li>
+                <li class="durp">Two</a></li>
+                <li class="durp">Three</a></li>
                 <li class="divider"></li>
                 <li role="presentation" class="dropdown-header">Independently Disclosed Companies</li>
-                <li><a href="../tech/apple.html">Apple</a></li>
-                <li><a href="../tech/ebay.html">EBay</a></li>
-                <li><a href="../tech/facebook.html">Facebook</a></li>
-                <li><a href="../tech/google.html">Google</a></li>
-                <li><a href="../tech/groupon.html">Groupon</a></li>
-                <li><a href="../tech/linkedin.html">LinkedIn</a></li>
-                <li><a href="../tech/pinterest.html">Pinterest</a></li>
-                <li><a href="../tech/salesforce.html">Salesforce</a></li>
-                <li><a href="../tech/twitter.html">Twitter</a></li>
-                <li><a href="../tech/yahoo.html">Yahoo!</a></li>
+                <li><a href="facebook.html">Facebook</a></li>
+                <li><a href="google.html">Google</a></li>
+                <li><a href="linkedin.html">LinkedIn</a></li>
+                <li><a href="yahoo.html">Yahoo!</a></li>
                 <li class="divider"></li>
                 <li class="dropdown-header-FYI" data-toggle="modal" data-target="#myModal"><a href="#">What's The Difference?</a></li>
               </ul>
@@ -113,15 +672,234 @@
 </div>
 
 <!------------------------------------ Begin page content ------------------------------------>
-<div class="masthead-img" id="masthead-facebook"><img src="tppagemasthead-facebook.png" alt="Facebook" width="195" height="75" class="masthead-img"></div>
-
-<div id="waist" class="masthead-img">
-<div id="guts"> 
+<div id="masthead-facebook"><img src="../images/tppagemasthead-facebook.png" alt="Facebook" width="195" height="75" class="masthead-img"></div>
    
+<!------------------------------------ Charts ------------------------------------>       
+<div id="container">
+   <div id="datestamp">
+      <p class="datestamp-month">----</p>
+      <p class="datestamp-day">--</p>
+      <p class="datestamp-year">2013</p>
+   </div>
+   <div id="chart_race"></div>
+   <div id="chart_gender"></div>
+   <div id="NiceLegend">
+     <p><span class="numbmen">71%</span><span class="men">male</span></p>
+     <p><span class="numbwomen">28%</span><span class="women">female</span></p>
+     <p><span class="numbother">0%</span><span class="other">other</span></p>
+     <p>&nbsp;</p>
+     <p><span class="numbwhite">63%</span><span class="white">white</span></p>
+     <p><span class="numbasian">30%</span><span class="asian">asian</span></p>
+     <p><span class="numbblack">1%</span><span class="black">black</span></p>
+     <p><span class="numblatino">3%</span><span class="latino">latino</span></p>
+     <p><span class="numbother">3%</span><span class="other">other</span></p>
+     <p>&nbsp;</p>
+   </div>
 </div>
+<div id="FYI">
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title">Independently Disclosed Data</h3>
+  </div>
+  <div class="panel-body">
+    <p class="fyibody">Facebook's data shown on EqualTogether is from a 2013 EEO-1 filing, included in their <a href="http://newsroom.fb.com/news/2014/06/building-a-more-diverse-facebook/">June 25th blog post</a> presenting their workforce diversity (though the graphics in that post are cited as from June 2014). This information is publicly available, and presented here to offer the most complete window we can into Tech's diversity challenges.</p>
+  </div>
+</div>
+</div>
+
+
+<!------------------------------------ CorpBar ------------------------------------>    
+<div id="CorpBar">
+    <div id="ThreeWeebles"></div>
+    <div id="EmployeeCount">4,263<span class="hereworld">us</span></div>
+    <div id="Founded">Founded<span class="citydate">Cambridge, 2004</span></div>
+    <div id="WeebleOffice-1">
+        <div id="OneWeeble-1"></div>
+        <span class="percentnumber">--</span><span class="percentsymbol">%</span>
+        <p class="addy">1 Hacker Way</p>
+        <p class="addy">Menlo Park, CA 95307</p>
+    </div>
+    <div id="WeebleOffice-2">
+        <div id="OneWeeble-2"></div>
+        <span class="percentnumber">--</span><span class="percentsymbol">%</span>
+        <p class="addy">300 W. 6th st.</p>
+        <p class="addy">Austin, TX 78701</p>
+    </div>
+    <div id="WeebleOffice-3">
+        <div id="OneWeeble-2"></div>
+        <span class="percentnumber">--</span><span class="percentsymbol">%</span>
+        <p class="addy">1730 Minor Ave.</p>
+        <p class="addy">Seattle, WA 98101</p>
+    </div>
+ <div id="ManyOffices">
+    <div id="Office-4">
+        <p class="officepurpose">Product, Media, Gaming</p>
+        <p class="addy">770 Broadway</p>
+        <p class="addy">NY, NY 10003</p>
+    </div>
+  <div id="Office-5">
+        <p class="officepurpose">Sales + Data Ops, North America</p>
+        <p class="addy3">Altoona, IA</p>
+        <p class="addy3">Ashburn, VA</p>
+        <p class="addy3">Atlanta, GA</p>
+        <p class="addy3">Boston, MA</p>
+        <p class="addy3">Chicago, IL</p>
+        <p class="addy3">Dallas, TX</p>
+        <p class="addy3">Detroit, MI</p>
+        <p class="addy3">Forrest City, NC</p>
+        <p class="addy3">Los Angeles, CA</p>
+        <p class="addy3">Miami, FL</p>
+        <p class="addy3">Prineville, OR</p>
+        <p class="addy3">Toronto, CA</p>
+        <p class="addy3">Washington, DC</p>
+        <p class="addy3">Woodland Hills, CA</p>
+    </div>
+    <div id="IntlOffices-1">
+        <p class="officepurpose">Latin America</p>
+        <p class="addy3">Bogotá</p>
+        <p class="addy3">Buenos Aires</p>
+        <p class="addy3">Mexico City</p>
+        <p class="addy3">São Paulo</p>
+    </div>
+     <div id="IntlOffices-2">
+        <p class="officepurpose">Europe + Middle East</p>
+        <p class="addy3">Amsterdam</p>
+        <p class="addy3">Berlin</p>
+        <p class="addy3">Brussels</p>
+        <p class="addy3">Dubai</p>
+        <p class="addy3">Dublin</p>
+        <p class="addy3">Hamburg</p>
+        <p class="addy3">London</p>
+        <p class="addy3">Luleå</p>
+        <p class="addy3">Madrid</p>
+        <p class="addy3">Milan</p>
+        <p class="addy3">Paris</p>
+        <p class="addy3">Stockholm</p>
+        <p class="addy3">Tel Aviv</p>
+        <p class="addy3">Warsaw</p>
+    </div>
+    <div id="IntlOffices-3">
+        <p class="officepurpose">Asia + South Pacific</p>
+        <p class="addy3">Auckland</p>
+        <p class="addy3">Hong Kong</p>
+        <p class="addy3">Hyderabad</p>
+        <p class="addy3">Jakarta</p>
+        <p class="addy3">Malaysia</p>
+        <p class="addy3">Melbourne</p>
+        <p class="addy3">New Delhi</p>
+        <p class="addy3">Seoul</p>
+        <p class="addy3">Singapore</p>
+        <p class="addy3">Sydney</p>
+        <p class="addy3">Tokyo</p>
+    </div>
+  </div>
+</div>
+  
+<!------------------------------------ Tabs ------------------------------------>
+<div id="tabbytabs">
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="active"><a href="#articles" role="tab" data-toggle="tab">Articles</a></li>
+    <li><a href="#leadership" role="tab" data-toggle="tab">Leadership</a></li>
+    <li><a href="#community" role="tab" data-toggle="tab">Community Support</a></li>
+  </ul>
+</div>
+<div id="tabby_content" class="tab-content">
+
+
+<!------------------------------------ Articles ------------------------------------>
+<div class="tab-pane fade active in" id="articles">
+      <div id="testimony" class="article">
+        <div class="dateline"><span>25 June 2014</span></div>
+        <p class="article-h1">Building a More Diverse Facebook</p>
+        <span class="article-body"><p>Today we’re making Facebook’s current diversity figures available publicly for the first time.</p><p>At Facebook, diversity is essential to achieving our mission. We build products to connect the world, and this means we need a team that understands and reflects many different communities, backgrounds and cultures. Research also shows that diverse teams are better at solving complex problems and enjoy more dynamic workplaces. So at Facebook we’re serious about building a workplace that reflects a broad range of experience, thought, geography, age, background, gender, sexual orientation, language, culture and many other characteristics.</p><a href="http://newsroom.fb.com/news/2014/06/building-a-more-diverse-facebook/"> Continue Reading</a></p></span>
+      </div>
+      <div class="article">
+        <div class="dateline"><span>14 October 2014</span></div>
+        <p class="article-h1">Austin Pride!</p>
+        <span class="article-body"><p>For the fourth consecutive year, Facebook Austin employees, along with family and friends, participated in the Austin Pride festivities. Thanks to those that stopped by our booth and celebrated with us in the parade. In case you missed it, or you want to relive it, check out this short video of the event</p><p><a href="https://www.facebook.com/video.php?v=959798270704263"><IMG SRC="../images/fbpridevideo_fakie.png" ALT="Video Fakie"></a></p>
+      </div>
+ </div>     
     
-<div id="mrsketchy"><img src="../PPage-Template.png" width="1008" height="1310"></div>
-<!---------------------- Bootstrap Template Fixed Footer Was Buggy----------------------------->
+    
+<!------------------------------------ Leadership ------------------------------------>    
+<div class="tab-pane fade" id="leadership">
+      <div id="exec_weebles"></div>
+   <div id="execs_list">
+      <div id="execcy_head" class="execs-head">Executive Team<span class="execs-headcomp">2013 Total Cash Compensation</span>
+      </div>
+      <div class="exec">
+         <p class="exec-name">Mark Zuckerberg, <script>
+       displayage(1984, 05, 14, "years", 0, "rounddown")
+       </script></p>
+         <p><span class="exec-title">Founder, CEO</span>
+            <span class="exec-comp">$1<font color="#ffffff">00,000,000.00</font></span></p>
+      </div>
+      <div class="exec">
+         <p class="exec-name">Sheryl Sandberg, <script>
+       displayage(1969, 08, 28, "years", 0, "rounddown")
+       </script></p>
+         <p><span class="exec-title">COO</span>
+            <span class="exec-comp">$988,390.00<font color="#ffffff">0,00</font></span></p>
+      </div>
+      <div class="exec">
+         <p class="exec-name">Dave Wehner, <script>
+       displayage(1969, 09, 29, "years", 0, "rounddown")
+       </script></p>
+         <p><span class="exec-title">CFO</span>
+            <span class="exec-comp">n/r<font color="#ffffff">0,000,000.00</font></span></p>
+      </div>
+      <div class="exec">
+         <p class="exec-name">Mike Schroepfer, <script>
+       displayage(1975, 02, 01, "years", 0, "rounddown")
+       </script></p>
+         <p><span class="exec-title">CTO, VP Engineering</span>
+            <span class="exec-comp">$710,824.00<font color="#ffffff">00,0</font></span></p>
+      </div>
+      <div class="exec">
+         <p class="exec-name">Chris Cox, <script>
+       displayage(1982, 09, 29, "years", 0, "rounddown")
+       </script></p>
+         <p><span class="exec-title">Chief Product Officer</span>
+            <span class="exec-comp">n/r<font color="#ffffff">0,000,000.00</font></span></p>
+      </div>
+   </div>
+ </div>
+    
+<!------------------------------------ Community ------------------------------------>        
+    <div class="tab-pane fade" id="community">
+    <div id="communitystuff">
+      <div class="panel panel-info">
+         <div class="panel-heading">
+            <h3 class="panel-title">Placeholder for logos</h3>
+            </div>
+            <div class="panel-body">
+            <p class="fyibody">Anita Borg, National Center for Women in IT, Facebook U, Girls Who Code, Code 2040, Dational Society of Black Engineers, Society of Hispanic Professional Engineers, Management Leadership for Tomorrow. Yes We Code.</p>
+           </div>
+         </div>
+       </div>
+     </div>
+    </div>
+
+<!---------------------- Nacho Momma's NonProfit ---------------------------->
+
+<div id="endpage_blahdeda">
+   <p class="footy-blather-header">EqualTogether is a project of HumanAxis</p>
+   <p class="footy-blather">HumanAxis is a 501(c)3, under the proud fiscal sponsorship of the NetRoots Foundation. Yep, you read that correctly: this whole shebang is being done as a non-profit. A competitively priced B2B SAAS platform serving curated content and workforce analytics, developed by industry vets who aren't in it to become billionaires—but are in this to get results. A business in the same game as all the other Delaware C-Corps, but without the VCs, without valuation goals, and with a  social entrepreneurship purpose. Expectations are high, and we seek to crush them.</p> 
+</div>
+
+<!---------------------- Footer Footer Footer Footer ---------------------------->
+  <div class="footer-filler">
+  </div>
+
+    <div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+      <div class="container" style="padding-top: 1em;">
+        <div class="navbar-left">
+          <p class="footy">&copy;2014 <a href="http://www.humanaxis.org">HumanAxis Inc.</a><span class="footy-etc"> All Rights Reserved.</span></p>
+        </div>
+      </div>
+    </div>
+
+
 
 
 
@@ -129,8 +907,12 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
-</body>
+
+
+
+  </body>
 </html>
