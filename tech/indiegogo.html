@@ -45,11 +45,11 @@
         data.addColumn('string', 'Race');
         data.addColumn('number', 'Ratios');
         data.addRows([
-          ['White', 2969],
-          ['Asian', 1424],
-          ['Black', 45],
-          ['Latino', 141],
-          ['Other', 127],
+          ['White', 64],
+          ['Asian', 23],
+          ['Black', 2],
+          ['Latino', 8],
+          ['Other', 3],
         ]);
 
         function selectHandler() {
@@ -99,9 +99,9 @@
         data.addColumn('string', 'Gender');
         data.addColumn('number', 'Ratio');
         data.addRows([
-          ['Men', 3050],
-          ['Women', 1213],
-          ['Other', 4],
+          ['Men', 55],
+          ['Women', 45],
+          ['Other', 0],
         ]);
 
         function selectHandler() {
@@ -198,7 +198,7 @@ document.write(yearspast+tail+" "+countunit)
 	width:195px;
 	height:75px;
 	z-index:6;
-	background-image: url('../images/BrandIMG_Facebook.png');
+	background-image: url('../images/BrandIMG_IndieGoGo.png');
 	background-size: 355px 115px;
     background-repeat: no-repeat;
 	background-position:-15px -12px;
@@ -212,7 +212,6 @@ document.write(yearspast+tail+" "+countunit)
 	height:300px;
 	z-index: 7;
 }
-
 #chart_gender {
 	position:absolute;
 	left:121px;
@@ -221,7 +220,6 @@ document.write(yearspast+tail+" "+countunit)
 	height:150px;
 	z-index: 8;
 }
-
 #apDiv2 {
 	position:absolute;
 	left:0px;
@@ -230,7 +228,6 @@ document.write(yearspast+tail+" "+countunit)
 	height:1400px;
 	z-index:4;
 }
-
 #NiceLegend {
 	position:absolute;
 	line-spacing: -2px;
@@ -275,7 +272,7 @@ document.write(yearspast+tail+" "+countunit)
 	width:38px;
 	height:25px;
 	z-index:4;
-	background-image: url('../images/BrandIMG_Facebook.png');
+	background-image: url('../images/BrandIMG_IndieGoGo.png');
 	background-size: 308px 99px;
 	background-repeat: no-repeat;
 	background-position:-205px -7px;
@@ -290,7 +287,6 @@ document.write(yearspast+tail+" "+countunit)
 	border-bottom:dotted 1px #bbb;
 	z-index:4;
 }
-
 #WeebleOffice-2 {
 	position:absolute;
 	display:block;
@@ -301,7 +297,6 @@ document.write(yearspast+tail+" "+countunit)
 	margin-bottom:20px;
 	z-index:4;
 }
-
 #WeebleOffice-3 {
 	position:absolute;
 	width:170px;
@@ -350,7 +345,6 @@ document.write(yearspast+tail+" "+countunit)
 	margin-bottom:20px;
 	z-index:4;
 }
-
 #IntlOffices-2 {
 	position:relative;
 	display:inline-block;
@@ -360,7 +354,6 @@ document.write(yearspast+tail+" "+countunit)
 	margin-bottom:20px;
 	z-index:4;
 }
-
 #IntlOffices-3 {
 	position:relative;
 	display:inline-block;
@@ -370,7 +363,6 @@ document.write(yearspast+tail+" "+countunit)
 	margin-bottom:20px;
 	z-index:4;
 }
-
 #IntlOffices-4 {
 	position:relative;
 	display:inline-block;
@@ -397,20 +389,19 @@ document.write(yearspast+tail+" "+countunit)
     left:0;
 	width:23px;
 	height:22px;
-	background-image: url('../images/BrandIMG_Facebook.png');
+	background-image: url('../images/BrandIMG_IndieGoGo.png');
 	background-size: 325px 107px;
 	background-repeat: no-repeat;
 	background-position:-215px -44px;
 	z-index:4;
 }
-
 #OneWeeble-2 {
 	position:absolute;
 	left:0px;
 	top:4px;
 	width:23px;
 	height:22px;
-	background-image: url('../images/BrandIMG_Facebook.png');
+	background-image: url('../images/BrandIMG_IndieGoGo.png');
 	background-size: 325px 107px;
 	background-repeat: no-repeat;
 	background-position:-215px -44px;
@@ -466,7 +457,7 @@ document.write(yearspast+tail+" "+countunit)
 	margin-bottom:20px;
 	width:78px;
 	height:78px;
-	background-image: url('../images/BrandIMG_Facebook.png');
+	background-image: url('../images/BrandIMG_IndieGoGo.png');
     background-size: 486px 155px;
 	background-repeat: no-repeat;
 	background-position:-400px -7px;
@@ -478,7 +469,7 @@ document.write(yearspast+tail+" "+countunit)
 	position:absolute;
 	top:30px;
 	left:-20px;
-	background-image: url('../images/execs_facebook.png');
+	background-image: url('../images/execs_IndieGoGo.png');
 	background-repeat:no-repeat;
 }
 
@@ -514,7 +505,7 @@ document.write(yearspast+tail+" "+countunit)
 	width:100%;
 	height:175px;
 	left:0px;
-	top:2600px;
+	top:2000px;
 	background-color:#eee;
 	z-index:1;
 }
@@ -523,8 +514,27 @@ document.write(yearspast+tail+" "+countunit)
   margin-bottom: 50px;
 }
 
+.percentnumber {
+	font-family: Montserrat, sans-serif;
+	font-weight:700;
+    font-size: 16px;
+	line-height: 30px;
+    color: #d6457e;
+    text-align: left;
+	padding-left:22px;
+}
+.percentsymbol {
+	font-family: Montserrat, sans-serif;
+	font-weight:400;
+    font-size: 16px;
+	line-height: 30px;
+    color: #d6457e;
+    text-align: left;
+	padding-left:1px;
+}
+
 #testimony {
-	border-bottom:5px solid #345393;
+	border-bottom:5px solid #d6457e;
 }
 
 #EmployeeCount {
@@ -535,7 +545,7 @@ document.write(yearspast+tail+" "+countunit)
 	font-family: 'Montserrat', sans-serif;
 	font-weight:700;
     font-size: 24px;
-    color: #345393;
+    color: #d6457e;
     text-align: left;
 	z-index:4;
 }
@@ -551,7 +561,7 @@ document.write(yearspast+tail+" "+countunit)
     font-size: 10px;
 	padding-bottom:5px;
 	border-bottom:dotted 1px #ccc;
-    color: #345393;
+    color: #d6457e;
     text-align: left;
 	z-index:4;
 }
@@ -561,26 +571,24 @@ document.write(yearspast+tail+" "+countunit)
 	font-weight:700;
     font-size: 16px;
 	line-height: 30px;
-    color: #345393;
+    color: #d6457e;
     text-align: left;
 	padding-left:22px;
 }
-
 .percentsymbol {
 	font-family: 'Montserrat', sans-serif;
 	font-weight:400;
     font-size: 16px;
 	line-height: 30px;
-    color: #345393;
+    color: #d6457e;
     text-align: left;
 	padding-left:1px;
 }
-
 .hereworld {
 	font-weight:400;
 	font-variant:small-caps;
     font-size: 24px;
-    color: #345393;
+    color: #d6457e;
     text-align:left;
 	padding-left:2px;
 }
@@ -591,14 +599,14 @@ document.write(yearspast+tail+" "+countunit)
 	font-weight:300;
     font-size:12px;
 	line-height:9px;
-    color: #345393;
+    color: #d6457e;
     text-align: left;
 }
 .us-world {
 	font-weight:400;
 	font-variant:small-caps;
     font-size: 24px;
-    color: #345393;
+    color: #d6457e;
     text-align:left;
 	padding-left:2px;
 }
@@ -606,7 +614,7 @@ document.write(yearspast+tail+" "+countunit)
 	font-family: 'Open-Sans', sans-serif;
 	font-weight:300;
     font-size: 30px;
-	color: #345393;
+	color: #d6457e;
 	padding-top:20px;
 }
 
@@ -672,26 +680,26 @@ document.write(yearspast+tail+" "+countunit)
 </div>
 
 <!------------------------------------ Begin page content ------------------------------------>
-<div id="masthead-facebook"><img src="../images/tppagemasthead-facebook.png" alt="Facebook" width="195" height="75" class="masthead-img"></div>
+<div id="masthead-indiegogo"><img src="../images/tppagemasthead-indiegogo.png" alt="IndieGoGo" width="195" height="75" class="masthead-img"></div>
    
 <!------------------------------------ Charts ------------------------------------>       
 <div id="container">
    <div id="datestamp">
-      <p class="datestamp-month">----</p>
-      <p class="datestamp-day">--</p>
+      <p class="datestamp-month">aug</p>
+      <p class="datestamp-day">21</p>
       <p class="datestamp-year">2013</p>
    </div>
    <div id="chart_race"></div>
    <div id="chart_gender"></div>
    <div id="NiceLegend">
-     <p><span class="numbmen">71%</span><span class="men">male</span></p>
-     <p><span class="numbwomen">28%</span><span class="women">female</span></p>
+     <p><span class="numbmen">55%</span><span class="men">male</span></p>
+     <p><span class="numbwomen">45%</span><span class="women">female</span></p>
      <p><span class="numbother">0%</span><span class="other">other</span></p>
      <p>&nbsp;</p>
-     <p><span class="numbwhite">63%</span><span class="white">white</span></p>
-     <p><span class="numbasian">30%</span><span class="asian">asian</span></p>
-     <p><span class="numbblack">1%</span><span class="black">black</span></p>
-     <p><span class="numblatino">3%</span><span class="latino">latino</span></p>
+     <p><span class="numbwhite">64%</span><span class="white">white</span></p>
+     <p><span class="numbasian">23%</span><span class="asian">asian</span></p>
+     <p><span class="numbblack">2%</span><span class="black">black</span></p>
+     <p><span class="numblatino">8%</span><span class="latino">latino</span></p>
      <p><span class="numbother">3%</span><span class="other">other</span></p>
      <p>&nbsp;</p>
    </div>
@@ -702,7 +710,7 @@ document.write(yearspast+tail+" "+countunit)
     <h3 class="panel-title">Independently Disclosed Data</h3>
   </div>
   <div class="panel-body">
-    <p class="fyibody">Facebook's data shown on EqualTogether is from a 2013 EEO-1 filing, included in their <a href="http://newsroom.fb.com/news/2014/06/building-a-more-diverse-facebook/">June 25th blog post</a> presenting their workforce diversity (though the graphics in that post are cited as from June 2014). This information is publicly available, and presented here to offer the most complete window we can into Tech's diversity challenges.</p>
+    <p class="fyibody">LinkedIn's data shown on EqualTogether is from a 2013 EEO-1 filing, included in their <a href="http://blog.linkedin.com/2014/06/12/linkedins-workforce-diversity/">June 12th blog post</a> presenting their workforce diversity (though the graphics in that post are cited as representing all employees worldwide, to date). This information is publicly available, and presented here to offer the most complete window we can into Tech's diversity challenges.</p>
   </div>
 </div>
 </div>
@@ -711,83 +719,62 @@ document.write(yearspast+tail+" "+countunit)
 <!------------------------------------ CorpBar ------------------------------------>    
 <div id="CorpBar">
     <div id="ThreeWeebles"></div>
-    <div id="EmployeeCount">4,263<span class="hereworld">us</span></div>
-    <div id="Founded">Founded<span class="citydate">Cambridge, 2004</span></div>
+    <div id="EmployeeCount">3,319<span class="hereworld">us</span></div>
+    <div id="Founded">Founded<span class="citydate">Mountain View, 2002</span></div>
     <div id="WeebleOffice-1">
         <div id="OneWeeble-1"></div>
         <span class="percentnumber">--</span><span class="percentsymbol">%</span>
-        <p class="addy">1 Hacker Way</p>
-        <p class="addy">Menlo Park, CA 95307</p>
+        <p class="addy">2029 Stierlin Ct.</p>
+        <p class="addy">Mountain View, CA 94043</p>
     </div>
     <div id="WeebleOffice-2">
         <div id="OneWeeble-2"></div>
         <span class="percentnumber">--</span><span class="percentsymbol">%</span>
-        <p class="addy">300 W. 6th st.</p>
-        <p class="addy">Austin, TX 78701</p>
+        <p class="addy">One Montgomery</p>
+        <p class="addy">San Francisco, CA 94104</p>
     </div>
     <div id="WeebleOffice-3">
         <div id="OneWeeble-2"></div>
         <span class="percentnumber">--</span><span class="percentsymbol">%</span>
-        <p class="addy">1730 Minor Ave.</p>
-        <p class="addy">Seattle, WA 98101</p>
+        <p class="addy">350 5th Ave.</p>
+        <p class="addy">NY, NY 10118</p>
     </div>
  <div id="ManyOffices">
-    <div id="Office-4">
-        <p class="officepurpose">Product, Media, Gaming</p>
-        <p class="addy">770 Broadway</p>
-        <p class="addy">NY, NY 10003</p>
-    </div>
   <div id="Office-5">
-        <p class="officepurpose">Sales + Data Ops, North America</p>
-        <p class="addy3">Altoona, IA</p>
-        <p class="addy3">Ashburn, VA</p>
-        <p class="addy3">Atlanta, GA</p>
-        <p class="addy3">Boston, MA</p>
+        <p class="officepurpose">North America</p>
         <p class="addy3">Chicago, IL</p>
-        <p class="addy3">Dallas, TX</p>
-        <p class="addy3">Detroit, MI</p>
-        <p class="addy3">Forrest City, NC</p>
         <p class="addy3">Los Angeles, CA</p>
-        <p class="addy3">Miami, FL</p>
-        <p class="addy3">Prineville, OR</p>
-        <p class="addy3">Toronto, CA</p>
+        <p class="addy3">Omaha, NB</p>
+        <p class="addy3">Sunnyvale, CA</p>
         <p class="addy3">Washington, DC</p>
-        <p class="addy3">Woodland Hills, CA</p>
     </div>
     <div id="IntlOffices-1">
-        <p class="officepurpose">Latin America</p>
-        <p class="addy3">Bogotá</p>
-        <p class="addy3">Buenos Aires</p>
-        <p class="addy3">Mexico City</p>
+        <p class="officepurpose">Americas</p>
+        <p class="addy3">Toronto</p>
         <p class="addy3">São Paulo</p>
     </div>
      <div id="IntlOffices-2">
-        <p class="officepurpose">Europe + Middle East</p>
+        <p class="officepurpose">Middle East + Europe</p>
         <p class="addy3">Amsterdam</p>
-        <p class="addy3">Berlin</p>
-        <p class="addy3">Brussels</p>
+        <p class="addy3">Barcelona</p>
         <p class="addy3">Dubai</p>
         <p class="addy3">Dublin</p>
-        <p class="addy3">Hamburg</p>
         <p class="addy3">London</p>
-        <p class="addy3">Luleå</p>
         <p class="addy3">Madrid</p>
         <p class="addy3">Milan</p>
+        <p class="addy3">Munich</p>
         <p class="addy3">Paris</p>
         <p class="addy3">Stockholm</p>
-        <p class="addy3">Tel Aviv</p>
-        <p class="addy3">Warsaw</p>
     </div>
     <div id="IntlOffices-3">
         <p class="officepurpose">Asia + South Pacific</p>
-        <p class="addy3">Auckland</p>
+        <p class="addy3">Bangalore</p>
+        <p class="addy3">Beijing</p>
         <p class="addy3">Hong Kong</p>
-        <p class="addy3">Hyderabad</p>
-        <p class="addy3">Jakarta</p>
-        <p class="addy3">Malaysia</p>
         <p class="addy3">Melbourne</p>
+        <p class="addy3">Mumbai</p>
         <p class="addy3">New Delhi</p>
-        <p class="addy3">Seoul</p>
+        <p class="addy3">Perth</p>
         <p class="addy3">Singapore</p>
         <p class="addy3">Sydney</p>
         <p class="addy3">Tokyo</p>
@@ -809,16 +796,13 @@ document.write(yearspast+tail+" "+countunit)
 <!------------------------------------ Articles ------------------------------------>
 <div class="tab-pane fade active in" id="articles">
       <div id="testimony" class="article">
-        <div class="dateline"><span>25 June 2014</span></div>
-        <p class="article-h1">Building a More Diverse Facebook</p>
-        <span class="article-body"><p>Today we’re making Facebook’s current diversity figures available publicly for the first time.</p><p>At Facebook, diversity is essential to achieving our mission. We build products to connect the world, and this means we need a team that understands and reflects many different communities, backgrounds and cultures. Research also shows that diverse teams are better at solving complex problems and enjoy more dynamic workplaces. So at Facebook we’re serious about building a workplace that reflects a broad range of experience, thought, geography, age, background, gender, sexual orientation, language, culture and many other characteristics.</p><a href="http://newsroom.fb.com/news/2014/06/building-a-more-diverse-facebook/"> Continue Reading</a></p></span>
+        <div class="dateline"><span>21 August 2014</span></div>
+        <p class="article-h1">Diversity Matters, Always</p>
+        <div id="ceo-mug"></div>
+        <span class="article-body"><p>With diversity reports from large tech companies coming out steadily over the last few months, there has recently been a lot of talk in the community about what openness and inclusiveness mean in the workforce. While startups haven’t been a part of the dialogue to date, we thought we would do our part to contribute to what I believe is a very important conversation that all tech companies, large and small, should engage in as leaders.</p><p>Our mission at Indiegogo is to democratize access to capital by empowering anyone, anywhere to fund what matters to them. At its core, Indiegogo exists to promote equality of opportunity. And so far, we’re on track to achieve this vision.</p><a href="https://go.indiegogo.com/blog/2014/08/diversity-matters-always.html"> Continue Reading</a></p></span>
       </div>
-      <div class="article">
-        <div class="dateline"><span>14 October 2014</span></div>
-        <p class="article-h1">Austin Pride!</p>
-        <span class="article-body"><p>For the fourth consecutive year, Facebook Austin employees, along with family and friends, participated in the Austin Pride festivities. Thanks to those that stopped by our booth and celebrated with us in the parade. In case you missed it, or you want to relive it, check out this short video of the event</p><p><a href="https://www.facebook.com/video.php?v=959798270704263"><IMG SRC="../images/fbpridevideo_fakie.png" ALT="Video Fakie"></a></p>
-      </div>
-</div>     
+ </div>     
+    
     
 <!------------------------------------ Leadership ------------------------------------>    
 <div class="tab-pane fade" id="leadership">
@@ -827,111 +811,73 @@ document.write(yearspast+tail+" "+countunit)
       <div id="execcy_head" class="execs-head">Executive Team<span class="execs-headcomp">2013 Total Cash Compensation</span>
       </div>
       <div class="exec">
-         <p class="exec-name">Mark Zuckerberg, <script>
-       displayage(1984, 05, 14, "years", 0, "rounddown")
+         <p class="exec-name">Jeff Weiner, <script>
+       displayage(1970, 02, 23, "years", 0, "rounddown")
        </script></p>
-         <p><span class="exec-title">Founder, CEO</span>
-            <span class="exec-comp">$1<font color="#ffffff">00,000,000.00</font></span></p>
+         <p><span class="exec-title">CEO</span>
+            <span class="exec-comp">$1,678,281.00<font color="#ffffff">,0</font></span></p>
       </div>
       <div class="exec">
-         <p class="exec-name">Sheryl Sandberg, <script>
+         <p class="exec-name">Nick Besbeas, <script>
        displayage(1969, 08, 28, "years", 0, "rounddown")
        </script></p>
-         <p><span class="exec-title">COO</span>
-            <span class="exec-comp">$988,390.00<font color="#ffffff">0,00</font></span></p>
+         <p><span class="exec-title">VP, Marketing</span>
+            <span class="exec-comp">$988,390.00<font color="#ffffff">0,0</font></span></p>
       </div>
       <div class="exec">
-         <p class="exec-name">Dave Wehner, <script>
+         <p class="exec-name">Michael Callahan, <script>
        displayage(1969, 09, 29, "years", 0, "rounddown")
        </script></p>
-         <p><span class="exec-title">CFO</span>
-            <span class="exec-comp">n/r<font color="#ffffff">0,000,000.00</font></span></p>
+         <p><span class="exec-title">VP, General Counsel + Secretary</span>
+            <span class="exec-comp">n/r<font color="#ffffff">0,000,000.0</font></span></p>
       </div>
       <div class="exec">
-         <p class="exec-name">Mike Schroepfer, <script>
+         <p class="exec-name">Mike Gamson, <script>
        displayage(1975, 02, 01, "years", 0, "rounddown")
        </script></p>
-         <p><span class="exec-title">CTO, VP Engineering</span>
-            <span class="exec-comp">$710,824.00<font color="#ffffff">00,0</font></span></p>
+         <p><span class="exec-title">SVP, Global Solutions</span>
+            <span class="exec-comp">$888,250.00<font color="#ffffff">0,0</font></span></p>
       </div>
       <div class="exec">
-         <p class="exec-name">Chris Cox, <script>
-       displayage(1982, 09, 29, "years", 0, "rounddown")
-       </script></p>
-         <p><span class="exec-title">Chief Product Officer</span>
-            <span class="exec-comp">n/r<font color="#ffffff">0,000,000.00</font></span></p>
+         <p class="exec-name">Kevin Scott, age unknown</p>
+         <p><span class="exec-title">SVP, CFO</span>
+            <span class="exec-comp">$888,250.00<font color="#ffffff">0,0</font></span></p>
+      </div>
+      <div class="exec">
+         <p class="exec-name">Steve Sordello, age unknown</p>
+         <p><span class="exec-title">SVP, CFO</span>
+            <span class="exec-comp">$918,500.00<font color="#ffffff">0,0</font></span></p>
+      </div>
+      <div class="exec">
+         <p class="exec-name">Shannon Stubo, age unknown</p>
+         <p><span class="exec-title">VP, Corporate Communications</span>
+            <span class="exec-comp">n/r<font color="#ffffff">>,00,000.00</font></span></p>
+      </div>
+      <div class="exec">
+         <p class="exec-name">Pat Wadors, age unknown</p>
+         <p><span class="exec-title">VP, Global Talent Organization</span>
+            <span class="exec-comp">n/r<font color="#ffffff">>,00,000.00</font></span></p>
       </div>
    </div>
  </div>
     
 <!------------------------------------ Community ------------------------------------>        
-<div class="tab-pane fade" id="community">
-  <div id="communityprog">
-  	<div class="onengo">
-    	<div class="dateline"><span>Anita Borg Institute</span></div>
-       	<div id="aborg_logo"><a href="http://www.anitaborg.org"><img src="../images/anitaborg.gif" width="223" height="54" /></a></div>
-        <span class="article-body"><p>Women in technology are at the heart of ABI’s mission. We are on a quest to accelerate the pace of global innovation by working to ensure that the creators of technology mirror the people and societies who use it.</p><p>In 1987, computer scientist Anita Borg started a digital community for women in computing. Today, ABI works with women technologists in over 50 countries, and partners with leading academic institutions and Fortune 500 companies.</p></span>
- 	</div>
-  
-  	<div class="onengo">
-    	<div class="dateline"><span>Black Girls Code</span></div>
-       <div id="bgc_logo"><a href="http://www.blackgirlscode.com"><img src="../images/blackgirlscode.gif" width="208" height="116" /></a></div>
-        <span class="article-body"><p>By launching Black Girls Code, I hope to provide  young and pre-teen girls of color opportunities to learn in-demand skills in technology and computer programming at a time when they are naturally thinking about what they want to be when they grow up.</p><p>That, really, is the Black Girls Code mission:  to introduce programming and technology to a new generation of coders, coders who will become builders of technological innovation and of their own futures. -Kimberly Bryant, founder</p></span>
-  	</div>
-  
-  	<div class="onengo">
-    	<div class="dateline"><span>Girls Who Code</span></div>
-        <div id="gwc_logo"><a href="http://www.girlswhocode.com"><img src="../images/girlswhocode.gif" width="159" height="74" /></a></div>
-        <span class="article-body"><p>Girls Who Code programs work to inspire, educate, and equip girls with the computing skills to pursue 21st century opportunities.Our vision is to reach gender parity in computing fields.</p><p>We believe this is paramount to ensure the economic prosperity of women, families, and communities across the globe, and to equip citizens with the 21st century tools for innovation and social change. We believe that more girls exposed to computer science at a young age will lead to more women working in the technology and engineering fields.</p></span>
-  	</div>
-  
-  	<div class="onengo">
-    	<div class="dateline"><span>National Socity of Black Engineers</span></div>
-      	<div id="nsbe_logo"><a href="http://www.nsbe.org/home.aspx"><img src="../images/nsbe.gif" width="196" height="55" /></a></div>
-        <span class="article-body"><p>The mission of the National Society of Black Engineers is "to increase the number of culturally responsible Black Engineers who excel academically, succeed professionally and positively impact the community."</p>
-
-<p>The National Society of Black Engineers strives to accomplish the following objectives for our organization:</p>
-
-<ul><li>Stimulate and develop student interest in the various engineering disciplines</li>
-<li>Strive to increase the number of minority students studying engineering at both the undergraduate and graduate levels</li> 
-<li>Encourage members to seek advanced degrees in engineering or related fields and to obtain professional engineering registrations</li>
-<li>Promote public awareness of engineering and the opportunities for Blacks and other minorities in that profession</li>
-<li>Function as a representative body on issues and developments that affect the careers of Black Engineers</li></ul>  </p></span>
-  	</div>
-  
-  	<div class="onengo">
-    	<div class="dateline"><span>Management Leadership for Tomorrow</span></div>
-       <div id="mlt_logo"><a href="http://www.ml4t.org/"><img src="../images/mlt.gif" width="124" height="80" /></a></div>
-        <span class="article-body"><p>Management Leadership for Tomorrow (MLT) is the premier career development institution that equips high potential African Americans, Hispanics and Native Americans with the key ingredients—skills, coaching and door-opening relationships—that unlock their potential.</p></span>
-  	</div>
-  
-  	<div class="onengo">
-    	<div class="dateline"><span>#yeswecode</span></div>
-       	<div id="ywc_logo"><a href="http://www.yeswecode.org"><img src="../images/yeswecode.gif" width="231" height="34" /></a></div>
-        <span class="article-body"><p>The #YesWeCode initiative targets low-opportunity youth and provides them with the necessary resources and tools to become world-class computer programmers. By learning this highly valuable and relevant 21st century skill, these young people are shifting the trajectory of their futures and transforming their relationships with their communities and their country.
-</p></span>
-  	</div>
-  
-  	<div class="onengo">
-    	<div class="dateline"><span>Society of Hispanic Professional Engineers</span></div>
-       	<div id="shpe_logo"><a href="http://national.shpe.org/"><img src="../images/shpe.gif" width="389" height="46" /></a></div>
-        <span class="article-body"><p>The Society of Hispanic Professional Engineers (SHPE) was founded in Los Angeles, California, in 1974 by a group of engineers employed by the city of Los Angeles. Their objective was to form a national organization of professional engineers to serve as role models in the Hispanic community.</p>
-
-<p>SHPE changes lives by empowering the Hispanic community to realize its fullest potential and to impact the world through STEM awareness, access, support and development. SHPE's vision is a world where Hispanics are highly valued and influe</p></span>
-  	</div>
-  
-  	<div class="onengo">
-    	<div class="dateline"><span>National Center for Women and Information Technnology</span></div>
-       <div id="ncwit_logo"><a href="http://www.ncwit.org/"><img src="../images/ncwit.gif" width="145" height="133" /></a></div>
-        <span class="article-body"><p>NCWIT works to correct the imbalance of gender diversity in technology and computing because gender diversity positively correlates with a larger workforce, better innovation, and increased business performance. Increasing the number of women in technology and computing also has the potential to improve the design of products and services to better serve a more diverse population, and increase economic and social well-being by providing more women with stable and lucrative careers.</p></span>
-  	</div>
-  </div>
-</div>
-
+    <div class="tab-pane fade" id="community">
+    <div id="communitystuff">
+      <div class="panel panel-info">
+         <div class="panel-heading">
+            <h3 class="panel-title">Placeholder for logos</h3>
+            </div>
+            <div class="panel-body">
+            <p class="fyibody">Anita Borg, National Center for Women in IT, Facebook U, Girls Who Code, Code 2040, Dational Society of Black Engineers, Society of Hispanic Professional Engineers, Management Leadership for Tomorrow. Yes We Code.</p>
+           </div>
+         </div>
+       </div>
+     </div>
+    </div>
 
 <!---------------------- Nacho Momma's NonProfit ---------------------------->
 
-</div>
 <div id="endpage_blahdeda">
    <p class="footy-blather-header">EqualTogether is a project of HumanAxis</p>
    <p class="footy-blather">HumanAxis is a 501(c)3, under the proud fiscal sponsorship of the NetRoots Foundation. Yep, you read that correctly: this whole shebang is being done as a non-profit. A competitively priced B2B SAAS platform serving curated content and workforce analytics, developed by industry vets who aren't in it to become billionaires—but are in this to get results. A business in the same game as all the other Delaware C-Corps, but without the VCs, without valuation goals, and with a  social entrepreneurship purpose. Expectations are high, and we seek to crush them.</p> 

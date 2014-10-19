@@ -32,13 +32,23 @@ body {
 	z-index:3;
 }
 
+#masthead-indiegogo {
+	position:absolute;
+	left:0px;
+	top:50px;
+	width:100%;
+	height:75px;
+	background-color: #d6457e;
+	z-index:3;
+}
+
 #masthead-airbnb {
 	position:absolute;
 	left:0px;
 	top:50px;
 	width:100%;
 	height:75px;
-	background-color: #f45c5b3;
+	background-color: #fd5f5e;
 	z-index:3;
 }
 
@@ -48,7 +58,7 @@ body {
 	top:50px;
 	width:100%;
 	height:75px;
-	background-color: #062f67;
+	background-color: #0e3562;
 	z-index:3;
 }
 
@@ -82,43 +92,13 @@ body {
 	z-index:3;
 }
 
-#masthead-groupon {
-	position:absolute;
-	left:0px;
-	top:50px;
-	width:100%;
-	height:75px;
-	background-color: #829b47;
-	z-index:3;
-}
-
-#masthead-pandora {
-	position:absolute;
-	left:0px;
-	top:50px;
-	width:100%;
-	height:75px;
-	background-color: #02538a;
-	z-index:3;
-}
-
 #masthead-pinterest {
 	position:absolute;
 	left:0px;
 	top:50px;
 	width:100%;
 	height:75px;
-	background-color: #d72c25;
-	z-index:3;
-}
-
-#masthead-salesforce {
-	position:absolute;
-	left:0px;
-	top:50px;
-	width:100%;
-	height:75px;
-	background-color: #3e9edc;
+	background-color: #d72b26;
 	z-index:3;
 }
 
@@ -478,6 +458,7 @@ p.datestamp-year {
 	font-family: 'Montserrat', sans-serif;
 	font-weight:600;
     font-size: 11px;
+	margin-bottom:5px;
 }
 
 .dateline span {
@@ -499,8 +480,8 @@ p.datestamp-year {
 .article-body {
 	font-family: 'Open-Sans', sans-serif;
 	font-weight:300;
-  font-size:15px;
-	line-height:19px;
+    font-size:15px;
+	line-height:20px;
 	color: #555;
 }
 
@@ -510,6 +491,7 @@ p.datestamp-year {
 	padding-bottom:15px;
 	z-index:4;
 }
+
 
 /* Leadership */
 
@@ -582,6 +564,7 @@ p.datestamp-year {
 
 
 /* Pact Things */
+
 .pact-headline {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
@@ -674,7 +657,9 @@ p.datestamp-year {
 	padding-top:15px;
 }
 
-/* Prices */
+
+
+/* Price Sheet */
 
 .prices-year {
 	display:block;
@@ -728,5 +713,118 @@ p.datestamp-year {
 }
 
 
+/* Community Programming Styles */
+
+#communityprog a:hover {
+    opacity:0.6;
+    filter:alpha(opacity=60); 
+}
+
+#communityprog {
+	position:absolute;
+	width:700px;
+	height:100%;
+    top:10px;
+	left:10px;
+	z-index:4;
+	margin-bottom:50px;
+}
+
+.onengo {
+    position:relative;
+	display:block;
+	margin-top:50px;
+	z-index:4;
+}
+
+#aborg_logo {
+    float:left;
+	width:223px;
+	height:54px;
+	margin-top:10px;
+	margin-right:20px;
+	margin-bottom:10px;
+	margin-left:0px;
+}
+
+#bgc_logo {
+    float:left;
+	width:208px;
+	height:116px;
+	margin-top:10px;
+	margin-right:20px;
+	margin-bottom:15px;
+	margin-left:0px;
+}
+
+#gwc_logo {
+    float:left;
+	width:159px;
+	height:74px;
+	margin-top:15px;
+	margin-right:20px;
+	margin-bottom:10px;
+	margin-left:0px;
+}
+
+#mlt_logo {
+    float:left;
+	width:124px;
+	height:80px;
+	margin-top:15px;
+	margin-right:20px;
+	margin-bottom:10px;
+	margin-left:0px;
+}
+
+#nsbe_logo {
+    float:left;
+	width:196px;
+	height:55px;
+	margin-top:15px;
+	margin-right:20px;
+	margin-bottom:10px;
+	margin-left:0px;
+}
+
+#2040_logo {
+    float:left;
+	width:196px;
+	height:55px;
+	margin-top:15px;
+	margin-right:20px;
+	margin-bottom:10px;
+	margin-left:0px;
+}
+
+#ywc_logo {
+    float:left;
+	width:231px;
+	height:34px;
+	margin-top:15px;
+	margin-right:20px;
+	margin-bottom:10px;
+	margin-left:0px;
+}
+
+#shpe_logo {
+    float:left;
+	width:389px;
+	height:46px;
+	margin-top:15px;
+	margin-right:20px;
+	margin-bottom:10px;
+	margin-left:0px;
+}
+
+#ncwit_logo {
+    float:left;
+	width:145px;
+	height:133px;
+	margin-top:15px;
+	margin-right:20px;
+	margin-bottom:10px;
+	margin-left:0px;
+}
 
 
