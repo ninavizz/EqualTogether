@@ -181,14 +181,6 @@ document.write(yearspast+tail+" "+countunit)
 
 <!-- Lame-assed embedded styles -->
 <style type="text/css">
-#mrsketchy {
-	position:absolute;
-	left:0px;
-	top:55px;
-	width:1140px;
-	height:79px;
-	z-index:2;
-}
 
 #NavBar-Masthead {
 	position:absolute;
@@ -207,6 +199,7 @@ document.write(yearspast+tail+" "+countunit)
 	z-index:6;
 	background-color: #000000;
 }
+
 #BrandID {
 	position:absolute;
 	left:554px;
@@ -271,25 +264,16 @@ document.write(yearspast+tail+" "+countunit)
 	height:72px;
 	z-index:6;
 }
+
 #CorpBar {
 	position:absolute;
 	top:470px;
 	left:100px;
-	width:1700px
-	height:800px;
-}
-#ThreeWeebles {
-	position:absolute;
-	left:0px;
-	top:3px;
-	width:38px;
-	height:25px;
+	width:300px;
+	height:1500px;
 	z-index:4;
-	background-image: url('../images/BrandIMG_Yahoo.png');
-	background-size: 308px 99px;
-	background-repeat: no-repeat;
-	background-position:-205px -7px;
 }
+
 #EmployeeCount {
 	position:absolute;
 	left:40px;
@@ -440,31 +424,6 @@ document.write(yearspast+tail+" "+countunit)
 	padding-left:4px;
 }
 
-#OneWeeble-1 {
-	position:absolute;
-	top:4px;
-    left:0;
-	width:23px;
-	height:22px;
-	background-image: url('../images/BrandIMG_Yahoo.png');
-	background-size: 325px 107px;
-	background-repeat: no-repeat;
-	background-position:-215px -44px;
-	z-index:4;
-}
-#OneWeeble-2 {
-	position:absolute;
-	left:0px;
-	top:4px;
-	width:23px;
-	height:22px;
-	background-image: url('../images/BrandIMG_Yahoo.png');
-	background-size: 325px 107px;
-	background-repeat: no-repeat;
-	background-position:-215px -44px;
-	z-index:4;
-}
-
 #tabbytabs {
 	position:absolute;
 	background-color:#ffffff;
@@ -511,29 +470,6 @@ document.write(yearspast+tail+" "+countunit)
 	z-index:4;
 }
 
-#ceo-mug {
-	float:left;
-	margin-top:5px;
-	margin-right:20px;
-	margin-bottom:20px;
-	width:78px;
-	height:78px;
-	background-image: url('../images/BrandIMG_Yahoo.png');
-    background-size: 486px 155px;
-	background-repeat: no-repeat;
-	background-position:-400px -7px;
-}
-
-#exec_weebles {
-	width:600px;
-	height:350px;
-	position:absolute;
-	top:30px;
-	left:-20px;
-	background-image: url('../images/execs_yahoo.png');
-	background-repeat:no-repeat;
-}
-
 #execs_list {
 	width:600px;
 	height:400px;
@@ -552,10 +488,20 @@ document.write(yearspast+tail+" "+countunit)
 	border-bottom:solid 2px #222;
 }
 
+#communitystuff {
+	position:absolute;
+	width:600px;
+	height:400px;
+	top:40px;
+	left:10px;
+	z-index:4;
+}
+
 #endpage_blahdeda {
 	position:absolute;
 	width:100%;
 	height:175px;
+	left:0px;
 	top:2000px;
 	background-color:#eee;
 	z-index:1;
@@ -565,56 +511,126 @@ document.write(yearspast+tail+" "+countunit)
   margin-bottom: 50px;
 }
 
-#slideout {
-    position:absolute;
-    top: 2000px;
-	height:50px;
-    left: 0;
-    width: 100%;
-    padding: 10px 0;
+/* Branded Attributes */
+
+.percentnumber {
+	font-family: 'Montserrat', sans-serif;
+	font-weight:700;
+    font-size: 16px;
+	line-height: 30px;
+    color: #40009D;
     text-align: left;
-    background: #BBB;
-    -webkit-transition-duration: 0.3s;
-    -moz-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -o-transition-duration: 0.3s;
-    -webkit-border-radius: 0 5px 5px 0;
-    -moz-border-radius: 0 5px 5px 0;
-    border-radius: 0 5px 5px 0;
+	padding-left:22px;
 }
-#slideout_inner {
-    position:absolute;
-    top: 2050px;
-    background: #CCC;
-    width: 100%;
-    padding: 50px;
-    height: 300px;
-    -webkit-transition-duration: 0.3s;
-    -moz-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -o-transition-duration: 0.3s;
+.percentsymbol {
+	font-family: 'Montserrat', sans-serif;
+	font-weight:400;
+    font-size: 16px;
+	line-height: 30px;
+    color: #40009D;
     text-align: left;
-    -webkit-border-radius: 0 0 5px 0;
-    -moz-border-radius: 0 0 5px 0;
-    border-radius: 0 0 5px 0;
+	padding-left:1px;
 }
-#slideout_inner textarea {
-    width: 190px;
-    height: 100px;
-    margin-bottom: 6px;
+.hereworld {
+	font-weight:400;
+	font-variant:small-caps;
+    font-size: 24px;
+    color: #40009D;
+    text-align:left;
+	padding-left:2px;
 }
-#slideout:hover {
-    bottom: 1700px;
+
+.officepurpose {
+	font-family: 'Open Sans', sans-serif;
+	font-style:italic;
+	font-weight:300;
+    font-size:12px;
+	line-height:9px;
+    color: #40009D;
+    text-align: left;
 }
-#slideout:hover #slideout_inner {
-    left: 0;
+.us-world {
+	font-weight:400;
+	font-variant:small-caps;
+    font-size: 24px;
+    color: #40009D;
+    text-align:left;
+	padding-left:2px;
+}
+.article-h1 {
+	font-family: 'Open-Sans', sans-serif;
+	font-weight:300;
+    font-size: 30px;
+	color: #40009D;
+	padding-top:30px;
+}
+
+#ThreeWeebles {
+	position:absolute;
+	left:0px;
+	top:3px;
+	width:38px;
+	height:25px;
+	z-index:4;
+	background-image: url('../images/BrandIMG_Yahoo.png');
+	background-size: 308px 99px;
+	background-repeat: no-repeat;
+	background-position:-205px -7px;
+}
+
+#ceo-mug {
+	float:left;
+	margin-top:5px;
+	margin-right:20px;
+	margin-bottom:20px;
+	width:78px;
+	height:78px;
+	background-image: url('../images/BrandIMG_Yahoo.png');
+    background-size: 486px 155px;
+	background-repeat: no-repeat;
+	background-position:-400px -7px;
+}
+
+#OneWeeble-1 {
+	position:absolute;
+	top:4px;
+    left:0;
+	width:23px;
+	height:22px;
+	background-image: url('../images/BrandIMG_Yahoo.png');
+	background-size: 325px 107px;
+	background-repeat: no-repeat;
+	background-position:-215px -44px;
+	z-index:4;
+}
+#OneWeeble-2 {
+	position:absolute;
+	left:0px;
+	top:4px;
+	width:23px;
+	height:22px;
+	background-image: url('../images/BrandIMG_Yahoo.png');
+	background-size: 325px 107px;
+	background-repeat: no-repeat;
+	background-position:-215px -44px;
+	z-index:4;
+}
+
+#exec_weebles {
+	width:600px;
+	height:350px;
+	position:absolute;
+	top:30px;
+	left:-20px;
+	background-image: url('../images/execs_yahoo.png');
+	background-repeat:no-repeat;
 }
 
 </style>
 </head>
 
 <body>
-<!---------------------------- Bootstrap Template Fed navbar -------------------------------->
+<!---------------------------- Bootstrap Template Navbar -------------------------------->
     <div id="NavBar-Masthead"></div>
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
@@ -625,7 +641,7 @@ document.write(yearspast+tail+" "+countunit)
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <div id="NavBar-Masthead"><a href="#"><img src="../images/et_mastheadlogo.png" width="164" height="19" alt="Home"></a></div>
+          <div id="NavBar-Masthead"><a href="http://www.equaltogether.com"><img src="../images/et_mastheadlogo.png" width="164" height="19" alt="Home"></a></div>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -672,27 +688,27 @@ document.write(yearspast+tail+" "+countunit)
 </div>
 
 <!------------------------------------ Begin page content ------------------------------------>
-<div id="masthead-yahoo"><img src="images/tppagemasthead-yahoo.png" alt="Yahoo!" width="195" height="75" class="masthead-img"></div>
+<div id="masthead-yahoo"><img src="../images/tppagemasthead-yahoo.png" alt="Yahoo!" width="195" height="75" class="masthead-img"></div>
    
 <!------------------------------------ Charts ------------------------------------>       
 <div id="container">
    <div id="datestamp">
-      <p class="datestamp-month">sept</p>
-      <p class="datestamp-day">23</p>
+      <p class="datestamp-month">july</p>
+      <p class="datestamp-day">31</p>
       <p class="datestamp-year">2013</p>
    </div>
    <div id="chart_race"></div>
    <div id="chart_gender"></div>
    <div id="NiceLegend">
-     <p><span class="numbmen">38%</span><span class="men">male</span></p>
-     <p><span class="numbwomen">57%</span><span class="women">female</span></p>
-     <p><span class="numbother">5%</span><span class="other">other</span></p>
+     <p><span class="numbmen">66%</span><span class="men">male</span></p>
+     <p><span class="numbwomen">33%</span><span class="women">female</span></p>
+     <p><span class="numbother">0%</span><span class="other">other</span></p>
      <p>&nbsp;</p>
-     <p><span class="numbwhite">49%</span><span class="white">white</span></p>
-     <p><span class="numbasian">19%</span><span class="asian">asian</span></p>
+     <p><span class="numbwhite">54%</span><span class="white">white</span></p>
+     <p><span class="numbasian">37%</span><span class="asian">asian</span></p>
      <p><span class="numbblack">2%</span><span class="black">black</span></p>
-     <p><span class="numblatino">4%</span><span class="latino">latino</span></p>
-     <p><span class="numbother">8%</span><span class="other">other</span></p>
+     <p><span class="numblatino">5%</span><span class="latino">latino</span></p>
+     <p><span class="numbother">2%</span><span class="other">other</span></p>
      <p>&nbsp;</p>
    </div>
 </div>
@@ -702,7 +718,7 @@ document.write(yearspast+tail+" "+countunit)
     <h3 class="panel-title">Independently Disclosed Data</h3>
   </div>
   <div class="panel-body">
-    <p class="fyibody">Yahoo!'s data shown on EqualTogether is from their Q4-2013 EEO-1 filing, cited as the source of their <a href="#">June 17th blog post</a> presenting their workforce diversity. This information is publicly available, and presented here to offer the most complete window we can into Tech's diversity challenges.</p>
+    <p class="fyibody">Yahoo!'s data shown on EqualTogether is from their Q4-2013 EEO-1 filing, cited as the source of their <a href="http://yahoo.tumblr.com/post/89085398949/workforce-diversity-at-yahoo">June 17th blog post</a> presenting their workforce diversity. This information is publicly available, and presented here to offer the most complete window we can into Tech's diversity challenges.</p>
   </div>
 </div>
 </div>
@@ -711,29 +727,29 @@ document.write(yearspast+tail+" "+countunit)
 <!------------------------------------ CorpBar ------------------------------------>    
 <div id="CorpBar">
     <div id="ThreeWeebles"></div>
-    <div id="EmployeeCount">3,300<span class="hereworld">us</span></div>
+    <div id="EmployeeCount">6,138<span class="hereworld">us</span></div>
     <div id="Founded">Founded<span class="citydate">Sunnyvale, 1995</span></div>
     <div id="WeebleOffice-1">
         <div id="OneWeeble-1"></div>
-        <span class="percentnumber">72</span><span class="percentsymbol">%</span>
+        <span class="percentnumber">--</span><span class="percentsymbol">%</span>
         <p class="addy">701 First Avenue</p>
         <p class="addy">Sunnyvale, CA 95307</p>
     </div>
     <div id="WeebleOffice-2">
         <div id="OneWeeble-2"></div>
-        <span class="percentnumber">12</span><span class="percentsymbol">%</span>
+        <span class="percentnumber">--</span><span class="percentsymbol">%</span>
         <p class="addy">555 Mission St.</p>
         <p class="addy">San Francisco, CA 94105</p>
     </div>
     <div id="WeebleOffice-3">
         <div id="OneWeeble-2"></div>
-        <span class="percentnumber">10</span><span class="percentsymbol">%</span>
+        <span class="percentnumber">--</span><span class="percentsymbol">%</span>
         <p class="addy">229 W. 43rd St.</p>
         <p class="addy">NYC, NY 20012</p>
     </div>
     <div id="WeebleOffice-4">
         <div id="OneWeeble-2"></div>
-        <span class="percentnumber">6</span><span class="percentsymbol">%</span>
+        <span class="percentnumber">-</span><span class="percentsymbol">%</span>
         <p class="addy">2450 Broadway</p>
         <p class="addy">Santa Monica, CA 90210</p>
     </div>
@@ -795,42 +811,18 @@ document.write(yearspast+tail+" "+countunit)
     <li><a href="#community" role="tab" data-toggle="tab">Community Support</a></li>
   </ul>
 </div>
-
-<!------------------------------- Tabby Content ------------------------------->
 <div id="tabby_content" class="tab-content">
 
 
 <!------------------------------------ Articles ------------------------------------>
 <div class="tab-pane fade active in" id="articles">
       <div id="testimony" class="article">
-        <div class="dateline"><span>02 August 2014</span></div>
-        <p class="article-h1">Q: Yahoo?<p>
-        <div id="ceo-mug"></div>
-        <span class="article-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer viverra interdum odio, ut elementum magna eleifend vitae. Aliquam ac commodo diam. Praesent venenatis eleifend commodo. Pellentesque faucibus dui sed blandit posuere. Sed et magna ac lectus porta interdum sodales a odio.</p>
-        <p>Suspendisse pharetra, neque eget eleifend fringilla, nisi est malesuada lacus, at varius neque elit id neque. Praesent egestas nisi turpis, ac imperdiet ante commodo id. Aenean volutpat dui quis malesuada convallis. Phasellus varius lectus ut lectus eleifend hendrerit. Duis viverra magna a purus aliquet, et malesuada ex consectetur. Sed ut mi pretium, tempus eros at, pulvinar libero.</p><p>-Maude Lebowski, CEO</span>
+        <div class="dateline"><span>17 June 2014</span></div>
+        <p class="article-h1">Workforce Diversity at Yahoo</p>
+        <span class="article-body"><p>Here at Yahoo we are committed to attracting, developing and retaining a diverse workforce. We’re in the business of building products for hundreds of millions of users worldwide and that starts with having the best possible talent - a Yahoo team that understands and reflects our diverse user base.</p>
+        <p>Today, we are happy to join others in the tech industry in disclosing specifics around the diversity of Yahoo’s workforce. The charts below detail gender and ethnicity statistics (as self reported) and how they break out across technical, non-technical and leadership roles across the company.</p><p><a href="http://yahoo.tumblr.com/post/89085398949/workforce-diversity-at-yahoo"> Continue Reading</a></p></span>
       </div>
-      <div class="article">
-        <div class="dateline"><span>14 June 2014</span></div>
-        <p class="article-h1">Here's What Happens, He Abides!</p>
-        <span class="article-body"><p>Etiam elementum lorem vel fermentum tempus. Vivamus quis leo pulvinar ligula iaculis pulvinar. Curabitur dapibus dictum tempor. Mauris felis elit, consectetur id suscipit vitae, elementum ut purus. Ut dolor enim, posuere vel efficitur ac, interdum vitae sem. Curabitur luctus rhoncus diam sit amet dignissim. Donec quis eros enim. Vivamus porta neque et commodo porta. Duis lobortis augue tortor, a cursus erat aliquam hendrerit.</p>
-       
-        <p>Nam magna justo, pharetra in libero nec, feugiat maximus enim. Mauris finibus tellus dolor, ultricies consectetur nibh ultricies feugiat. Vivamus aliquet vehicula quam, accumsan accumsan nulla auctor ut. Donec ut viverra purus, non bibendum ex. In auctor lacus at quam rutrum, ut euismod orci interdum. Integer at ultrices orci. Duis fermentum, dolor in ullamcorper scelerisque, metus nunc faucibus ex, hendrerit sodales diam dui sed orci.</p></span>
-      </div>
-      <div class="article">
-        <div class="dateline"><span>27 May 2014</span></div>
-        <p class="article-h1">My Rug!</p>
-        <span class="article-body"><p>Etiam elementum lorem vel fermentum tempus. Vivamus quis leo pulvinar ligula iaculis pulvinar. Curabitur dapibus dictum tempor. Mauris felis elit, consectetur id suscipit vitae, elementum ut purus. Ut dolor enim, posuere vel efficitur ac, interdum vitae sem. Curabitur luctus rhoncus diam sit amet dignissim. Donec quis eros enim. Vivamus porta neque et commodo porta. Duis lobortis augue tortor, a cursus erat aliquam hendrerit.</p>
-       
-        <p>Nam magna justo, pharetra in libero nec, feugiat maximus enim. Mauris finibus tellus dolor, ultricies consectetur nibh ultricies feugiat. Vivamus aliquet vehicula quam, accumsan accumsan nulla auctor ut. Donec ut viverra purus, non bibendum ex. In auctor lacus at quam rutrum, ut euismod orci interdum. Integer at ultrices orci. Duis fermentum, dolor in ullamcorper scelerisque, metus nunc faucibus ex, hendrerit sodales diam dui sed orci.</p></span>
-      </div>
-      <div class="article">
-        <div class="dateline"><span>05 May 2014</span></div>
-        <p class="article-h1">Bowling</p>
-        <span class="article-body"><p>Etiam elementum lorem vel fermentum tempus. Vivamus quis leo pulvinar ligula iaculis pulvinar. Curabitur dapibus dictum tempor. Mauris felis elit, consectetur id suscipit vitae, elementum ut purus. Ut dolor enim, posuere vel efficitur ac, interdum vitae sem. Curabitur luctus rhoncus diam sit amet dignissim. Donec quis eros enim. Vivamus porta neque et commodo porta. Duis lobortis augue tortor, a cursus erat aliquam hendrerit.</p>
-       
-        <p>Nam magna justo, pharetra in libero nec, feugiat maximus enim. Mauris finibus tellus dolor, ultricies consectetur nibh ultricies feugiat. Vivamus aliquet vehicula quam, accumsan accumsan nulla auctor ut. Donec ut viverra purus, non bibendum ex. In auctor lacus at quam rutrum, ut euismod orci interdum. Integer at ultrices orci. Duis fermentum, dolor in ullamcorper scelerisque, metus nunc faucibus ex, hendrerit sodales diam dui sed orci.</p></span>
-      </div>
-    </div>
+ </div>     
     
     
 <!------------------------------------ Leadership ------------------------------------>    
@@ -896,82 +888,71 @@ document.write(yearspast+tail+" "+countunit)
             <span class="exec-comp">n/r<font color="#ffffff">000,000,000</font></span></p>
       </div>
       <div class="exec">
-         <p class="exec-name">Laurie Mann, <script>
-       displayage(1992, 10, 28, "years", 0, "rounddown")
-       </script></p>
+         <p class="exec-name">Laurie Mann, age unknown</p>
          <p><span class="exec-title">SVP, Search Products</span>
             <span class="exec-comp">n/r<font color="#ffffff">000,000,000</font></span></p>
       </div>
       <div class="exec">
-         <p class="exec-name">Jeff Bonaforte, <script>
-       displayage(1992, 10, 28, "years", 0, "rounddown")
-       </script></p>
+         <p class="exec-name">Jeff Bonaforte, age unknown</p>
          <p><span class="exec-title">SVP, Communication Products</span>
             <span class="exec-comp">n/r<font color="#ffffff">000,000,000</font></span></p>
       </div>
       <div class="exec">
-         <p class="exec-name">Scott Burke, <script>
-       displayage(1992, 10, 28, "years", 0, "rounddown")
-       </script></p>
+         <p class="exec-name">Scott Burke, age unknown</p>
          <p><span class="exec-title">SVP, Advertising Technology</span>
             <span class="exec-comp">n/r<font color="#ffffff">000,000,000</font></span></p>
       </div>
       <div class="exec">
-         <p class="exec-name">Jay Rossiter, <script>
-       displayage(1992, 10, 28, "years", 0, "rounddown")
-       </script></p>
+         <p class="exec-name">Jay Rossiter, age unknown</p>
          <p><span class="exec-title">SVP, Platforms</span>
             <span class="exec-comp">n/r<font color="#ffffff">000,000,000</font></span></p>
       </div>
       <div class="exec">
-         <p class="exec-name">Mike Kail, <script>
-       displayage(1992, 10, 28, "years", 0, "rounddown")
-       </script></p>
+         <p class="exec-name">Mike Kail, age unknown</p>
          <p><span class="exec-title">SVP, CIO</span>
             <span class="exec-comp">n/r<font color="#ffffff">000,000,000</font></span></p>
       </div>
       <div class="exec">
-         <p class="exec-name">Ned Brody, <script>
-       displayage(1992, 10, 28, "years", 0, "rounddown")
-       </script></p>
+         <p class="exec-name">Ned Brody, age unknown</p>
          <p><span class="exec-title">Head of Americas</span>
             <span class="exec-comp">n/r<font color="#ffffff">000,000,000</font></span></p>
       </div>
       <div class="exec">
-         <p class="exec-name">Dawn Airey, <script>
-       displayage(1992, 10, 28, "years", 0, "rounddown")
-       </script></p>
+         <p class="exec-name">Dawn Airey, age unknown</p>
          <p><span class="exec-title">SVP, Europe, Middle East, and Africa</span>
             <span class="exec-comp">n/r<font color="#ffffff">000,000,000</font></span></p>
       </div>
       <div class="exec">
-         <p class="exec-name">Rose Tsou, <script>
-       displayage(1992, 10, 28, "years", 0, "rounddown")
-       </script></p>
+         <p class="exec-name">Rose Tsou, age unknown</p>
          <p><span class="exec-title">SVP, Asia Pacific</span>
             <span class="exec-comp">n/r<font color="#ffffff">000,000,000</font></span></p>
       </div>
    </div>
-    </div>
+ </div>
     
 <!------------------------------------ Community ------------------------------------>        
     <div class="tab-pane fade" id="community">
-      <h4>Community Support</h4>
+    <div id="communitystuff">
+      <div class="panel panel-info">
+         <div class="panel-heading">
+            <h3 class="panel-title">Information Not Known</h3>
+            </div>
+            <div class="panel-body">
+            <p class="fyibody">No information is available about Yahoo!'s financial or in-kind support of non-profits seeking to address equality of workforce opportunity issues. EqualTogether does hope to work with Yahoo! as a Partner Company, and should this happen we look forward to shining a warm spotlight on efforts we're confident are happening behind the scenes... and want to celebrate, here.</p>
+           </div>
+         </div>
+       </div>
+     </div>
     </div>
-  </div>
 
 <!---------------------- Nacho Momma's NonProfit ---------------------------->
 
 <div id="endpage_blahdeda">
    <p class="footy-blather-header">EqualTogether is a project of HumanAxis</p>
-   <p class="footy-blather">HumanAxis is a 501(c)3, under the proud fiscal sponsorship of the NetRoots Foundation. Yep, you read that correctly: this whole shebang is being done as a non-profit. A competitively priced B2B SAAS platform serving curated content and workforce analytics, developed by industry vets who aren't in it to become billionaires—but are in this to get results. A business in the same game as all the other Delaware C-Corps, but without the VCs, without valuation goals, and with a  social entrepreneurship purpose. Expectations are high, and we seek to crush them.
-</p> 
+   <p class="footy-blather">HumanAxis is a 501(c)3, under the proud fiscal sponsorship of the NetRoots Foundation. Yep, you read that correctly: this whole shebang is being done as a non-profit. A competitively priced B2B SAAS platform serving curated content and workforce analytics, developed by industry vets who aren't in it to become billionaires—but are in this to get results. A business in the same game as all the other Delaware C-Corps, but without the VCs, without valuation goals, and with a  social entrepreneurship purpose. Expectations are high, and we seek to crush them.</p> 
 </div>
 
 <!---------------------- Footer Footer Footer Footer ---------------------------->
-
-
-
   <div class="footer-filler">
   </div>
 
@@ -983,7 +964,7 @@ document.write(yearspast+tail+" "+countunit)
       </div>
     </div>
 
-<!---------------------- Bootstrap Template Fixed Footer Was Buggy---------------------------->
+
 
 
 
