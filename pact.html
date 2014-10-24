@@ -53,10 +53,18 @@
 	z-index:7;
 }
 
+#TopBlurbz {
+	position:relative;
+	float:left;
+	width:650px;
+	height:100%;
+	z-index:7;
+}
+
 #PactGuts {
 	position:absolute;
 	left:0px;
-	top:215px;
+	top:330px;
 	width:780px;
 	height:100%;
 	border-top:solid;
@@ -82,7 +90,7 @@
 
 #dottie {
 	position:absolute;
-	top:850px;
+	top:1130px;
 	width:100%;
 	border-bottom:dotted thin #555;
 }
@@ -90,7 +98,7 @@
 #apDiv1 {
 	position:absolute;
 	left:145px;
-	top:875px;
+	top:1160px;
 	width:465px;
 	height:86px;
 	z-index:8;
@@ -101,7 +109,7 @@
 	position:absolute;
 	width:100%;
 	height:175px;
-	top:1200px;
+	top:1550px;
 	background-color:#eee;
 	z-index:1;
 }
@@ -188,11 +196,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <div id="NavBar-Masthead"><a href="http://www.equaltogether.com"><img src="images/et_mastheadlogo.png" width="164" height="19" alt="Home"></a></div>
+          <div id="NavBar-Masthead"><a href="http://sandbox.equaltogether.com"><img src="images/et_mastheadlogo.png" width="164" height="19" alt="Home"></a></div>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">Our Pact</a></li>
+            <li><a href="../pact.html">Our Pact</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Browse Companies<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
@@ -202,11 +210,10 @@
                 <li class="durp">Three</a></li>
                 <li class="divider"></li>
                 <li role="presentation" class="dropdown-header">Independently Disclosed Companies</li>
-                <li>Facebook</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Google</a></li>
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#">Yahoo!</a></li>
+                <li><a href="facebook.html">Facebook</a></li>
+                <li><a href="google.html">Google</a></li>
+                <li><a href="linkedin.html">LinkedIn</a></li>
+                <li><a href="yahoo.html">Yahoo!</a></li>
                 <li class="divider"></li>
                 <li class="dropdown-header-FYI" data-toggle="modal" data-target="#myModal"><a href="#">What's The Difference?</a></li>
               </ul>
@@ -226,7 +233,7 @@
         <h4 class="modal-title" id="myModalLabel">What's The Difference?</h4>
       </div>
       <div class="modal-body">
-        <p>The difference between Partner Companies and Independently Disclosed Companies, is that our Partner Companies have agreed to the EqualTogether pact—and work directly with us to deliver updated numbers as frequently as makes sense for the size of their organization and rate of hiring. Weekly for a mammoth company, quarterly for a startup with less than 250 employees. We’re also developing API based direct reporting to enable daily updates, and are excited to see those go live just as soon as we can.</p><p>Independently Disclosed Companies are just that—organizations who've taken the bold step to go public with their EEO-1 reported diversity numbers on their own, and have no relationship with EqualTogether. All information we post about these companies is publicly available, and presented here to offer the most complete window we can into Tech's diversity challenges.</p>
+         <p>Partner Companies on EqualTogether are those who've agreed to our Pact and with whom we have a relationship. Partner Companies provide us with all the data you see about them, here—and we do the reporting. Everything is either current to the dates shown, or dynamically served from the wings of unicorns.</p><p>Independently Disclosed Companies are just that—organizations who've independently chosen to release an EEO-1 report at some point within the past year, and have no relationship with EqualTogether. All information we post about these companies is publicly available, and presented here to offer the most complete window we can into Tech's diversity challenges.</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal">Got It!</button>
@@ -240,13 +247,15 @@
 <div class="pact-headline" id="Headline">Our Partner Company Pact</div>   
 
 <div id="TheePact">
+  <div id="TopBlurbz">
    <div class="pact-agreeto">
-     <p>Accountability is at the heart of EqualTogether’s purpose, as is mutual responsibility.<span class="pact-agreeto"><a href="pricing.html"> Businesses: Join Us!</a></span></p>
+     <p>Accountability is at the heart of EqualTogether’s purpose, as is mutual responsibility.</p><p><a href="pricing.html">Join Us!</a></p>
    </div>
    <div class="pact-intro">
-   <p><span class="pact-agreeto">We the undersigned</span> are a consortium of organizations joined in a shared commitment to radical transparency and measurable change. Our charge is correcting today’s disparities in workforce diversity, across our               industry. Our goal is to align the diversity numbers of our corporate workplaces, with the communities that house them.</p>
-   <p>We each commit to this charge as one force among many—because together our visible efforts, mistakes, successes, and challenges, will be a far greater force with which to drive industry-wide equality of opportunity for all, than any one organization could alone accomplish.      </p>
-  <p>We each specifically commit, to…</p>
+   <p><span class="pact-agreeto">We the undersigned</span> are a consortium of organizations joined in a shared commitment to radical transparency and measurable change. Our charge is correcting today’s disparities in workforce diversity, across our industry. Our goal is to align the diversity numbers of our corporate workplaces, with the communities that house them.</p>
+   <p>We each commit to this charge as one force among many—because together our visible efforts, mistakes, successes, and challenges, will be a far greater force with which to drive industry-wide equality of opportunity for all, than any one organization could alone accomplish.</p>
+  <p>We each specifically commit to:</p>
+    </div>
   </div>
   <div id="PactGuts">
     <div id="LeftCol">
@@ -303,6 +312,7 @@
         <div class="navbar-left">
           <p class="footy">&copy;2014 <a href="http://www.humanaxis.org">HumanAxis Inc.</a><span class="footy-etc"> All Rights Reserved.</span></p>
         </div>
+        <div class="navbar-right"><p class="footy"><a href="http://equaltogether.posthaven.com">blog</a> · <a href="mailto:hello@equaltogether.com">Contact Us</a></p></div>
       </div>
     </div>
 
