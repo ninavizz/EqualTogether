@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Greetings! Please present your super secret credentials..."
+AuthUserFile /path/to/.htpasswd
+Require valid-user
