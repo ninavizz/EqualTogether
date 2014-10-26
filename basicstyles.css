@@ -68,7 +68,7 @@ body {
 	top:50px;
 	width:100%;
 	height:75px;
-	background-color: #345393;
+	background-color: #3d5c96;
 	z-index:3;
 }
 
@@ -675,6 +675,15 @@ p.datestamp-year {
 }
 
 /* Prices */
+.deets {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+    font-size: 12px;
+	line-height: 15px;
+    color: #555;
+    text-align: left; 
+	padding-bottom:15px;
+}
 
 .prices-year {
 	display:block;
