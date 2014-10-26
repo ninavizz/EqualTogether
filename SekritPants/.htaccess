@@ -1,4 +1,4 @@
 AuthType Basic
-AuthName "Greetings! Please present your super secret credentials..."
-AuthUserFile /path/to/.htpasswd
+AuthName "Where does Linus stay ALL NIGHT LONG instead of going trick or treat with the kids?"
+AuthUserFile //sandbox.equaltogether.com/web/content/images/.htpasswd
 Require valid-user
