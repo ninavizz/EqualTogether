@@ -465,31 +465,63 @@ document.write(yearspast+tail+" "+countunit)
 }
 
 #exec_weebles {
-	width:600px;
+	width:700px;
 	height:350px;
 	position:absolute;
 	top:30px;
 	left:-20px;
 	background-image: url('../images/execs_google.png');
 	background-repeat:no-repeat;
+	margin-bottom:30px;
 }
 
 #execs_list {
-	width:600px;
+	width:700px;
 	height:400px;
-	position:absolute;
-	top:340px;
+	position:relative;
+	display:inline-block;
     left:0px;
+	z-index:4;
+}
+
+#bored_list {
+	width:700px;
+	height:400px;
+	position:relative;
+	display:inline-block;
+    left:0px;
+	z-index:4;
+	margin-top:10px;
 }
 
 #execcy_head {
 	display:block;
-	width:600px;
+	width:700px;
 	height:23px;
 	top:0px;
     left:0px;
 	margin-bottom:5px;
 	border-bottom:solid 2px #222;
+	z-index:4;
+}
+
+#boredy_head {
+	display:block;
+	width:700px;
+	height:23px;
+	top:0px;
+    left:0px;
+	margin-bottom:5px;
+	border-bottom:solid 2px #222;
+	z-index:4;
+}
+
+#leadr_list {
+	width:700px;
+	height:900px;
+	position:absolute;
+	top:370px;
+    left:0px;
 }
 
 #communitystuff {
@@ -617,7 +649,7 @@ document.write(yearspast+tail+" "+countunit)
 	font-weight:300;
     font-size: 30px;
 	color: #4985f5;
-	padding-top:30px;
+	padding-top:20px;
 }
 
 </style>
@@ -672,7 +704,7 @@ document.write(yearspast+tail+" "+countunit)
         <h4 class="modal-title" id="myModalLabel">What's The Difference Between Partner Companies + Independently Disclosed Companies?</h4>
       </div>
       <div class="modal-body">
-        <p>Partner Companies here, are those who've agreed to the EqualTogether Pact. Sure, we also have traditional technology partners to help make the magic behind the curtain happen.</p><p>At the of EqualTogether's value, are both the api-based reporting services we provide, and the realtionship we build with each Partner Company and that we help Prtner Companies forge with one another. Unprecidented workplace cultural transformation, traditional methods be damned, is something we've all agreed to make happen. Together.</p><p>Independently Disclosed Companies are just that—organizations who've taken the bold step to go public with their EEO-1 reported diversity numbers, and have no relationship with EqualTogether. All information we post about these companies is publicly available, and presented here to offer the most complete window we can into Tech's diversity challenges.</p>
+        <p>Partner Companies on EqualTogether are those who've agreed to our Pact and with whom we have a relationship. Partner Companies provide us with all the data you see about them, here—and we do the reporting. Everything is either current to the dates shown, or dynamically served from the wings of unicorns.</p><p>Independently Disclosed Companies are just that—organizations who've independently chosen to release an EEO-1 report at some point within the past year, and have no relationship with EqualTogether. All information we post about these companies is publicly available, and presented here to offer the most complete window we can into Tech's diversity challenges.</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal">Coolio!</button>
@@ -843,7 +875,6 @@ document.write(yearspast+tail+" "+countunit)
   <ul class="nav nav-tabs" role="tablist">
     <li class="active"><a href="#articles" role="tab" data-toggle="tab">Articles</a></li>
     <li><a href="#leadership" role="tab" data-toggle="tab">Leadership</a></li>
-    <li><a href="#community" role="tab" data-toggle="tab">Community Support</a></li>
   </ul>
 </div>
 <div id="tabby_content" class="tab-content">
@@ -867,9 +898,8 @@ document.write(yearspast+tail+" "+countunit)
 <!------------------------------------ Leadership ------------------------------------>    
 <div class="tab-pane fade" id="leadership">
       <div id="exec_weebles"></div>
-   <div id="execs_list">
-      <div id="execcy_head" class="execs-head">Executive Team<span class="execs-headcomp">2013 Total Cash Compensation</span>
-      </div>
+   <div id="leadr_list">
+      <div id="execcy_head" class="execs-head">Executive Team<span class="execs-headcomp">2013 Total Cash Compensation</span></div>
       <div class="exec">
          <p class="exec-name">Larry Page, <script>
        displayage(1973, 03, 26, "years", 0, "rounddown")
@@ -993,23 +1023,10 @@ document.write(yearspast+tail+" "+countunit)
    </div>
  </div>
     
-<!------------------------------------ Community ------------------------------------>        
-    <div class="tab-pane fade" id="community">
-    <div id="communitystuff">
-      <div class="panel panel-info">
-         <div class="panel-heading">
-            <h3 class="panel-title">Under Construction</h3>
-            </div>
-            <div class="panel-body">
-            <p class="fyibody">The pins are flying, the treadle spinning!</p>
-           </div>
-         </div>
-       </div>
-     </div>
-    </div>
 
 <!---------------------- Nacho Momma's NonProfit ---------------------------->
 
+</div>
 <div id="endpage_blahdeda">
    <p class="footy-blather-header">EqualTogether is a project of HumanAxis</p>
    <p class="footy-blather">HumanAxis is a 501(c)3, under the proud fiscal sponsorship of the NetRoots Foundation. Yep, you read that correctly: this whole shebang is being done as a non-profit. A competitively priced B2B SAAS platform serving curated content and workforce analytics, developed by industry vets who aren't in it to become billionaires—but are in this to get results. A business in the same game as all the other Delaware C-Corps, but without the VCs, without valuation goals, and with a  social entrepreneurship purpose. Expectations are high, and we seek to crush them.</p> 
@@ -1024,6 +1041,7 @@ document.write(yearspast+tail+" "+countunit)
         <div class="navbar-left">
           <p class="footy">&copy;2014 <a href="http://www.humanaxis.org">HumanAxis Inc.</a><span class="footy-etc"> All Rights Reserved.</span></p>
         </div>
+        <div class="navbar-right"><p class="footy"><a href="http://equaltogether.posthaven.com">blog</a> · <a href="mailto:yes@equaltogether.com">Contact Us</a></p></div>
       </div>
     </div>
 

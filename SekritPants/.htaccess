@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Where does Linus stay ALL NIGHT LONG instead of going trick or treat with the kids?"
+AuthUserFile /mnt/stor14-wc1-ord1/934055/sandbox.equaltogether.com/web/content/
+Require valid-user
